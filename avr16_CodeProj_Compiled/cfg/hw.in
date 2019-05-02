@@ -1,0 +1,73 @@
+#put the name of the target mcu here (at90s8515, at90s8535, attiny22, atmega603 etc.)
+#	MCU = at90s8515
+#	MCU = atmega164p
+#    MCU = atmega163
+#	MCU = atmega323
+	MCU = atmega16
+	
+# Programming device in swdef
+#	PMCU = 90S8515
+#	PMCU = MEGA164P
+#	PMCU = MEGA163
+
+# select the clock frequency in Hz
+    MCUCLOCK	= 8000000.0
+
+# BAUD Rate for UART
+    BAUDRATE = 19200
+
+# Timer Rate
+    Period_mS = 500
+
+# OS Version
+    VER_OS = "V1.00"
+# APP Version
+    VER_APP = "V0.00"	
+
+# Low power Design
+    ADD_LOWPOW = 0
+
+# Add UART, RS232
+    ADD_UART = 1
+# Add Simple Debugger	(needs UART)
+    ADD_DBG		= 1
+
+# Add Small Delays
+    ADD_DELAY = 1
+
+# Add Internal ADC capture	
+    ADD_ADC		= 1
+# Add SPI
+    ADD_SPI = 0
+# Add I2C interface functions
+    ADD_I2C = 0
+# Add PWM output control
+    ADD_PWM     = 1
+# Add EEPROM
+    ADD_EEPROM    = 1
+
+# Add LCD 2/4-line 	
+    ADD_LCM		= 0
+# Add 4x4 Keyboard	
+    ADD_KB44	= 0
+# Add LPC interface 	
+    ADD_LPC		= 0
+# Add SST Flash chip with LPC interface. Needs LPC	
+    ADD_SST		= 0
+
+# Add PWM output control
+    ADD_SCARD     = 1
+
+# select peripherals to attach	
+# select FPGA Configuration
+# FPGA Configuration from AVR
+# 2: AVR Configures FPGA XCS Spartan
+# 1: AVR Configures FPGA XC3K (legacy)
+# 0: FPGA configures itself from PROM
+    ADD_FPGA_CFG	= 0
+    
+# Add Serial Command process for application (needs UART)
+    ADD_SERAPP	= 1
+    
+    
+

@@ -1,0 +1,97 @@
+#this defines the aims of the make process
+all:    $(DESTDIR)/$(TRG).obj $(DESTDIR)/$(TRG).elf \
+    $(PRGDIR)/$(TRG).rom $(PRGDIR)/$(TRG).eep \
+    $(DESTDIR)/$(TRG).ok
+		@echo  ----------- Generating ALL
+
+.PRECIOUS: $(DESTDIR)/%.o $(DESTDIR)/%.obj 
+#compile: instructions to create assembler and/or object files from C source
+
+$(DESTDIR)/%.s : %.c
+	@echo  ----------- Compiling to ASM $< to $@
+	$(AVRCC) -S $(CPFLAGS) $(CDEFS) -I$(INCDIR) $< -o $@
+
+$(DESTDIR)/%.o : %.c
+	@echo  ----------- Compiling $< to $@
+	$(AVRCC) -c $(CPFLAGS) $(CDEFS)  -Wp,-MD,$(DEPDIR)/$*.d -I$(INCDIR) $< -o $@
+	@cp $(DEPDIR)/$*.d $(DEPDIR)/$*.P; \
+        sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
+        -e '/^$$/ d' -e 's/$$/ :/' < $(DEPDIR)/$*.d >> $(DEPDIR)/$*.P; \
+        $(RM) -f $(DEPDIR)/$*.d
+
+
+#assemble: instructions to create object file from assembler files
+$(DESTDIR)/%.o : %.s
+	@echo  ----------- Assembling $< to $@
+	$(AVRAS) -c $(ASFLAGS) -I$(INCDIR) $< -o $@
+
+#link: instructions to create elf output file from object files
+$(DESTDIR)/%.elf: $(PATHOBJECTS)
+	@echo  ----------- Generating ELF
+	$(AVRCC) $(PATHOBJECTS) $(LIB) $(LDFLAGS) -o $@	
+# $(AVRCC) $(DESTDIR)/*.o $(LIB) $(LDFLAGS) -o $@
+
+#create avrobj file from elf output file
+$(DESTDIR)/%.obj: $(DESTDIR)/%.elf
+	@echo  ----------- Generating Object
+#  $(AVRBIN) -O avrobj -R .eeprom $< $@
+	$(AVRBIN) -O coff-ext-avr -R .eeprom $< $@
+
+#create bin (ihex, srec) file from elf output file
+$(PRGDIR)/%.rom: $(DESTDIR)/%.elf
+	@echo  ----------- Generating ROM
+	$(AVRBIN) -O $(FORMAT) -R .eeprom $< $@
+
+$(PRGDIR)/%.eep: $(DESTDIR)/%.elf
+	@echo  ----------- Generating EEP
+	$(AVRBIN) -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 -O $(FORMAT) $< $@
+
+#If all other steps compile ok then echo "Errors: none".
+#Necessary for AVR Studio to understand that everything went ok.
+%ok:
+	@echo "Errors: none"
+
+#make instruction to delete created files
+clean:
+	@echo  ----------- Cleaning output files
+	$(RM) $(LSTDIR)/*.lst
+	$(RM) $(DEPDIR)/*.d
+	$(RM) $(DEPDIR)/*.P
+	$(RM) $(LSTDIR)/*.map
+	$(RM) $(PRGDIR)/*.*
+	$(RM) $(ERRDIR)/*.*
+	$(RM) $(DESTDIR)/*.o
+	$(RM) $(DESTDIR)/*.d
+	$(RM) $(DESTDIR)/*.elf
+	$(RM) $(DESTDIR)/*.obj
+	@echo  ----------- Done! 
+  
+size:
+	@echo  ----------- Generating Size Report
+	@echo Used the following modules: $(OBJECTS)	
+	$(AVRSIZE) $(DESTDIR)/$(TRG).elf
+
+prog: $(PRGDIR)/$(TRG).rom $(PRGDIR)/$(TRG).eep
+	@echo  ----------- Programming MCU,  AVReal - AVRISP
+	$(AVRPROG) +$(PMCU) -p1 -as -o0 -ew -c $(PRGDIR)/$(TRG).rom -fcksel=0a 
+	
+progsp: $(PRGDIR)/$(TRG).rom $(PRGDIR)/$(TRG).eep
+	@echo  ----------- Programming MCU, Pololu - AVRDude - AVRISPv2
+	$(AVRPROGSP) -p $(PMCU2) -P COM3 -c avrispv2  -e -U flash:w:$(PRGDIR)/$(TRG).rom 
+
+list:
+	@echo ------------ Makefile Options ------------------------------------------
+	@echo MAKE size : Gets compiled binary size
+	@echo MAKE clean: Clears all compiler outputs
+	@echo MAKE all  : Compile all sources independ if they are already compiled
+	@echo MAKE prog  : AVReal AVR Programming
+	@echo MAKE progsp  : Program AVR with AVRISP [Pololu]  	
+	@echo MAKE settings  : Display compilation settings
+	@echo MAKE      : Compile the modified or uncompiled sources until completion
+	@echo ------------ End of Options --------------------------------------------
+
+settings:
+	@echo $(OBJECTS)
+	@echo $(CDEFS)
+	@echo $(DEFHW)
+

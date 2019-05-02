@@ -1,0 +1,106 @@
+# Source Path Tree
+VPATH = %.c  $(SRCDIR)/periphint
+VPATH += %.c $(SRCDIR)/periphext
+VPATH += %.c $(SRCDIR)/applic
+VPATH += %.c $(SRCDIR)/applic/cfg
+VPATH += %.c $(SRCDIR)/debug
+VPATH += %.c $(SRCDIR)/Utils
+VPATH += %.c $(SRCDIR)/applic/cfg
+VPATH += %.h $(SRCDIR)/includes
+VPATH += %.h  $(SRCDIR)/periphint
+VPATH += %.h $(SRCDIR)/periphext
+VPATH += %.h $(SRCDIR)/applic
+VPATH += %.h $(SRCDIR)/debug
+VPATH += %.h $(SRCDIR)/Utils
+VPATH += %.h $(SRCDIR)/applic/cfg
+VPATH += %.o $(DESTDIR)
+VPATH += %.elf $(DESTDIR)
+VPATH += %.lst $(LSTDIR)
+VPATH += %.log $(ERRDIR)
+
+
+#put additional assembler source file here
+    ASRC =
+
+#additional libraries and object files to link
+    LIB =
+
+#additional includes to compile
+    INC =
+
+#put your C sourcefiles here
+SRC =   kernel.c \
+            Timer0.c \
+            typeconv.c \
+            applic.c
+	
+ifeq ($(ADD_UART),1)
+    SRC := $(SRC) Uart.c
+endif
+
+ifeq ($(ADD_ADC),1)
+    SRC := $(SRC) adc.c
+endif
+
+ifeq ($(ADD_DBG),1)
+    SRC := $(SRC) debugger.c dbgext.c
+endif
+
+ifeq ($(ADD_LCM),1)
+    SRC := $(SRC) lcm_char.c
+endif
+
+ifeq ($(ADD_KB44),1)
+    SRC := $(SRC) keymat44.c
+endif
+
+ifeq ($(ADD_EEPROM),1)
+    SRC := $(SRC) eeprom.c
+endif
+
+ifeq ($(ADD_LPC),1)
+    SRC := $(SRC) lpc.c
+
+	ifeq ($(ADD_SST),1)
+        SRC := $(SRC) sst.c
+	endif
+	
+endif
+
+ifeq ($(ADD_FPGA_CFG),1)
+  # legacy XC3K support
+   SRC := $(SRC) xc3k_cfg.c
+endif
+
+ifeq ($(ADD_FPGA_CFG),2)	
+  	SRC := $(SRC) xcs_cfg.c
+endif
+
+ifeq ($(ADD_SERAPP),1)
+ 	SRC := $(SRC) serapp.c
+endif
+
+ifeq ($(ADD_PWM),1)
+    SRC := $(SRC) Timer1.c
+endif   
+
+ifeq ($(ADD_SCARD), 1)
+    SRC := $(SRC) scard.c
+endif
+
+ifeq ($(ADD_SPI), 1)
+    SRC := $(SRC) spi.c
+endif
+
+ifeq ($(ADD_DELAY), 1)
+    SRC := $(SRC)  delay.c
+endif
+
+ifeq ($(ADD_I2C), 1)
+    SRC := $(SRC)  i2c.c
+endif
+
+
+
+OBJECTS = $(SRC:%.c=%.o)
+PATHOBJECTS = $(OBJECTS:%.o=$(DESTDIR)/%.o)

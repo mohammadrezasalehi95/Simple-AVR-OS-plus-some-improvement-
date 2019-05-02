@@ -1,0 +1,101 @@
+CDEFS = -DMPUCLK_Hz=$(MCUCLOCK)  \
+      -DUART_BAUD_RATE=$(BAUDRATE)    \
+      -Dc_SysTickPeriod_ms=$(Period_mS)   \
+      -Dc_VEROS=$(VER_OS)\
+      -Dc_VERAPP=$(VER_APP)\
+      -DMOD_SYSTIMER_ON
+
+ifeq ($(ADD_LOWPOW), 1)
+	CDEFS := ($CDEFS) -DCFG_LOWPOW
+endif
+      
+# CPU Definitions
+ifeq ($(MCU),at90s8515)
+	CDEFS := $(CDEFS) -Dc_MCU=0
+	PMCU = 90S8515
+	PMCU2 = 8515
+endif
+ifeq ($(MCU),atmega16)
+	CDEFS := $(CDEFS) -Dc_MCU=1 
+	PMCU = MEGA16
+	PMCU2 = m16
+endif
+ifeq ($(MCU),atmega163)
+	CDEFS := $(CDEFS) -Dc_MCU=2 
+	PMCU = MEGA163
+	PMCU2 = m163
+endif
+ifeq ($(MCU),atmega164p)
+	CDEFS := $(CDEFS) -Dc_MCU=3
+	PMCU = MEGA164P
+	PMCU2 = m164p
+endif
+ifeq ($(MCU),atmega323)
+	CDEFS := $(CDEFS) -Dc_MCU=4
+	PMCU = MEGA323
+	PMCU2 = m323
+endif
+
+
+ifeq ($(ADD_DBG),1)
+  CDEFS := $(CDEFS) -DMOD_DEBUGGER_ON  
+endif
+
+
+ifeq ($(ADD_UART),1)
+  CDEFS := $(CDEFS) -DMOD_UART_ON
+endif
+
+ifeq ($(ADD_ADC),1)
+  CDEFS := $(CDEFS) -DMOD_ADC8_ON
+endif
+
+ifeq ($(ADD_LCM),1)
+  CDEFS := $(CDEFS) -DMOD_LCMCHAR_ON
+endif
+
+ifeq ($(ADD_KB44),1)
+  CDEFS := $(CDEFS) -DMOD_KEY44_ON
+endif
+
+ifeq ($(ADD_LPC),1)
+  CDEFS := $(CDEFS) -DMOD_LPC_ON
+endif
+
+ifeq ($(ADD_EEPROM),1)
+  CDEFS := $(CDEFS) -DMOD_EEPROM_ON
+endif
+
+ifeq ($(ADD_SERAPP),1)
+    CDEFS := $(CDEFS)  -DMOD_SERAPP_ON
+endif
+  
+ifeq ($(ADD_FPGA_CFG),1)
+  # legacy XC3K support
+  #OBJECTS := $(OBJECTS) xc3k_cfg.o
+  #CDEFS := $(CDEFS)  -DMOD_XXXXXX
+endif
+
+ifeq ($(ADD_FPGA_CFG),2)
+  CDEFS := $(CDEFS)  -DMOD_FPGAXCS_ON
+  #OBJECTS := $(OBJECTS) xcs_cfg.o
+endif
+
+
+ifeq ($(ADD_PWM),1)
+    CDEFS := $(CDEFS) -DMOD_PWMTIMER_ON
+endif
+
+ifeq ($(ADD_SCARD),1)
+    CDEFS := $(CDEFS) -DMOD_SCARD_ON
+endif
+
+ifeq ($(ADD_SPI),1)
+  CDEFS := $(CDEFS) -DMOD_SPI_ON
+endif
+
+ifeq ($(ADD_I2C),1)
+  CDEFS := $(CDEFS) -DMOD_I2C_ON
+endif
+
+

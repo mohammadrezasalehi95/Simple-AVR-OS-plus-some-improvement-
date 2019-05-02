@@ -1,0 +1,5 @@
+#define all project specific object files
+	OBJ	= $(ASRC:.s=.o) $(SRC:.c=.o) 
+	CPFLAGS += -mmcu=$(MCU)
+	ASFLAGS += -mmcu=$(MCU)
+	LDFLAGS += -mmcu=$(MCU)
