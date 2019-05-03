@@ -1,0 +1,1768 @@
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 1
+
+
+   1               		.file	"serapp.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.section	.debug_abbrev,"",@progbits
+   9               	.Ldebug_abbrev0:
+  10               		.section	.debug_info,"",@progbits
+  11               	.Ldebug_info0:
+  12               		.section	.debug_line,"",@progbits
+  13               	.Ldebug_line0:
+  14               		.text
+  15               	.Ltext0:
+  16               	.global	f_InitSerApp
+  17               		.type	f_InitSerApp, @function
+  18               	f_InitSerApp:
+  19               	.LFB3:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 1092 0000 		sts v_appcnt,__zero_reg__
+  25               	.LM3:
+  26 0004 82E3      		ldi r24,lo8(50)
+  27 0006 8093 0000 		sts v_pwmcnt,r24
+  28               	/* epilogue start */
+  29               	.LM4:
+  30 000a 0895      		ret
+  31               	.LFE3:
+  32               		.size	f_InitSerApp, .-f_InitSerApp
+  33               		.data
+  34               	.LC0:
+  35 0000 2D47 6F69 		.string	"-Going Debug\n"
+  35      6E67 2044 
+  35      6562 7567 
+  35      0A00 
+  36               		.text
+  37               	.global	f_SerApp_DbgEn
+  38               		.type	f_SerApp_DbgEn, @function
+  39               	f_SerApp_DbgEn:
+  40               	.LFB7:
+  41               	.LM5:
+  42               	/* prologue: function */
+  43               	/* frame size = 0 */
+  44               	.LM6:
+  45 000c 8091 0000 		lds r24,v_SysStat
+  46 0010 8260      		ori r24,lo8(2)
+  47 0012 8093 0000 		sts v_SysStat,r24
+  48               	.LM7:
+  49 0016 80E0      		ldi r24,lo8(.LC0)
+  50 0018 90E0      		ldi r25,hi8(.LC0)
+  51 001a 0E94 0000 		call f_Uart_PutStr
+  52               	/* epilogue start */
+  53               	.LM8:
+  54 001e 0895      		ret
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 2
+
+
+  55               	.LFE7:
+  56               		.size	f_SerApp_DbgEn, .-f_SerApp_DbgEn
+  57               		.data
+  58               	.LC1:
+  59 000e 0A00      		.string	"\n"
+  60               	.LC2:
+  61 0010 0A45 7272 		.string	"\nErr\n"
+  61      0A00 
+  62               		.text
+  63               	.global	f_ProcessAPPCMD
+  64               		.type	f_ProcessAPPCMD, @function
+  65               	f_ProcessAPPCMD:
+  66               	.LFB6:
+  67               	.LM9:
+  68 0020 1F93      		push r17
+  69               	/* prologue: function */
+  70               	/* frame size = 0 */
+  71               	.LM10:
+  72 0022 1091 0000 		lds r17,buf_appentry
+  73               	.LVL0:
+  74               	.LM11:
+  75 0026 80E0      		ldi r24,lo8(.LC1)
+  76 0028 90E0      		ldi r25,hi8(.LC1)
+  77 002a 0E94 0000 		call f_Uart_PutStr
+  78               	.LM12:
+  79 002e 1092 0000 		sts v_appcnt,__zero_reg__
+  80               	.LM13:
+  81 0032 1137      		cpi r17,lo8(113)
+  82 0034 01F0      		breq .L8
+  83 0036 1237      		cpi r17,lo8(114)
+  84 0038 00F0      		brlo .L14
+  85 003a 1737      		cpi r17,lo8(119)
+  86 003c 01F0      		breq .L15
+  87               	.L6:
+  88               	.LM14:
+  89 003e 80E0      		ldi r24,lo8(.LC2)
+  90 0040 90E0      		ldi r25,hi8(.LC2)
+  91 0042 0E94 0000 		call f_Uart_PutStr
+  92               	/* epilogue start */
+  93               	.LM15:
+  94 0046 1F91      		pop r17
+  95               	.LVL1:
+  96 0048 0895      		ret
+  97               	.LVL2:
+  98               	.L14:
+  99               	.LM16:
+ 100 004a 1632      		cpi r17,lo8(38)
+ 101 004c 01F0      		breq .L7
+ 102 004e 1A32      		cpi r17,lo8(42)
+ 103 0050 01F4      		brne .L6
+ 104               	.L7:
+ 105               	.LM17:
+ 106 0052 0E94 0000 		call f_SerApp_DbgEn
+ 107               	.LM18:
+ 108 0056 1F91      		pop r17
+ 109               	.LVL3:
+ 110 0058 0895      		ret
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 3
+
+
+ 111               	.LVL4:
+ 112               	.L8:
+ 113               	.LM19:
+ 114 005a 8091 0000 		lds r24,v_pwmcnt
+ 115 005e 8F5F      		subi r24,lo8(-(1))
+ 116 0060 8093 0000 		sts v_pwmcnt,r24
+ 117               	.LM20:
+ 118 0064 6091 0000 		lds r22,v_pwmcnt
+ 119 0068 80E0      		ldi r24,lo8(0)
+ 120 006a 0E94 0000 		call f_PWM1Set
+ 121               	.LM21:
+ 122 006e 1F91      		pop r17
+ 123               	.LVL5:
+ 124 0070 0895      		ret
+ 125               	.LVL6:
+ 126               	.L15:
+ 127               	.LM22:
+ 128 0072 8091 0000 		lds r24,v_pwmcnt
+ 129 0076 8150      		subi r24,lo8(-(-1))
+ 130 0078 8093 0000 		sts v_pwmcnt,r24
+ 131               	.LM23:
+ 132 007c 6091 0000 		lds r22,v_pwmcnt
+ 133 0080 80E0      		ldi r24,lo8(0)
+ 134 0082 0E94 0000 		call f_PWM1Set
+ 135               	.LM24:
+ 136 0086 1F91      		pop r17
+ 137               	.LVL7:
+ 138 0088 0895      		ret
+ 139               	.LFE6:
+ 140               		.size	f_ProcessAPPCMD, .-f_ProcessAPPCMD
+ 141               	.global	f_ProcessAPPKey
+ 142               		.type	f_ProcessAPPKey, @function
+ 143               	f_ProcessAPPKey:
+ 144               	.LFB5:
+ 145               	.LM25:
+ 146               	.LVL8:
+ 147               	/* prologue: function */
+ 148               	/* frame size = 0 */
+ 149               	.LM26:
+ 150 008a 8D36      		cpi r24,lo8(109)
+ 151 008c 01F4      		brne .+2
+ 152 008e 00C0      		rjmp .L21
+ 153 0090 8E36      		cpi r24,lo8(110)
+ 154 0092 00F0      		brlo .L34
+ 155 0094 8637      		cpi r24,lo8(118)
+ 156 0096 01F0      		breq .L23
+ 157 0098 8A37      		cpi r24,lo8(122)
+ 158 009a 01F0      		breq .L24
+ 159 009c 8E36      		cpi r24,lo8(110)
+ 160 009e 01F0      		breq .L22
+ 161               	.L17:
+ 162 00a0 80E0      		ldi r24,lo8(0)
+ 163               	.LVL9:
+ 164 00a2 0895      		ret
+ 165               	.LVL10:
+ 166               	.L34:
+ 167 00a4 8436      		cpi r24,lo8(100)
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 4
+
+
+ 168 00a6 01F0      		breq .L19
+ 169 00a8 8536      		cpi r24,lo8(101)
+ 170 00aa 01F0      		breq .L20
+ 171 00ac 8336      		cpi r24,lo8(99)
+ 172 00ae 01F4      		brne .L17
+ 173               	.LM27:
+ 174 00b0 8091 0000 		lds r24,v_pwmcnt
+ 175               	.LVL11:
+ 176 00b4 8F5F      		subi r24,lo8(-(1))
+ 177 00b6 8093 0000 		sts v_pwmcnt,r24
+ 178               	.LM28:
+ 179 00ba 8091 0000 		lds r24,v_pwmcnt
+ 180 00be 9091 0000 		lds r25,v_ServoLock
+ 181 00c2 9817      		cp r25,r24
+ 182 00c4 00F4      		brsh .L32
+ 183               	.L33:
+ 184               	.LM29:
+ 185 00c6 9093 0000 		sts v_pwmcnt,r25
+ 186               	.L32:
+ 187               	.LM30:
+ 188 00ca 6091 0000 		lds r22,v_pwmcnt
+ 189 00ce 80E0      		ldi r24,lo8(0)
+ 190 00d0 0E94 0000 		call f_PWM1Set
+ 191 00d4 81E0      		ldi r24,lo8(1)
+ 192               	.LVL12:
+ 193 00d6 0895      		ret
+ 194               	.LVL13:
+ 195               	.L24:
+ 196               	.LM31:
+ 197 00d8 82E3      		ldi r24,lo8(50)
+ 198               	.LVL14:
+ 199               	.L31:
+ 200               	.LM32:
+ 201 00da 8093 0000 		sts v_pwmcnt,r24
+ 202               	.LM33:
+ 203 00de 6091 0000 		lds r22,v_pwmcnt
+ 204 00e2 80E0      		ldi r24,lo8(0)
+ 205 00e4 0E94 0000 		call f_PWM1Set
+ 206 00e8 81E0      		ldi r24,lo8(1)
+ 207               	.LVL15:
+ 208 00ea 0895      		ret
+ 209               	.LVL16:
+ 210               	.L20:
+ 211               	.LM34:
+ 212 00ec 80E0      		ldi r24,lo8(0)
+ 213               	.LVL17:
+ 214 00ee 0E94 0000 		call f_PWM1Enable
+ 215 00f2 81E0      		ldi r24,lo8(1)
+ 216               	.LVL18:
+ 217 00f4 0895      		ret
+ 218               	.LVL19:
+ 219               	.L23:
+ 220               	.LM35:
+ 221 00f6 8091 0000 		lds r24,v_pwmcnt
+ 222               	.LVL20:
+ 223 00fa 8150      		subi r24,lo8(-(-1))
+ 224 00fc 8093 0000 		sts v_pwmcnt,r24
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 5
+
+
+ 225               	.LM36:
+ 226 0100 8091 0000 		lds r24,v_pwmcnt
+ 227 0104 9091 0000 		lds r25,v_ServoUnLock
+ 228 0108 8917      		cp r24,r25
+ 229 010a 00F0      		brlo .L33
+ 230 010c 00C0      		rjmp .L32
+ 231               	.LVL21:
+ 232               	.L22:
+ 233               	.LM37:
+ 234 010e 8091 0000 		lds r24,v_ServoUnLock
+ 235               	.LVL22:
+ 236 0112 00C0      		rjmp .L31
+ 237               	.LVL23:
+ 238               	.L19:
+ 239               	.LM38:
+ 240 0114 80E0      		ldi r24,lo8(0)
+ 241               	.LVL24:
+ 242 0116 0E94 0000 		call f_PWM1Disable
+ 243 011a 81E0      		ldi r24,lo8(1)
+ 244               	.LVL25:
+ 245               	.LVL26:
+ 246               	.LM39:
+ 247 011c 0895      		ret
+ 248               	.LVL27:
+ 249               	.L21:
+ 250               	.LM40:
+ 251 011e 8091 0000 		lds r24,v_ServoLock
+ 252               	.LVL28:
+ 253 0122 8093 0000 		sts v_pwmcnt,r24
+ 254               	.LM41:
+ 255 0126 6091 0000 		lds r22,v_pwmcnt
+ 256 012a 80E0      		ldi r24,lo8(0)
+ 257 012c 0E94 0000 		call f_PWM1Set
+ 258 0130 81E0      		ldi r24,lo8(1)
+ 259               	.LVL29:
+ 260 0132 0895      		ret
+ 261               	.LFE5:
+ 262               		.size	f_ProcessAPPKey, .-f_ProcessAPPKey
+ 263               		.data
+ 264               	.LC3:
+ 265 0016 2D2D 2D2D 		.string	"---- Err\n"
+ 265      2045 7272 
+ 265      0A00 
+ 266               	.LC4:
+ 267 0020 3E20 00   		.string	"> "
+ 268               		.text
+ 269               	.global	f_SerApp
+ 270               		.type	f_SerApp, @function
+ 271               	f_SerApp:
+ 272               	.LFB4:
+ 273               	.LM42:
+ 274 0134 1F93      		push r17
+ 275 0136 CF93      		push r28
+ 276 0138 DF93      		push r29
+ 277               	/* prologue: function */
+ 278               	/* frame size = 0 */
+ 279               	.LM43:
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 6
+
+
+ 280 013a 8091 0000 		lds r24,v_SysStat
+ 281 013e 81FF      		sbrs r24,1
+ 282 0140 00C0      		rjmp .L39
+ 283               	.LVL30:
+ 284               	.L38:
+ 285               	/* epilogue start */
+ 286               	.LM44:
+ 287 0142 DF91      		pop r29
+ 288 0144 CF91      		pop r28
+ 289               	.LVL31:
+ 290 0146 1F91      		pop r17
+ 291 0148 0895      		ret
+ 292               	.L39:
+ 293               	.LM45:
+ 294 014a 0E94 0000 		call f_Uart_GetChar
+ 295 014e EC01      		movw r28,r24
+ 296               	.LVL32:
+ 297 0150 8FEF      		ldi r24,hi8(-1)
+ 298 0152 CF3F      		cpi r28,lo8(-1)
+ 299 0154 D807      		cpc r29,r24
+ 300 0156 01F0      		breq .L38
+ 301               	.LM46:
+ 302 0158 E091 0000 		lds r30,v_appcnt
+ 303 015c F0E0      		ldi r31,lo8(0)
+ 304 015e E050      		subi r30,lo8(-(buf_appentry))
+ 305 0160 F040      		sbci r31,hi8(-(buf_appentry))
+ 306 0162 C083      		st Z,r28
+ 307               	.LM47:
+ 308 0164 8C2F      		mov r24,r28
+ 309 0166 0E94 0000 		call f_ProcessAPPKey
+ 310               	.LM48:
+ 311 016a 8823      		tst r24
+ 312 016c 01F4      		brne .L38
+ 313               	.LM49:
+ 314 016e 8091 0000 		lds r24,v_appcnt
+ 315 0172 8F5F      		subi r24,lo8(-(1))
+ 316 0174 8093 0000 		sts v_appcnt,r24
+ 317               	.LM50:
+ 318 0178 8091 0000 		lds r24,v_appcnt
+ 319 017c 8A30      		cpi r24,lo8(10)
+ 320 017e 01F0      		breq .L40
+ 321               	.LM51:
+ 322 0180 8C2F      		mov r24,r28
+ 323 0182 0E94 0000 		call f_Uart_PutChar
+ 324               	.LM52:
+ 325 0186 CD30      		cpi r28,lo8(13)
+ 326               	.LVL33:
+ 327 0188 01F4      		brne .L38
+ 328               	.LM53:
+ 329 018a 0E94 0000 		call f_ProcessAPPCMD
+ 330               	.LM54:
+ 331 018e 80E0      		ldi r24,lo8(.LC4)
+ 332 0190 90E0      		ldi r25,hi8(.LC4)
+ 333 0192 0E94 0000 		call f_Uart_PutStr
+ 334 0196 00C0      		rjmp .L38
+ 335               	.LVL34:
+ 336               	.L40:
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 7
+
+
+ 337               	.LM55:
+ 338 0198 1092 0000 		sts v_appcnt,__zero_reg__
+ 339               	.LM56:
+ 340 019c 80E0      		ldi r24,lo8(.LC3)
+ 341 019e 90E0      		ldi r25,hi8(.LC3)
+ 342 01a0 0E94 0000 		call f_Uart_PutStr
+ 343               	.LM57:
+ 344 01a4 80E0      		ldi r24,lo8(.LC4)
+ 345 01a6 90E0      		ldi r25,hi8(.LC4)
+ 346 01a8 0E94 0000 		call f_Uart_PutStr
+ 347 01ac 00C0      		rjmp .L38
+ 348               	.LFE4:
+ 349               		.size	f_SerApp, .-f_SerApp
+ 350               		.comm v_appcnt,1,1
+ 351               		.comm v_pwmcnt,1,1
+ 352               		.comm buf_appentry,10,1
+ 353               		.comm buf_types,60,1
+ 354               		.section	.debug_frame,"",@progbits
+ 355               	.Lframe0:
+ 356 0000 0C00 0000 		.long	.LECIE0-.LSCIE0
+ 357               	.LSCIE0:
+ 358 0004 FFFF FFFF 		.long	0xffffffff
+ 359 0008 01        		.byte	0x1
+ 360 0009 00        		.string	""
+ 361 000a 01        		.uleb128 0x1
+ 362 000b 7F        		.sleb128 -1
+ 363 000c 24        		.byte	0x24
+ 364 000d 0C        		.byte	0xc
+ 365 000e 20        		.uleb128 0x20
+ 366 000f 00        		.uleb128 0x0
+ 367               		.p2align	2
+ 368               	.LECIE0:
+ 369               	.LSFDE0:
+ 370 0010 0C00 0000 		.long	.LEFDE0-.LASFDE0
+ 371               	.LASFDE0:
+ 372 0014 0000 0000 		.long	.Lframe0
+ 373 0018 0000 0000 		.long	.LFB3
+ 374 001c 0C00 0000 		.long	.LFE3-.LFB3
+ 375               		.p2align	2
+ 376               	.LEFDE0:
+ 377               	.LSFDE2:
+ 378 0020 0C00 0000 		.long	.LEFDE2-.LASFDE2
+ 379               	.LASFDE2:
+ 380 0024 0000 0000 		.long	.Lframe0
+ 381 0028 0000 0000 		.long	.LFB7
+ 382 002c 1400 0000 		.long	.LFE7-.LFB7
+ 383               		.p2align	2
+ 384               	.LEFDE2:
+ 385               	.LSFDE4:
+ 386 0030 0C00 0000 		.long	.LEFDE4-.LASFDE4
+ 387               	.LASFDE4:
+ 388 0034 0000 0000 		.long	.Lframe0
+ 389 0038 0000 0000 		.long	.LFB6
+ 390 003c 6A00 0000 		.long	.LFE6-.LFB6
+ 391               		.p2align	2
+ 392               	.LEFDE4:
+ 393               	.LSFDE6:
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 8
+
+
+ 394 0040 0C00 0000 		.long	.LEFDE6-.LASFDE6
+ 395               	.LASFDE6:
+ 396 0044 0000 0000 		.long	.Lframe0
+ 397 0048 0000 0000 		.long	.LFB5
+ 398 004c AA00 0000 		.long	.LFE5-.LFB5
+ 399               		.p2align	2
+ 400               	.LEFDE6:
+ 401               	.LSFDE8:
+ 402 0050 0C00 0000 		.long	.LEFDE8-.LASFDE8
+ 403               	.LASFDE8:
+ 404 0054 0000 0000 		.long	.Lframe0
+ 405 0058 0000 0000 		.long	.LFB4
+ 406 005c 7A00 0000 		.long	.LFE4-.LFB4
+ 407               		.p2align	2
+ 408               	.LEFDE8:
+ 409               		.text
+ 410               	.Letext0:
+ 411               		.section	.debug_loc,"",@progbits
+ 412               	.Ldebug_loc0:
+ 413               	.LLST3:
+ 414 0000 2600 0000 		.long	.LVL0-.Ltext0
+ 415 0004 4800 0000 		.long	.LVL1-.Ltext0
+ 416 0008 0100      		.word	0x1
+ 417 000a 61        		.byte	0x61
+ 418 000b 4A00 0000 		.long	.LVL2-.Ltext0
+ 419 000f 5800 0000 		.long	.LVL3-.Ltext0
+ 420 0013 0100      		.word	0x1
+ 421 0015 61        		.byte	0x61
+ 422 0016 5A00 0000 		.long	.LVL4-.Ltext0
+ 423 001a 7000 0000 		.long	.LVL5-.Ltext0
+ 424 001e 0100      		.word	0x1
+ 425 0020 61        		.byte	0x61
+ 426 0021 7200 0000 		.long	.LVL6-.Ltext0
+ 427 0025 8800 0000 		.long	.LVL7-.Ltext0
+ 428 0029 0100      		.word	0x1
+ 429 002b 61        		.byte	0x61
+ 430 002c 0000 0000 		.long	0x0
+ 431 0030 0000 0000 		.long	0x0
+ 432               	.LLST5:
+ 433 0034 8A00 0000 		.long	.LVL8-.Ltext0
+ 434 0038 A200 0000 		.long	.LVL9-.Ltext0
+ 435 003c 0100      		.word	0x1
+ 436 003e 68        		.byte	0x68
+ 437 003f A400 0000 		.long	.LVL10-.Ltext0
+ 438 0043 B400 0000 		.long	.LVL11-.Ltext0
+ 439 0047 0100      		.word	0x1
+ 440 0049 68        		.byte	0x68
+ 441 004a D800 0000 		.long	.LVL13-.Ltext0
+ 442 004e DA00 0000 		.long	.LVL14-.Ltext0
+ 443 0052 0100      		.word	0x1
+ 444 0054 68        		.byte	0x68
+ 445 0055 EC00 0000 		.long	.LVL16-.Ltext0
+ 446 0059 EE00 0000 		.long	.LVL17-.Ltext0
+ 447 005d 0100      		.word	0x1
+ 448 005f 68        		.byte	0x68
+ 449 0060 F600 0000 		.long	.LVL19-.Ltext0
+ 450 0064 FA00 0000 		.long	.LVL20-.Ltext0
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 9
+
+
+ 451 0068 0100      		.word	0x1
+ 452 006a 68        		.byte	0x68
+ 453 006b 0E01 0000 		.long	.LVL21-.Ltext0
+ 454 006f 1201 0000 		.long	.LVL22-.Ltext0
+ 455 0073 0100      		.word	0x1
+ 456 0075 68        		.byte	0x68
+ 457 0076 1401 0000 		.long	.LVL23-.Ltext0
+ 458 007a 1601 0000 		.long	.LVL24-.Ltext0
+ 459 007e 0100      		.word	0x1
+ 460 0080 68        		.byte	0x68
+ 461 0081 1E01 0000 		.long	.LVL27-.Ltext0
+ 462 0085 2201 0000 		.long	.LVL28-.Ltext0
+ 463 0089 0100      		.word	0x1
+ 464 008b 68        		.byte	0x68
+ 465 008c 0000 0000 		.long	0x0
+ 466 0090 0000 0000 		.long	0x0
+ 467               	.LLST6:
+ 468 0094 A200 0000 		.long	.LVL9-.Ltext0
+ 469 0098 A400 0000 		.long	.LVL10-.Ltext0
+ 470 009c 0100      		.word	0x1
+ 471 009e 68        		.byte	0x68
+ 472 009f D600 0000 		.long	.LVL12-.Ltext0
+ 473 00a3 D800 0000 		.long	.LVL13-.Ltext0
+ 474 00a7 0100      		.word	0x1
+ 475 00a9 68        		.byte	0x68
+ 476 00aa EA00 0000 		.long	.LVL15-.Ltext0
+ 477 00ae EC00 0000 		.long	.LVL16-.Ltext0
+ 478 00b2 0100      		.word	0x1
+ 479 00b4 68        		.byte	0x68
+ 480 00b5 F400 0000 		.long	.LVL18-.Ltext0
+ 481 00b9 F600 0000 		.long	.LVL19-.Ltext0
+ 482 00bd 0100      		.word	0x1
+ 483 00bf 68        		.byte	0x68
+ 484 00c0 1C01 0000 		.long	.LVL25-.Ltext0
+ 485 00c4 1C01 0000 		.long	.LVL26-.Ltext0
+ 486 00c8 0100      		.word	0x1
+ 487 00ca 68        		.byte	0x68
+ 488 00cb 3201 0000 		.long	.LVL29-.Ltext0
+ 489 00cf 3401 0000 		.long	.LFE5-.Ltext0
+ 490 00d3 0100      		.word	0x1
+ 491 00d5 68        		.byte	0x68
+ 492 00d6 0000 0000 		.long	0x0
+ 493 00da 0000 0000 		.long	0x0
+ 494               	.LLST8:
+ 495 00de 4201 0000 		.long	.LVL30-.Ltext0
+ 496 00e2 4601 0000 		.long	.LVL31-.Ltext0
+ 497 00e6 0600      		.word	0x6
+ 498 00e8 6C        		.byte	0x6c
+ 499 00e9 93        		.byte	0x93
+ 500 00ea 01        		.uleb128 0x1
+ 501 00eb 6D        		.byte	0x6d
+ 502 00ec 93        		.byte	0x93
+ 503 00ed 01        		.uleb128 0x1
+ 504 00ee 5001 0000 		.long	.LVL32-.Ltext0
+ 505 00f2 AE01 0000 		.long	.LFE4-.Ltext0
+ 506 00f6 0600      		.word	0x6
+ 507 00f8 6C        		.byte	0x6c
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 10
+
+
+ 508 00f9 93        		.byte	0x93
+ 509 00fa 01        		.uleb128 0x1
+ 510 00fb 6D        		.byte	0x6d
+ 511 00fc 93        		.byte	0x93
+ 512 00fd 01        		.uleb128 0x1
+ 513 00fe 0000 0000 		.long	0x0
+ 514 0102 0000 0000 		.long	0x0
+ 515               	.LLST9:
+ 516 0106 4201 0000 		.long	.LVL30-.Ltext0
+ 517 010a 4601 0000 		.long	.LVL31-.Ltext0
+ 518 010e 0100      		.word	0x1
+ 519 0110 6C        		.byte	0x6c
+ 520 0111 8801 0000 		.long	.LVL33-.Ltext0
+ 521 0115 9801 0000 		.long	.LVL34-.Ltext0
+ 522 0119 0100      		.word	0x1
+ 523 011b 6C        		.byte	0x6c
+ 524 011c 0000 0000 		.long	0x0
+ 525 0120 0000 0000 		.long	0x0
+ 526               		.section	.debug_info
+ 527 0000 3502 0000 		.long	0x235
+ 528 0004 0200      		.word	0x2
+ 529 0006 0000 0000 		.long	.Ldebug_abbrev0
+ 530 000a 04        		.byte	0x4
+ 531 000b 01        		.uleb128 0x1
+ 532 000c 0000 0000 		.long	.LASF30
+ 533 0010 01        		.byte	0x1
+ 534 0011 0000 0000 		.long	.LASF31
+ 535 0015 0000 0000 		.long	.LASF32
+ 536 0019 0000 0000 		.long	.Ltext0
+ 537 001d 0000 0000 		.long	.Letext0
+ 538 0021 0000 0000 		.long	.Ldebug_line0
+ 539 0025 02        		.uleb128 0x2
+ 540 0026 01        		.byte	0x1
+ 541 0027 08        		.byte	0x8
+ 542 0028 0000 0000 		.long	.LASF0
+ 543 002c 02        		.uleb128 0x2
+ 544 002d 01        		.byte	0x1
+ 545 002e 06        		.byte	0x6
+ 546 002f 0000 0000 		.long	.LASF1
+ 547 0033 02        		.uleb128 0x2
+ 548 0034 02        		.byte	0x2
+ 549 0035 07        		.byte	0x7
+ 550 0036 0000 0000 		.long	.LASF2
+ 551 003a 02        		.uleb128 0x2
+ 552 003b 02        		.byte	0x2
+ 553 003c 05        		.byte	0x5
+ 554 003d 0000 0000 		.long	.LASF3
+ 555 0041 03        		.uleb128 0x3
+ 556 0042 0000 0000 		.long	.LASF4
+ 557 0046 02        		.byte	0x2
+ 558 0047 0D        		.byte	0xd
+ 559 0048 2500 0000 		.long	0x25
+ 560 004c 03        		.uleb128 0x3
+ 561 004d 0000 0000 		.long	.LASF5
+ 562 0051 02        		.byte	0x2
+ 563 0052 0E        		.byte	0xe
+ 564 0053 2C00 0000 		.long	0x2c
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 11
+
+
+ 565 0057 03        		.uleb128 0x3
+ 566 0058 0000 0000 		.long	.LASF6
+ 567 005c 02        		.byte	0x2
+ 568 005d 0F        		.byte	0xf
+ 569 005e 3300 0000 		.long	0x33
+ 570 0062 03        		.uleb128 0x3
+ 571 0063 0000 0000 		.long	.LASF7
+ 572 0067 02        		.byte	0x2
+ 573 0068 10        		.byte	0x10
+ 574 0069 3A00 0000 		.long	0x3a
+ 575 006d 02        		.uleb128 0x2
+ 576 006e 04        		.byte	0x4
+ 577 006f 07        		.byte	0x7
+ 578 0070 0000 0000 		.long	.LASF8
+ 579 0074 02        		.uleb128 0x2
+ 580 0075 04        		.byte	0x4
+ 581 0076 05        		.byte	0x5
+ 582 0077 0000 0000 		.long	.LASF9
+ 583 007b 02        		.uleb128 0x2
+ 584 007c 01        		.byte	0x1
+ 585 007d 06        		.byte	0x6
+ 586 007e 0000 0000 		.long	.LASF10
+ 587 0082 04        		.uleb128 0x4
+ 588 0083 02        		.byte	0x2
+ 589 0084 05        		.byte	0x5
+ 590 0085 696E 7400 		.string	"int"
+ 591 0089 02        		.uleb128 0x2
+ 592 008a 02        		.byte	0x2
+ 593 008b 07        		.byte	0x7
+ 594 008c 0000 0000 		.long	.LASF11
+ 595 0090 02        		.uleb128 0x2
+ 596 0091 08        		.byte	0x8
+ 597 0092 05        		.byte	0x5
+ 598 0093 0000 0000 		.long	.LASF12
+ 599 0097 02        		.uleb128 0x2
+ 600 0098 08        		.byte	0x8
+ 601 0099 07        		.byte	0x7
+ 602 009a 0000 0000 		.long	.LASF13
+ 603 009e 05        		.uleb128 0x5
+ 604 009f 01        		.byte	0x1
+ 605 00a0 0000 0000 		.long	.LASF14
+ 606 00a4 01        		.byte	0x1
+ 607 00a5 42        		.byte	0x42
+ 608 00a6 01        		.byte	0x1
+ 609 00a7 0000 0000 		.long	.LFB3
+ 610 00ab 0000 0000 		.long	.LFE3
+ 611 00af 02        		.byte	0x2
+ 612 00b0 90        		.byte	0x90
+ 613 00b1 20        		.uleb128 0x20
+ 614 00b2 05        		.uleb128 0x5
+ 615 00b3 01        		.byte	0x1
+ 616 00b4 0000 0000 		.long	.LASF15
+ 617 00b8 01        		.byte	0x1
+ 618 00b9 D0        		.byte	0xd0
+ 619 00ba 01        		.byte	0x1
+ 620 00bb 0000 0000 		.long	.LFB7
+ 621 00bf 0000 0000 		.long	.LFE7
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 12
+
+
+ 622 00c3 02        		.byte	0x2
+ 623 00c4 90        		.byte	0x90
+ 624 00c5 20        		.uleb128 0x20
+ 625 00c6 06        		.uleb128 0x6
+ 626 00c7 01        		.byte	0x1
+ 627 00c8 0000 0000 		.long	.LASF19
+ 628 00cc 01        		.byte	0x1
+ 629 00cd AF        		.byte	0xaf
+ 630 00ce 01        		.byte	0x1
+ 631 00cf 0000 0000 		.long	.LFB6
+ 632 00d3 0000 0000 		.long	.LFE6
+ 633 00d7 02        		.byte	0x2
+ 634 00d8 90        		.byte	0x90
+ 635 00d9 20        		.uleb128 0x20
+ 636 00da 0401 0000 		.long	0x104
+ 637 00de 07        		.uleb128 0x7
+ 638 00df 636D 6400 		.string	"cmd"
+ 639 00e3 01        		.byte	0x1
+ 640 00e4 B0        		.byte	0xb0
+ 641 00e5 4100 0000 		.long	0x41
+ 642 00e9 0000 0000 		.long	.LLST3
+ 643 00ed 08        		.uleb128 0x8
+ 644 00ee 0000 0000 		.long	.LASF16
+ 645 00f2 01        		.byte	0x1
+ 646 00f3 B1        		.byte	0xb1
+ 647 00f4 5700 0000 		.long	0x57
+ 648 00f8 08        		.uleb128 0x8
+ 649 00f9 0000 0000 		.long	.LASF17
+ 650 00fd 01        		.byte	0x1
+ 651 00fe B2        		.byte	0xb2
+ 652 00ff 0401 0000 		.long	0x104
+ 653 0103 00        		.byte	0x0
+ 654 0104 09        		.uleb128 0x9
+ 655 0105 02        		.byte	0x2
+ 656 0106 4100 0000 		.long	0x41
+ 657 010a 0A        		.uleb128 0xa
+ 658 010b 01        		.byte	0x1
+ 659 010c 0000 0000 		.long	.LASF33
+ 660 0110 01        		.byte	0x1
+ 661 0111 7B        		.byte	0x7b
+ 662 0112 01        		.byte	0x1
+ 663 0113 4100 0000 		.long	0x41
+ 664 0117 0000 0000 		.long	.LFB5
+ 665 011b 0000 0000 		.long	.LFE5
+ 666 011f 02        		.byte	0x2
+ 667 0120 90        		.byte	0x90
+ 668 0121 20        		.uleb128 0x20
+ 669 0122 4501 0000 		.long	0x145
+ 670 0126 0B        		.uleb128 0xb
+ 671 0127 0000 0000 		.long	.LASF34
+ 672 012b 01        		.byte	0x1
+ 673 012c 7A        		.byte	0x7a
+ 674 012d 4100 0000 		.long	0x41
+ 675 0131 0000 0000 		.long	.LLST5
+ 676 0135 0C        		.uleb128 0xc
+ 677 0136 0000 0000 		.long	.LASF18
+ 678 013a 01        		.byte	0x1
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 13
+
+
+ 679 013b 7C        		.byte	0x7c
+ 680 013c 4100 0000 		.long	0x41
+ 681 0140 0000 0000 		.long	.LLST6
+ 682 0144 00        		.byte	0x0
+ 683 0145 06        		.uleb128 0x6
+ 684 0146 01        		.byte	0x1
+ 685 0147 0000 0000 		.long	.LASF20
+ 686 014b 01        		.byte	0x1
+ 687 014c 4B        		.byte	0x4b
+ 688 014d 01        		.byte	0x1
+ 689 014e 0000 0000 		.long	.LFB4
+ 690 0152 0000 0000 		.long	.LFE4
+ 691 0156 02        		.byte	0x2
+ 692 0157 90        		.byte	0x90
+ 693 0158 20        		.uleb128 0x20
+ 694 0159 9101 0000 		.long	0x191
+ 695 015d 0C        		.uleb128 0xc
+ 696 015e 0000 0000 		.long	.LASF21
+ 697 0162 01        		.byte	0x1
+ 698 0163 4C        		.byte	0x4c
+ 699 0164 6200 0000 		.long	0x62
+ 700 0168 0000 0000 		.long	.LLST8
+ 701 016c 07        		.uleb128 0x7
+ 702 016d 6368 00   		.string	"ch"
+ 703 0170 01        		.byte	0x1
+ 704 0171 4D        		.byte	0x4d
+ 705 0172 4100 0000 		.long	0x41
+ 706 0176 0000 0000 		.long	.LLST9
+ 707 017a 08        		.uleb128 0x8
+ 708 017b 0000 0000 		.long	.LASF22
+ 709 017f 01        		.byte	0x1
+ 710 0180 4E        		.byte	0x4e
+ 711 0181 4100 0000 		.long	0x41
+ 712 0185 08        		.uleb128 0x8
+ 713 0186 0000 0000 		.long	.LASF17
+ 714 018a 01        		.byte	0x1
+ 715 018b 4F        		.byte	0x4f
+ 716 018c 9101 0000 		.long	0x191
+ 717 0190 00        		.byte	0x0
+ 718 0191 09        		.uleb128 0x9
+ 719 0192 02        		.byte	0x2
+ 720 0193 4C00 0000 		.long	0x4c
+ 721 0197 0D        		.uleb128 0xd
+ 722 0198 0000 0000 		.long	.LASF23
+ 723 019c 01        		.byte	0x1
+ 724 019d 29        		.byte	0x29
+ 725 019e 4100 0000 		.long	0x41
+ 726 01a2 01        		.byte	0x1
+ 727 01a3 01        		.byte	0x1
+ 728 01a4 0E        		.uleb128 0xe
+ 729 01a5 0000 0000 		.long	.LASF24
+ 730 01a9 01        		.byte	0x1
+ 731 01aa 2B        		.byte	0x2b
+ 732 01ab B601 0000 		.long	0x1b6
+ 733 01af 01        		.byte	0x1
+ 734 01b0 05        		.byte	0x5
+ 735 01b1 03        		.byte	0x3
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 14
+
+
+ 736 01b2 0000 0000 		.long	v_appcnt
+ 737 01b6 0F        		.uleb128 0xf
+ 738 01b7 4100 0000 		.long	0x41
+ 739 01bb 0E        		.uleb128 0xe
+ 740 01bc 0000 0000 		.long	.LASF25
+ 741 01c0 01        		.byte	0x1
+ 742 01c1 2C        		.byte	0x2c
+ 743 01c2 B601 0000 		.long	0x1b6
+ 744 01c6 01        		.byte	0x1
+ 745 01c7 05        		.byte	0x5
+ 746 01c8 03        		.byte	0x3
+ 747 01c9 0000 0000 		.long	v_pwmcnt
+ 748 01cd 10        		.uleb128 0x10
+ 749 01ce 4100 0000 		.long	0x41
+ 750 01d2 DD01 0000 		.long	0x1dd
+ 751 01d6 11        		.uleb128 0x11
+ 752 01d7 DD01 0000 		.long	0x1dd
+ 753 01db 09        		.byte	0x9
+ 754 01dc 00        		.byte	0x0
+ 755 01dd 12        		.uleb128 0x12
+ 756 01de 02        		.byte	0x2
+ 757 01df 07        		.byte	0x7
+ 758 01e0 0E        		.uleb128 0xe
+ 759 01e1 0000 0000 		.long	.LASF26
+ 760 01e5 01        		.byte	0x1
+ 761 01e6 2D        		.byte	0x2d
+ 762 01e7 F201 0000 		.long	0x1f2
+ 763 01eb 01        		.byte	0x1
+ 764 01ec 05        		.byte	0x5
+ 765 01ed 03        		.byte	0x3
+ 766 01ee 0000 0000 		.long	buf_appentry
+ 767 01f2 0F        		.uleb128 0xf
+ 768 01f3 CD01 0000 		.long	0x1cd
+ 769 01f7 10        		.uleb128 0x10
+ 770 01f8 4C00 0000 		.long	0x4c
+ 771 01fc 0702 0000 		.long	0x207
+ 772 0200 11        		.uleb128 0x11
+ 773 0201 DD01 0000 		.long	0x1dd
+ 774 0205 3B        		.byte	0x3b
+ 775 0206 00        		.byte	0x0
+ 776 0207 0E        		.uleb128 0xe
+ 777 0208 0000 0000 		.long	.LASF27
+ 778 020c 01        		.byte	0x1
+ 779 020d 2F        		.byte	0x2f
+ 780 020e 1902 0000 		.long	0x219
+ 781 0212 01        		.byte	0x1
+ 782 0213 05        		.byte	0x5
+ 783 0214 03        		.byte	0x3
+ 784 0215 0000 0000 		.long	buf_types
+ 785 0219 0F        		.uleb128 0xf
+ 786 021a F701 0000 		.long	0x1f7
+ 787 021e 0D        		.uleb128 0xd
+ 788 021f 0000 0000 		.long	.LASF28
+ 789 0223 01        		.byte	0x1
+ 790 0224 3E        		.byte	0x3e
+ 791 0225 4100 0000 		.long	0x41
+ 792 0229 01        		.byte	0x1
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 15
+
+
+ 793 022a 01        		.byte	0x1
+ 794 022b 0D        		.uleb128 0xd
+ 795 022c 0000 0000 		.long	.LASF29
+ 796 0230 01        		.byte	0x1
+ 797 0231 3F        		.byte	0x3f
+ 798 0232 4100 0000 		.long	0x41
+ 799 0236 01        		.byte	0x1
+ 800 0237 01        		.byte	0x1
+ 801 0238 00        		.byte	0x0
+ 802               		.section	.debug_abbrev
+ 803 0000 01        		.uleb128 0x1
+ 804 0001 11        		.uleb128 0x11
+ 805 0002 01        		.byte	0x1
+ 806 0003 25        		.uleb128 0x25
+ 807 0004 0E        		.uleb128 0xe
+ 808 0005 13        		.uleb128 0x13
+ 809 0006 0B        		.uleb128 0xb
+ 810 0007 03        		.uleb128 0x3
+ 811 0008 0E        		.uleb128 0xe
+ 812 0009 1B        		.uleb128 0x1b
+ 813 000a 0E        		.uleb128 0xe
+ 814 000b 11        		.uleb128 0x11
+ 815 000c 01        		.uleb128 0x1
+ 816 000d 12        		.uleb128 0x12
+ 817 000e 01        		.uleb128 0x1
+ 818 000f 10        		.uleb128 0x10
+ 819 0010 06        		.uleb128 0x6
+ 820 0011 00        		.byte	0x0
+ 821 0012 00        		.byte	0x0
+ 822 0013 02        		.uleb128 0x2
+ 823 0014 24        		.uleb128 0x24
+ 824 0015 00        		.byte	0x0
+ 825 0016 0B        		.uleb128 0xb
+ 826 0017 0B        		.uleb128 0xb
+ 827 0018 3E        		.uleb128 0x3e
+ 828 0019 0B        		.uleb128 0xb
+ 829 001a 03        		.uleb128 0x3
+ 830 001b 0E        		.uleb128 0xe
+ 831 001c 00        		.byte	0x0
+ 832 001d 00        		.byte	0x0
+ 833 001e 03        		.uleb128 0x3
+ 834 001f 16        		.uleb128 0x16
+ 835 0020 00        		.byte	0x0
+ 836 0021 03        		.uleb128 0x3
+ 837 0022 0E        		.uleb128 0xe
+ 838 0023 3A        		.uleb128 0x3a
+ 839 0024 0B        		.uleb128 0xb
+ 840 0025 3B        		.uleb128 0x3b
+ 841 0026 0B        		.uleb128 0xb
+ 842 0027 49        		.uleb128 0x49
+ 843 0028 13        		.uleb128 0x13
+ 844 0029 00        		.byte	0x0
+ 845 002a 00        		.byte	0x0
+ 846 002b 04        		.uleb128 0x4
+ 847 002c 24        		.uleb128 0x24
+ 848 002d 00        		.byte	0x0
+ 849 002e 0B        		.uleb128 0xb
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 16
+
+
+ 850 002f 0B        		.uleb128 0xb
+ 851 0030 3E        		.uleb128 0x3e
+ 852 0031 0B        		.uleb128 0xb
+ 853 0032 03        		.uleb128 0x3
+ 854 0033 08        		.uleb128 0x8
+ 855 0034 00        		.byte	0x0
+ 856 0035 00        		.byte	0x0
+ 857 0036 05        		.uleb128 0x5
+ 858 0037 2E        		.uleb128 0x2e
+ 859 0038 00        		.byte	0x0
+ 860 0039 3F        		.uleb128 0x3f
+ 861 003a 0C        		.uleb128 0xc
+ 862 003b 03        		.uleb128 0x3
+ 863 003c 0E        		.uleb128 0xe
+ 864 003d 3A        		.uleb128 0x3a
+ 865 003e 0B        		.uleb128 0xb
+ 866 003f 3B        		.uleb128 0x3b
+ 867 0040 0B        		.uleb128 0xb
+ 868 0041 27        		.uleb128 0x27
+ 869 0042 0C        		.uleb128 0xc
+ 870 0043 11        		.uleb128 0x11
+ 871 0044 01        		.uleb128 0x1
+ 872 0045 12        		.uleb128 0x12
+ 873 0046 01        		.uleb128 0x1
+ 874 0047 40        		.uleb128 0x40
+ 875 0048 0A        		.uleb128 0xa
+ 876 0049 00        		.byte	0x0
+ 877 004a 00        		.byte	0x0
+ 878 004b 06        		.uleb128 0x6
+ 879 004c 2E        		.uleb128 0x2e
+ 880 004d 01        		.byte	0x1
+ 881 004e 3F        		.uleb128 0x3f
+ 882 004f 0C        		.uleb128 0xc
+ 883 0050 03        		.uleb128 0x3
+ 884 0051 0E        		.uleb128 0xe
+ 885 0052 3A        		.uleb128 0x3a
+ 886 0053 0B        		.uleb128 0xb
+ 887 0054 3B        		.uleb128 0x3b
+ 888 0055 0B        		.uleb128 0xb
+ 889 0056 27        		.uleb128 0x27
+ 890 0057 0C        		.uleb128 0xc
+ 891 0058 11        		.uleb128 0x11
+ 892 0059 01        		.uleb128 0x1
+ 893 005a 12        		.uleb128 0x12
+ 894 005b 01        		.uleb128 0x1
+ 895 005c 40        		.uleb128 0x40
+ 896 005d 0A        		.uleb128 0xa
+ 897 005e 01        		.uleb128 0x1
+ 898 005f 13        		.uleb128 0x13
+ 899 0060 00        		.byte	0x0
+ 900 0061 00        		.byte	0x0
+ 901 0062 07        		.uleb128 0x7
+ 902 0063 34        		.uleb128 0x34
+ 903 0064 00        		.byte	0x0
+ 904 0065 03        		.uleb128 0x3
+ 905 0066 08        		.uleb128 0x8
+ 906 0067 3A        		.uleb128 0x3a
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 17
+
+
+ 907 0068 0B        		.uleb128 0xb
+ 908 0069 3B        		.uleb128 0x3b
+ 909 006a 0B        		.uleb128 0xb
+ 910 006b 49        		.uleb128 0x49
+ 911 006c 13        		.uleb128 0x13
+ 912 006d 02        		.uleb128 0x2
+ 913 006e 06        		.uleb128 0x6
+ 914 006f 00        		.byte	0x0
+ 915 0070 00        		.byte	0x0
+ 916 0071 08        		.uleb128 0x8
+ 917 0072 34        		.uleb128 0x34
+ 918 0073 00        		.byte	0x0
+ 919 0074 03        		.uleb128 0x3
+ 920 0075 0E        		.uleb128 0xe
+ 921 0076 3A        		.uleb128 0x3a
+ 922 0077 0B        		.uleb128 0xb
+ 923 0078 3B        		.uleb128 0x3b
+ 924 0079 0B        		.uleb128 0xb
+ 925 007a 49        		.uleb128 0x49
+ 926 007b 13        		.uleb128 0x13
+ 927 007c 00        		.byte	0x0
+ 928 007d 00        		.byte	0x0
+ 929 007e 09        		.uleb128 0x9
+ 930 007f 0F        		.uleb128 0xf
+ 931 0080 00        		.byte	0x0
+ 932 0081 0B        		.uleb128 0xb
+ 933 0082 0B        		.uleb128 0xb
+ 934 0083 49        		.uleb128 0x49
+ 935 0084 13        		.uleb128 0x13
+ 936 0085 00        		.byte	0x0
+ 937 0086 00        		.byte	0x0
+ 938 0087 0A        		.uleb128 0xa
+ 939 0088 2E        		.uleb128 0x2e
+ 940 0089 01        		.byte	0x1
+ 941 008a 3F        		.uleb128 0x3f
+ 942 008b 0C        		.uleb128 0xc
+ 943 008c 03        		.uleb128 0x3
+ 944 008d 0E        		.uleb128 0xe
+ 945 008e 3A        		.uleb128 0x3a
+ 946 008f 0B        		.uleb128 0xb
+ 947 0090 3B        		.uleb128 0x3b
+ 948 0091 0B        		.uleb128 0xb
+ 949 0092 27        		.uleb128 0x27
+ 950 0093 0C        		.uleb128 0xc
+ 951 0094 49        		.uleb128 0x49
+ 952 0095 13        		.uleb128 0x13
+ 953 0096 11        		.uleb128 0x11
+ 954 0097 01        		.uleb128 0x1
+ 955 0098 12        		.uleb128 0x12
+ 956 0099 01        		.uleb128 0x1
+ 957 009a 40        		.uleb128 0x40
+ 958 009b 0A        		.uleb128 0xa
+ 959 009c 01        		.uleb128 0x1
+ 960 009d 13        		.uleb128 0x13
+ 961 009e 00        		.byte	0x0
+ 962 009f 00        		.byte	0x0
+ 963 00a0 0B        		.uleb128 0xb
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 18
+
+
+ 964 00a1 05        		.uleb128 0x5
+ 965 00a2 00        		.byte	0x0
+ 966 00a3 03        		.uleb128 0x3
+ 967 00a4 0E        		.uleb128 0xe
+ 968 00a5 3A        		.uleb128 0x3a
+ 969 00a6 0B        		.uleb128 0xb
+ 970 00a7 3B        		.uleb128 0x3b
+ 971 00a8 0B        		.uleb128 0xb
+ 972 00a9 49        		.uleb128 0x49
+ 973 00aa 13        		.uleb128 0x13
+ 974 00ab 02        		.uleb128 0x2
+ 975 00ac 06        		.uleb128 0x6
+ 976 00ad 00        		.byte	0x0
+ 977 00ae 00        		.byte	0x0
+ 978 00af 0C        		.uleb128 0xc
+ 979 00b0 34        		.uleb128 0x34
+ 980 00b1 00        		.byte	0x0
+ 981 00b2 03        		.uleb128 0x3
+ 982 00b3 0E        		.uleb128 0xe
+ 983 00b4 3A        		.uleb128 0x3a
+ 984 00b5 0B        		.uleb128 0xb
+ 985 00b6 3B        		.uleb128 0x3b
+ 986 00b7 0B        		.uleb128 0xb
+ 987 00b8 49        		.uleb128 0x49
+ 988 00b9 13        		.uleb128 0x13
+ 989 00ba 02        		.uleb128 0x2
+ 990 00bb 06        		.uleb128 0x6
+ 991 00bc 00        		.byte	0x0
+ 992 00bd 00        		.byte	0x0
+ 993 00be 0D        		.uleb128 0xd
+ 994 00bf 34        		.uleb128 0x34
+ 995 00c0 00        		.byte	0x0
+ 996 00c1 03        		.uleb128 0x3
+ 997 00c2 0E        		.uleb128 0xe
+ 998 00c3 3A        		.uleb128 0x3a
+ 999 00c4 0B        		.uleb128 0xb
+ 1000 00c5 3B        		.uleb128 0x3b
+ 1001 00c6 0B        		.uleb128 0xb
+ 1002 00c7 49        		.uleb128 0x49
+ 1003 00c8 13        		.uleb128 0x13
+ 1004 00c9 3F        		.uleb128 0x3f
+ 1005 00ca 0C        		.uleb128 0xc
+ 1006 00cb 3C        		.uleb128 0x3c
+ 1007 00cc 0C        		.uleb128 0xc
+ 1008 00cd 00        		.byte	0x0
+ 1009 00ce 00        		.byte	0x0
+ 1010 00cf 0E        		.uleb128 0xe
+ 1011 00d0 34        		.uleb128 0x34
+ 1012 00d1 00        		.byte	0x0
+ 1013 00d2 03        		.uleb128 0x3
+ 1014 00d3 0E        		.uleb128 0xe
+ 1015 00d4 3A        		.uleb128 0x3a
+ 1016 00d5 0B        		.uleb128 0xb
+ 1017 00d6 3B        		.uleb128 0x3b
+ 1018 00d7 0B        		.uleb128 0xb
+ 1019 00d8 49        		.uleb128 0x49
+ 1020 00d9 13        		.uleb128 0x13
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 19
+
+
+ 1021 00da 3F        		.uleb128 0x3f
+ 1022 00db 0C        		.uleb128 0xc
+ 1023 00dc 02        		.uleb128 0x2
+ 1024 00dd 0A        		.uleb128 0xa
+ 1025 00de 00        		.byte	0x0
+ 1026 00df 00        		.byte	0x0
+ 1027 00e0 0F        		.uleb128 0xf
+ 1028 00e1 35        		.uleb128 0x35
+ 1029 00e2 00        		.byte	0x0
+ 1030 00e3 49        		.uleb128 0x49
+ 1031 00e4 13        		.uleb128 0x13
+ 1032 00e5 00        		.byte	0x0
+ 1033 00e6 00        		.byte	0x0
+ 1034 00e7 10        		.uleb128 0x10
+ 1035 00e8 01        		.uleb128 0x1
+ 1036 00e9 01        		.byte	0x1
+ 1037 00ea 49        		.uleb128 0x49
+ 1038 00eb 13        		.uleb128 0x13
+ 1039 00ec 01        		.uleb128 0x1
+ 1040 00ed 13        		.uleb128 0x13
+ 1041 00ee 00        		.byte	0x0
+ 1042 00ef 00        		.byte	0x0
+ 1043 00f0 11        		.uleb128 0x11
+ 1044 00f1 21        		.uleb128 0x21
+ 1045 00f2 00        		.byte	0x0
+ 1046 00f3 49        		.uleb128 0x49
+ 1047 00f4 13        		.uleb128 0x13
+ 1048 00f5 2F        		.uleb128 0x2f
+ 1049 00f6 0B        		.uleb128 0xb
+ 1050 00f7 00        		.byte	0x0
+ 1051 00f8 00        		.byte	0x0
+ 1052 00f9 12        		.uleb128 0x12
+ 1053 00fa 24        		.uleb128 0x24
+ 1054 00fb 00        		.byte	0x0
+ 1055 00fc 0B        		.uleb128 0xb
+ 1056 00fd 0B        		.uleb128 0xb
+ 1057 00fe 3E        		.uleb128 0x3e
+ 1058 00ff 0B        		.uleb128 0xb
+ 1059 0100 00        		.byte	0x0
+ 1060 0101 00        		.byte	0x0
+ 1061 0102 00        		.byte	0x0
+ 1062               		.section	.debug_pubnames,"",@progbits
+ 1063 0000 A000 0000 		.long	0xa0
+ 1064 0004 0200      		.word	0x2
+ 1065 0006 0000 0000 		.long	.Ldebug_info0
+ 1066 000a 3902 0000 		.long	0x239
+ 1067 000e 9E00 0000 		.long	0x9e
+ 1068 0012 665F 496E 		.string	"f_InitSerApp"
+ 1068      6974 5365 
+ 1068      7241 7070 
+ 1068      00
+ 1069 001f B200 0000 		.long	0xb2
+ 1070 0023 665F 5365 		.string	"f_SerApp_DbgEn"
+ 1070      7241 7070 
+ 1070      5F44 6267 
+ 1070      456E 00
+ 1071 0032 C600 0000 		.long	0xc6
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 20
+
+
+ 1072 0036 665F 5072 		.string	"f_ProcessAPPCMD"
+ 1072      6F63 6573 
+ 1072      7341 5050 
+ 1072      434D 4400 
+ 1073 0046 0A01 0000 		.long	0x10a
+ 1074 004a 665F 5072 		.string	"f_ProcessAPPKey"
+ 1074      6F63 6573 
+ 1074      7341 5050 
+ 1074      4B65 7900 
+ 1075 005a 4501 0000 		.long	0x145
+ 1076 005e 665F 5365 		.string	"f_SerApp"
+ 1076      7241 7070 
+ 1076      00
+ 1077 0067 A401 0000 		.long	0x1a4
+ 1078 006b 765F 6170 		.string	"v_appcnt"
+ 1078      7063 6E74 
+ 1078      00
+ 1079 0074 BB01 0000 		.long	0x1bb
+ 1080 0078 765F 7077 		.string	"v_pwmcnt"
+ 1080      6D63 6E74 
+ 1080      00
+ 1081 0081 E001 0000 		.long	0x1e0
+ 1082 0085 6275 665F 		.string	"buf_appentry"
+ 1082      6170 7065 
+ 1082      6E74 7279 
+ 1082      00
+ 1083 0092 0702 0000 		.long	0x207
+ 1084 0096 6275 665F 		.string	"buf_types"
+ 1084      7479 7065 
+ 1084      7300 
+ 1085 00a0 0000 0000 		.long	0x0
+ 1086               		.section	.debug_aranges,"",@progbits
+ 1087 0000 1C00 0000 		.long	0x1c
+ 1088 0004 0200      		.word	0x2
+ 1089 0006 0000 0000 		.long	.Ldebug_info0
+ 1090 000a 04        		.byte	0x4
+ 1091 000b 00        		.byte	0x0
+ 1092 000c 0000      		.word	0x0
+ 1093 000e 0000      		.word	0x0
+ 1094 0010 0000 0000 		.long	.Ltext0
+ 1095 0014 AE01 0000 		.long	.Letext0-.Ltext0
+ 1096 0018 0000 0000 		.long	0x0
+ 1097 001c 0000 0000 		.long	0x0
+ 1098               		.section	.debug_line
+ 1099 0000 4302 0000 		.long	.LELT0-.LSLT0
+ 1100               	.LSLT0:
+ 1101 0004 0200      		.word	0x2
+ 1102 0006 5500 0000 		.long	.LELTP0-.LASLTP0
+ 1103               	.LASLTP0:
+ 1104 000a 01        		.byte	0x1
+ 1105 000b 01        		.byte	0x1
+ 1106 000c F6        		.byte	0xf6
+ 1107 000d F5        		.byte	0xf5
+ 1108 000e 0A        		.byte	0xa
+ 1109 000f 00        		.byte	0x0
+ 1110 0010 01        		.byte	0x1
+ 1111 0011 01        		.byte	0x1
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 21
+
+
+ 1112 0012 01        		.byte	0x1
+ 1113 0013 01        		.byte	0x1
+ 1114 0014 00        		.byte	0x0
+ 1115 0015 00        		.byte	0x0
+ 1116 0016 00        		.byte	0x0
+ 1117 0017 01        		.byte	0x1
+ 1118 0018 7372 632F 		.ascii	"src/applic"
+ 1118      6170 706C 
+ 1118      6963 
+ 1119 0022 00        		.byte	0
+ 1120 0023 7372 632F 		.ascii	"src/applic/../includes"
+ 1120      6170 706C 
+ 1120      6963 2F2E 
+ 1120      2E2F 696E 
+ 1120      636C 7564 
+ 1121 0039 00        		.byte	0
+ 1122 003a 00        		.byte	0x0
+ 1123 003b 7365 7261 		.string	"serapp.c"
+ 1123      7070 2E63 
+ 1123      00
+ 1124 0044 01        		.uleb128 0x1
+ 1125 0045 00        		.uleb128 0x0
+ 1126 0046 00        		.uleb128 0x0
+ 1127 0047 2E2E 2F69 		.string	"../includes/types.h"
+ 1127      6E63 6C75 
+ 1127      6465 732F 
+ 1127      7479 7065 
+ 1127      732E 6800 
+ 1128 005b 01        		.uleb128 0x1
+ 1129 005c 00        		.uleb128 0x0
+ 1130 005d 00        		.uleb128 0x0
+ 1131 005e 00        		.byte	0x0
+ 1132               	.LELTP0:
+ 1133 005f 00        		.byte	0x0
+ 1134 0060 05        		.uleb128 0x5
+ 1135 0061 02        		.byte	0x2
+ 1136 0062 0000 0000 		.long	.LM1
+ 1137 0066 55        		.byte	0x55
+ 1138 0067 00        		.byte	0x0
+ 1139 0068 05        		.uleb128 0x5
+ 1140 0069 02        		.byte	0x2
+ 1141 006a 0000 0000 		.long	.LM2
+ 1142 006e 15        		.byte	0x15
+ 1143 006f 00        		.byte	0x0
+ 1144 0070 05        		.uleb128 0x5
+ 1145 0071 02        		.byte	0x2
+ 1146 0072 0000 0000 		.long	.LM3
+ 1147 0076 15        		.byte	0x15
+ 1148 0077 00        		.byte	0x0
+ 1149 0078 05        		.uleb128 0x5
+ 1150 0079 02        		.byte	0x2
+ 1151 007a 0000 0000 		.long	.LM4
+ 1152 007e 18        		.byte	0x18
+ 1153 007f 00        		.byte	0x0
+ 1154 0080 05        		.uleb128 0x5
+ 1155 0081 02        		.byte	0x2
+ 1156 0082 0000 0000 		.long	.LM5
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 22
+
+
+ 1157 0086 9C        		.byte	0x9c
+ 1158 0087 00        		.byte	0x0
+ 1159 0088 05        		.uleb128 0x5
+ 1160 0089 02        		.byte	0x2
+ 1161 008a 0000 0000 		.long	.LM6
+ 1162 008e 15        		.byte	0x15
+ 1163 008f 00        		.byte	0x0
+ 1164 0090 05        		.uleb128 0x5
+ 1165 0091 02        		.byte	0x2
+ 1166 0092 0000 0000 		.long	.LM7
+ 1167 0096 15        		.byte	0x15
+ 1168 0097 00        		.byte	0x0
+ 1169 0098 05        		.uleb128 0x5
+ 1170 0099 02        		.byte	0x2
+ 1171 009a 0000 0000 		.long	.LM8
+ 1172 009e 15        		.byte	0x15
+ 1173 009f 00        		.byte	0x0
+ 1174 00a0 05        		.uleb128 0x5
+ 1175 00a1 02        		.byte	0x2
+ 1176 00a2 0000 0000 		.long	.LM9
+ 1177 00a6 03        		.byte	0x3
+ 1178 00a7 5C        		.sleb128 -36
+ 1179 00a8 01        		.byte	0x1
+ 1180 00a9 00        		.byte	0x0
+ 1181 00aa 05        		.uleb128 0x5
+ 1182 00ab 02        		.byte	0x2
+ 1183 00ac 0000 0000 		.long	.LM10
+ 1184 00b0 15        		.byte	0x15
+ 1185 00b1 00        		.byte	0x0
+ 1186 00b2 05        		.uleb128 0x5
+ 1187 00b3 02        		.byte	0x2
+ 1188 00b4 0000 0000 		.long	.LM11
+ 1189 00b8 18        		.byte	0x18
+ 1190 00b9 00        		.byte	0x0
+ 1191 00ba 05        		.uleb128 0x5
+ 1192 00bb 02        		.byte	0x2
+ 1193 00bc 0000 0000 		.long	.LM12
+ 1194 00c0 15        		.byte	0x15
+ 1195 00c1 00        		.byte	0x0
+ 1196 00c2 05        		.uleb128 0x5
+ 1197 00c3 02        		.byte	0x2
+ 1198 00c4 0000 0000 		.long	.LM13
+ 1199 00c8 16        		.byte	0x16
+ 1200 00c9 00        		.byte	0x0
+ 1201 00ca 05        		.uleb128 0x5
+ 1202 00cb 02        		.byte	0x2
+ 1203 00cc 0000 0000 		.long	.LM14
+ 1204 00d0 26        		.byte	0x26
+ 1205 00d1 00        		.byte	0x0
+ 1206 00d2 05        		.uleb128 0x5
+ 1207 00d3 02        		.byte	0x2
+ 1208 00d4 0000 0000 		.long	.LM15
+ 1209 00d8 18        		.byte	0x18
+ 1210 00d9 00        		.byte	0x0
+ 1211 00da 05        		.uleb128 0x5
+ 1212 00db 02        		.byte	0x2
+ 1213 00dc 0000 0000 		.long	.LM16
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 23
+
+
+ 1214 00e0 03        		.byte	0x3
+ 1215 00e1 6A        		.sleb128 -22
+ 1216 00e2 01        		.byte	0x1
+ 1217 00e3 00        		.byte	0x0
+ 1218 00e4 05        		.uleb128 0x5
+ 1219 00e5 02        		.byte	0x2
+ 1220 00e6 0000 0000 		.long	.LM17
+ 1221 00ea 22        		.byte	0x22
+ 1222 00eb 00        		.byte	0x0
+ 1223 00ec 05        		.uleb128 0x5
+ 1224 00ed 02        		.byte	0x2
+ 1225 00ee 0000 0000 		.long	.LM18
+ 1226 00f2 1C        		.byte	0x1c
+ 1227 00f3 00        		.byte	0x0
+ 1228 00f4 05        		.uleb128 0x5
+ 1229 00f5 02        		.byte	0x2
+ 1230 00f6 0000 0000 		.long	.LM19
+ 1231 00fa 03        		.byte	0x3
+ 1232 00fb 6D        		.sleb128 -19
+ 1233 00fc 01        		.byte	0x1
+ 1234 00fd 00        		.byte	0x0
+ 1235 00fe 05        		.uleb128 0x5
+ 1236 00ff 02        		.byte	0x2
+ 1237 0100 0000 0000 		.long	.LM20
+ 1238 0104 15        		.byte	0x15
+ 1239 0105 00        		.byte	0x0
+ 1240 0106 05        		.uleb128 0x5
+ 1241 0107 02        		.byte	0x2
+ 1242 0108 0000 0000 		.long	.LM21
+ 1243 010c 26        		.byte	0x26
+ 1244 010d 00        		.byte	0x0
+ 1245 010e 05        		.uleb128 0x5
+ 1246 010f 02        		.byte	0x2
+ 1247 0110 0000 0000 		.long	.LM22
+ 1248 0114 03        		.byte	0x3
+ 1249 0115 71        		.sleb128 -15
+ 1250 0116 01        		.byte	0x1
+ 1251 0117 00        		.byte	0x0
+ 1252 0118 05        		.uleb128 0x5
+ 1253 0119 02        		.byte	0x2
+ 1254 011a 0000 0000 		.long	.LM23
+ 1255 011e 15        		.byte	0x15
+ 1256 011f 00        		.byte	0x0
+ 1257 0120 05        		.uleb128 0x5
+ 1258 0121 02        		.byte	0x2
+ 1259 0122 0000 0000 		.long	.LM24
+ 1260 0126 22        		.byte	0x22
+ 1261 0127 00        		.byte	0x0
+ 1262 0128 05        		.uleb128 0x5
+ 1263 0129 02        		.byte	0x2
+ 1264 012a 0000 0000 		.long	.LM25
+ 1265 012e 03        		.byte	0x3
+ 1266 012f AE7F      		.sleb128 -82
+ 1267 0131 01        		.byte	0x1
+ 1268 0132 00        		.byte	0x0
+ 1269 0133 05        		.uleb128 0x5
+ 1270 0134 02        		.byte	0x2
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 24
+
+
+ 1271 0135 0000 0000 		.long	.LM26
+ 1272 0139 19        		.byte	0x19
+ 1273 013a 00        		.byte	0x0
+ 1274 013b 05        		.uleb128 0x5
+ 1275 013c 02        		.byte	0x2
+ 1276 013d 0000 0000 		.long	.LM27
+ 1277 0141 17        		.byte	0x17
+ 1278 0142 00        		.byte	0x0
+ 1279 0143 05        		.uleb128 0x5
+ 1280 0144 02        		.byte	0x2
+ 1281 0145 0000 0000 		.long	.LM28
+ 1282 0149 15        		.byte	0x15
+ 1283 014a 00        		.byte	0x0
+ 1284 014b 05        		.uleb128 0x5
+ 1285 014c 02        		.byte	0x2
+ 1286 014d 0000 0000 		.long	.LM29
+ 1287 0151 1A        		.byte	0x1a
+ 1288 0152 00        		.byte	0x0
+ 1289 0153 05        		.uleb128 0x5
+ 1290 0154 02        		.byte	0x2
+ 1291 0155 0000 0000 		.long	.LM30
+ 1292 0159 20        		.byte	0x20
+ 1293 015a 00        		.byte	0x0
+ 1294 015b 05        		.uleb128 0x5
+ 1295 015c 02        		.byte	0x2
+ 1296 015d 0000 0000 		.long	.LM31
+ 1297 0161 0D        		.byte	0xd
+ 1298 0162 00        		.byte	0x0
+ 1299 0163 05        		.uleb128 0x5
+ 1300 0164 02        		.byte	0x2
+ 1301 0165 0000 0000 		.long	.LM32
+ 1302 0169 19        		.byte	0x19
+ 1303 016a 00        		.byte	0x0
+ 1304 016b 05        		.uleb128 0x5
+ 1305 016c 02        		.byte	0x2
+ 1306 016d 0000 0000 		.long	.LM33
+ 1307 0171 16        		.byte	0x16
+ 1308 0172 00        		.byte	0x0
+ 1309 0173 05        		.uleb128 0x5
+ 1310 0174 02        		.byte	0x2
+ 1311 0175 0000 0000 		.long	.LM34
+ 1312 0179 1C        		.byte	0x1c
+ 1313 017a 00        		.byte	0x0
+ 1314 017b 05        		.uleb128 0x5
+ 1315 017c 02        		.byte	0x2
+ 1316 017d 0000 0000 		.long	.LM35
+ 1317 0181 03        		.byte	0x3
+ 1318 0182 6B        		.sleb128 -21
+ 1319 0183 01        		.byte	0x1
+ 1320 0184 00        		.byte	0x0
+ 1321 0185 05        		.uleb128 0x5
+ 1322 0186 02        		.byte	0x2
+ 1323 0187 0000 0000 		.long	.LM36
+ 1324 018b 15        		.byte	0x15
+ 1325 018c 00        		.byte	0x0
+ 1326 018d 05        		.uleb128 0x5
+ 1327 018e 02        		.byte	0x2
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 25
+
+
+ 1328 018f 0000 0000 		.long	.LM37
+ 1329 0193 1E        		.byte	0x1e
+ 1330 0194 00        		.byte	0x0
+ 1331 0195 05        		.uleb128 0x5
+ 1332 0196 02        		.byte	0x2
+ 1333 0197 0000 0000 		.long	.LM38
+ 1334 019b 22        		.byte	0x22
+ 1335 019c 00        		.byte	0x0
+ 1336 019d 05        		.uleb128 0x5
+ 1337 019e 02        		.byte	0x2
+ 1338 019f 0000 0000 		.long	.LM39
+ 1339 01a3 1D        		.byte	0x1d
+ 1340 01a4 00        		.byte	0x0
+ 1341 01a5 05        		.uleb128 0x5
+ 1342 01a6 02        		.byte	0x2
+ 1343 01a7 0000 0000 		.long	.LM40
+ 1344 01ab 03        		.byte	0x3
+ 1345 01ac 6E        		.sleb128 -18
+ 1346 01ad 01        		.byte	0x1
+ 1347 01ae 00        		.byte	0x0
+ 1348 01af 05        		.uleb128 0x5
+ 1349 01b0 02        		.byte	0x2
+ 1350 01b1 0000 0000 		.long	.LM41
+ 1351 01b5 11        		.byte	0x11
+ 1352 01b6 00        		.byte	0x0
+ 1353 01b7 05        		.uleb128 0x5
+ 1354 01b8 02        		.byte	0x2
+ 1355 01b9 0000 0000 		.long	.LM42
+ 1356 01bd 03        		.byte	0x3
+ 1357 01be B57F      		.sleb128 -75
+ 1358 01c0 01        		.byte	0x1
+ 1359 01c1 00        		.byte	0x0
+ 1360 01c2 05        		.uleb128 0x5
+ 1361 01c3 02        		.byte	0x2
+ 1362 01c4 0000 0000 		.long	.LM43
+ 1363 01c8 1B        		.byte	0x1b
+ 1364 01c9 00        		.byte	0x0
+ 1365 01ca 05        		.uleb128 0x5
+ 1366 01cb 02        		.byte	0x2
+ 1367 01cc 0000 0000 		.long	.LM44
+ 1368 01d0 39        		.byte	0x39
+ 1369 01d1 00        		.byte	0x0
+ 1370 01d2 05        		.uleb128 0x5
+ 1371 01d3 02        		.byte	0x2
+ 1372 01d4 0000 0000 		.long	.LM45
+ 1373 01d8 03        		.byte	0x3
+ 1374 01d9 5E        		.sleb128 -34
+ 1375 01da 01        		.byte	0x1
+ 1376 01db 00        		.byte	0x0
+ 1377 01dc 05        		.uleb128 0x5
+ 1378 01dd 02        		.byte	0x2
+ 1379 01de 0000 0000 		.long	.LM46
+ 1380 01e2 17        		.byte	0x17
+ 1381 01e3 00        		.byte	0x0
+ 1382 01e4 05        		.uleb128 0x5
+ 1383 01e5 02        		.byte	0x2
+ 1384 01e6 0000 0000 		.long	.LM47
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 26
+
+
+ 1385 01ea 18        		.byte	0x18
+ 1386 01eb 00        		.byte	0x0
+ 1387 01ec 05        		.uleb128 0x5
+ 1388 01ed 02        		.byte	0x2
+ 1389 01ee 0000 0000 		.long	.LM48
+ 1390 01f2 15        		.byte	0x15
+ 1391 01f3 00        		.byte	0x0
+ 1392 01f4 05        		.uleb128 0x5
+ 1393 01f5 02        		.byte	0x2
+ 1394 01f6 0000 0000 		.long	.LM49
+ 1395 01fa 16        		.byte	0x16
+ 1396 01fb 00        		.byte	0x0
+ 1397 01fc 05        		.uleb128 0x5
+ 1398 01fd 02        		.byte	0x2
+ 1399 01fe 0000 0000 		.long	.LM50
+ 1400 0202 17        		.byte	0x17
+ 1401 0203 00        		.byte	0x0
+ 1402 0204 05        		.uleb128 0x5
+ 1403 0205 02        		.byte	0x2
+ 1404 0206 0000 0000 		.long	.LM51
+ 1405 020a 1C        		.byte	0x1c
+ 1406 020b 00        		.byte	0x0
+ 1407 020c 05        		.uleb128 0x5
+ 1408 020d 02        		.byte	0x2
+ 1409 020e 0000 0000 		.long	.LM52
+ 1410 0212 16        		.byte	0x16
+ 1411 0213 00        		.byte	0x0
+ 1412 0214 05        		.uleb128 0x5
+ 1413 0215 02        		.byte	0x2
+ 1414 0216 0000 0000 		.long	.LM53
+ 1415 021a 16        		.byte	0x16
+ 1416 021b 00        		.byte	0x0
+ 1417 021c 05        		.uleb128 0x5
+ 1418 021d 02        		.byte	0x2
+ 1419 021e 0000 0000 		.long	.LM54
+ 1420 0222 15        		.byte	0x15
+ 1421 0223 00        		.byte	0x0
+ 1422 0224 05        		.uleb128 0x5
+ 1423 0225 02        		.byte	0x2
+ 1424 0226 0000 0000 		.long	.LM55
+ 1425 022a 03        		.byte	0x3
+ 1426 022b 75        		.sleb128 -11
+ 1427 022c 01        		.byte	0x1
+ 1428 022d 00        		.byte	0x0
+ 1429 022e 05        		.uleb128 0x5
+ 1430 022f 02        		.byte	0x2
+ 1431 0230 0000 0000 		.long	.LM56
+ 1432 0234 15        		.byte	0x15
+ 1433 0235 00        		.byte	0x0
+ 1434 0236 05        		.uleb128 0x5
+ 1435 0237 02        		.byte	0x2
+ 1436 0238 0000 0000 		.long	.LM57
+ 1437 023c 15        		.byte	0x15
+ 1438 023d 00        		.byte	0x0
+ 1439 023e 05        		.uleb128 0x5
+ 1440 023f 02        		.byte	0x2
+ 1441 0240 0000 0000 		.long	.Letext0
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 27
+
+
+ 1442 0244 00        		.byte	0x0
+ 1443 0245 01        		.uleb128 0x1
+ 1444 0246 01        		.byte	0x1
+ 1445               	.LELT0:
+ 1446 0247 1600 0000 		.section	.debug_str,"MS",@progbits,1
+ 1446      0200 1000 
+ 1446      0000 0101 
+ 1446      FB0E 0A00 
+ 1446      0101 0101 
+ 1447               	.LASF23:
+ 1448 0000 765F 5379 		.string	"v_SysStat"
+ 1448      7353 7461 
+ 1448      7400 
+ 1449               	.LASF9:
+ 1450 000a 6C6F 6E67 		.string	"long int"
+ 1450      2069 6E74 
+ 1450      00
+ 1451               	.LASF15:
+ 1452 0013 665F 5365 		.string	"f_SerApp_DbgEn"
+ 1452      7241 7070 
+ 1452      5F44 6267 
+ 1452      456E 00
+ 1453               	.LASF20:
+ 1454 0022 665F 5365 		.string	"f_SerApp"
+ 1454      7241 7070 
+ 1454      00
+ 1455               	.LASF6:
+ 1456 002b 494E 5431 		.string	"INT16U"
+ 1456      3655 00
+ 1457               	.LASF16:
+ 1458 0032 6164 6472 		.string	"addr"
+ 1458      00
+ 1459               	.LASF22:
+ 1460 0037 765F 7072 		.string	"v_prockey"
+ 1460      6F63 6B65 
+ 1460      7900 
+ 1461               	.LASF13:
+ 1462 0041 6C6F 6E67 		.string	"long long unsigned int"
+ 1462      206C 6F6E 
+ 1462      6720 756E 
+ 1462      7369 676E 
+ 1462      6564 2069 
+ 1463               	.LASF31:
+ 1464 0058 7372 632F 		.string	"src/applic/serapp.c"
+ 1464      6170 706C 
+ 1464      6963 2F73 
+ 1464      6572 6170 
+ 1464      702E 6300 
+ 1465               	.LASF34:
+ 1466 006c 765F 636D 		.string	"v_cmd"
+ 1466      6400 
+ 1467               	.LASF17:
+ 1468 0072 705F 7374 		.string	"p_str"
+ 1468      7200 
+ 1469               	.LASF8:
+ 1470 0078 6C6F 6E67 		.string	"long unsigned int"
+ 1470      2075 6E73 
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 28
+
+
+ 1470      6967 6E65 
+ 1470      6420 696E 
+ 1470      7400 
+ 1471               	.LASF26:
+ 1472 008a 6275 665F 		.string	"buf_appentry"
+ 1472      6170 7065 
+ 1472      6E74 7279 
+ 1472      00
+ 1473               	.LASF2:
+ 1474 0097 7368 6F72 		.string	"short unsigned int"
+ 1474      7420 756E 
+ 1474      7369 676E 
+ 1474      6564 2069 
+ 1474      6E74 00
+ 1475               	.LASF30:
+ 1476 00aa 474E 5520 		.string	"GNU C 4.3.3"
+ 1476      4320 342E 
+ 1476      332E 3300 
+ 1477               	.LASF25:
+ 1478 00b6 765F 7077 		.string	"v_pwmcnt"
+ 1478      6D63 6E74 
+ 1478      00
+ 1479               	.LASF0:
+ 1480 00bf 756E 7369 		.string	"unsigned char"
+ 1480      676E 6564 
+ 1480      2063 6861 
+ 1480      7200 
+ 1481               	.LASF18:
+ 1482 00cd 765F 7265 		.string	"v_retval"
+ 1482      7476 616C 
+ 1482      00
+ 1483               	.LASF33:
+ 1484 00d6 665F 5072 		.string	"f_ProcessAPPKey"
+ 1484      6F63 6573 
+ 1484      7341 5050 
+ 1484      4B65 7900 
+ 1485               	.LASF11:
+ 1486 00e6 756E 7369 		.string	"unsigned int"
+ 1486      676E 6564 
+ 1486      2069 6E74 
+ 1486      00
+ 1487               	.LASF14:
+ 1488 00f3 665F 496E 		.string	"f_InitSerApp"
+ 1488      6974 5365 
+ 1488      7241 7070 
+ 1488      00
+ 1489               	.LASF4:
+ 1490 0100 494E 5438 		.string	"INT8U"
+ 1490      5500 
+ 1491               	.LASF1:
+ 1492 0106 6368 6172 		.string	"char"
+ 1492      00
+ 1493               	.LASF21:
+ 1494 010b 7265 7375 		.string	"result"
+ 1494      6C74 00
+ 1495               	.LASF27:
+ 1496 0112 6275 665F 		.string	"buf_types"
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 29
+
+
+ 1496      7479 7065 
+ 1496      7300 
+ 1497               	.LASF7:
+ 1498 011c 494E 5431 		.string	"INT16"
+ 1498      3600 
+ 1499               	.LASF24:
+ 1500 0122 765F 6170 		.string	"v_appcnt"
+ 1500      7063 6E74 
+ 1500      00
+ 1501               	.LASF29:
+ 1502 012b 765F 5365 		.string	"v_ServoUnLock"
+ 1502      7276 6F55 
+ 1502      6E4C 6F63 
+ 1502      6B00 
+ 1503               	.LASF19:
+ 1504 0139 665F 5072 		.string	"f_ProcessAPPCMD"
+ 1504      6F63 6573 
+ 1504      7341 5050 
+ 1504      434D 4400 
+ 1505               	.LASF12:
+ 1506 0149 6C6F 6E67 		.string	"long long int"
+ 1506      206C 6F6E 
+ 1506      6720 696E 
+ 1506      7400 
+ 1507               	.LASF5:
+ 1508 0157 494E 5438 		.string	"INT8"
+ 1508      00
+ 1509               	.LASF3:
+ 1510 015c 7368 6F72 		.string	"short int"
+ 1510      7420 696E 
+ 1510      7400 
+ 1511               	.LASF28:
+ 1512 0166 765F 5365 		.string	"v_ServoLock"
+ 1512      7276 6F4C 
+ 1512      6F63 6B00 
+ 1513               	.LASF32:
+ 1514 0172 433A 5C44 		.ascii	"C:\\Documents and "
+ 1514      6F63 756D 
+ 1514      656E 7473 
+ 1514      2061 6E64 
+ 1514      20
+ 1515 0183 5365 7474 		.string	"Settings\\Administrator\\Desktop\\avr16_CodeProj_v11\\avr16_CodeProj"
+ 1515      696E 6773 
+ 1515      5C41 646D 
+ 1515      696E 6973 
+ 1515      7472 6174 
+ 1516               	.LASF10:
+ 1517 01c4 7369 676E 		.string	"signed char"
+ 1517      6564 2063 
+ 1517      6861 7200 
+ 1518               	.global __do_copy_data
+ 1519               	.global __do_clear_bss
+GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s 			page 30
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 serapp.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:18     .text:00000000 f_InitSerApp
+                            *COM*:00000001 v_appcnt
+                            *COM*:00000001 v_pwmcnt
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:39     .text:0000000c f_SerApp_DbgEn
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:65     .text:00000020 f_ProcessAPPCMD
+                            *COM*:0000000a buf_appentry
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:143    .text:0000008a f_ProcessAPPKey
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccJNRivp.s:271    .text:00000134 f_SerApp
+                            *COM*:0000003c buf_types
+
+UNDEFINED SYMBOLS
+v_SysStat
+f_Uart_PutStr
+f_PWM1Set
+v_ServoLock
+f_PWM1Enable
+v_ServoUnLock
+f_PWM1Disable
+f_Uart_GetChar
+f_Uart_PutChar
+__do_copy_data
+__do_clear_bss
