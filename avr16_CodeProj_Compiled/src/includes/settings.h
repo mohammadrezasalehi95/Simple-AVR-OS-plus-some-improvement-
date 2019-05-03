@@ -20,7 +20,7 @@
 
 #include "legacy.h"
 
-#define c_VEROSSTR "\n \n {NOTICE!} \n [By Using This Compiled Verision You Just Lost 15 Percent Of The Assignment's Points]\n \n AVRILOS " XSTR(c_VEROS)" started...\r\n"
+#define c_VEROSSTR "\n \n {NOTICE!} \n [Hi this is my compiled version of AVRILOS]\n \n AVRILOS " XSTR(c_VEROS)" started...\r\n"
 #define c_VERAPPSTR "APP Version " XSTR(c_VERAPP)"\r\n"
 
 /***********************************
