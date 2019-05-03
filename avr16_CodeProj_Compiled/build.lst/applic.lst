@@ -1,4 +1,4 @@
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 1
 
 
    1               		.file	"applic.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
   51               	.LM6:
   52               	/* prologue: function */
   53               	/* frame size = 0 */
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 2
 
 
   54               	.LM7:
@@ -118,7 +118,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  107 0054 9105      		cpc r25,__zero_reg__
  108 0056 01F0      		breq .L11
  109 0058 0397      		sbiw r24,3
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 3
 
 
  110 005a 01F0      		breq .L17
@@ -178,7 +178,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  164               	.LBB8:
  165               	.LBB9:
  166               	.LM27:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 4
 
 
  167 00c2 80E0      		ldi r24,lo8(.LC1)
@@ -238,7 +238,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  221               	.LM39:
  222 0108 0E94 0000 		call f_InitPWM1
  223               	.LM40:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 5
 
 
  224 010c 82E3      		ldi r24,lo8(50)
@@ -298,7 +298,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  278               	.LASFDE6:
  279 0044 0000 0000 		.long	.Lframe0
  280 0048 0000 0000 		.long	.LFB7
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 6
 
 
  281 004c B400 0000 		.long	.LFE7-.LFB7
@@ -358,7 +358,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  335 0048 02        		.uleb128 0x2
  336 0049 04        		.byte	0x4
  337 004a 07        		.byte	0x7
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 7
 
 
  338 004b 0000 0000 		.long	.LASF4
@@ -418,7 +418,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  392 00b4 07        		.uleb128 0x7
  393 00b5 01        		.byte	0x1
  394 00b6 0000 0000 		.long	.LASF28
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 8
 
 
  395 00ba 01        		.byte	0x1
@@ -478,7 +478,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  449 0126 01        		.byte	0x1
  450 0127 B5        		.byte	0xb5
  451 0128 0C        		.uleb128 0xc
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 9
 
 
  452 0129 B400 0000 		.long	0xb4
@@ -538,7 +538,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  506 0192 12        		.uleb128 0x12
  507 0193 A900 0000 		.long	0xa9
  508 0197 11        		.uleb128 0x11
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 10
 
 
  509 0198 0000 0000 		.long	.LASF23
@@ -598,7 +598,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  563 0021 0B        		.uleb128 0xb
  564 0022 0B        		.uleb128 0xb
  565 0023 3E        		.uleb128 0x3e
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 11
 
 
  566 0024 0B        		.uleb128 0xb
@@ -658,7 +658,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  620 005a 0B        		.uleb128 0xb
  621 005b 00        		.byte	0x0
  622 005c 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 12
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 12
 
 
  623 005d 08        		.uleb128 0x8
@@ -718,7 +718,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  677 0093 13        		.uleb128 0x13
  678 0094 00        		.byte	0x0
  679 0095 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 13
 
 
  680 0096 0B        		.uleb128 0xb
@@ -778,7 +778,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  734 00cc 00        		.byte	0x0
  735 00cd 10        		.uleb128 0x10
  736 00ce 34        		.uleb128 0x34
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 14
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 14
 
 
  737 00cf 00        		.byte	0x0
@@ -838,7 +838,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  786 002e E200 0000 		.long	0xe2
  787 0032 665F 4C6F 		.string	"f_LockLock"
  787      636B 4C6F 
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 15
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 15
 
 
  787      636B 00
@@ -898,7 +898,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  827 0012 01        		.byte	0x1
  828 0013 01        		.byte	0x1
  829 0014 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 16
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 16
 
 
  830 0015 00        		.byte	0x0
@@ -958,7 +958,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  864 00a0 00        		.byte	0x0
  865 00a1 05        		.uleb128 0x5
  866 00a2 02        		.byte	0x2
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 17
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 17
 
 
  867 00a3 0000 0000 		.long	.LM3
@@ -1018,7 +1018,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  921 00f7 0000 0000 		.long	.LM13
  922 00fb 15        		.byte	0x15
  923 00fc 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 18
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 18
 
 
  924 00fd 05        		.uleb128 0x5
@@ -1078,7 +1078,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  978 0151 0000 0000 		.long	.LM24
  979 0155 03        		.byte	0x3
  980 0156 45        		.sleb128 -59
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 19
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 19
 
 
  981 0157 01        		.byte	0x1
@@ -1138,7 +1138,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  1035 01ac 16        		.byte	0x16
  1036 01ad 00        		.byte	0x0
  1037 01ae 05        		.uleb128 0x5
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 20
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 20
 
 
  1038 01af 02        		.byte	0x2
@@ -1198,7 +1198,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  1088 0000 7479 7065 		.string	"type_Lock_state"
  1088      5F4C 6F63 
  1088      6B5F 7374 
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 21
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 21
 
 
  1088      6174 6500 
@@ -1206,173 +1206,173 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 1
  1090 0010 7374 6174 		.string	"state_IDLE"
  1090      655F 4944 
  1090      4C45 00
- 1091               	.LASF3:
- 1092 001b 6C6F 6E67 		.string	"long int"
- 1092      2069 6E74 
- 1092      00
+ 1091               	.LASF24:
+ 1092 001b 765F 5365 		.string	"v_ServoUnLock"
+ 1092      7276 6F55 
+ 1092      6E4C 6F63 
+ 1092      6B00 
  1093               	.LASF15:
- 1094 0024 7374 6174 		.string	"state_WaitTO2UnLock"
+ 1094 0029 7374 6174 		.string	"state_WaitTO2UnLock"
  1094      655F 5761 
  1094      6974 544F 
  1094      3255 6E4C 
  1094      6F63 6B00 
  1095               	.LASF11:
- 1096 0038 494E 5431 		.string	"INT16U"
+ 1096 003d 494E 5431 		.string	"INT16U"
  1096      3655 00
  1097               	.LASF1:
- 1098 003f 756E 7369 		.string	"unsigned char"
+ 1098 0044 756E 7369 		.string	"unsigned char"
  1098      676E 6564 
  1098      2063 6861 
  1098      7200 
  1099               	.LASF4:
- 1100 004d 6C6F 6E67 		.string	"long unsigned int"
+ 1100 0052 6C6F 6E67 		.string	"long unsigned int"
  1100      2075 6E73 
  1100      6967 6E65 
  1100      6420 696E 
  1100      7400 
  1101               	.LASF8:
- 1102 005f 7368 6F72 		.string	"short unsigned int"
+ 1102 0064 7368 6F72 		.string	"short unsigned int"
  1102      7420 756E 
  1102      7369 676E 
  1102      6564 2069 
  1102      6E74 00
  1103               	.LASF25:
- 1104 0072 474E 5520 		.string	"GNU C 4.3.3"
+ 1104 0077 474E 5520 		.string	"GNU C 4.3.3"
  1104      4320 342E 
  1104      332E 3300 
- 1105               	.LASF24:
- 1106 007e 765F 5365 		.string	"v_ServoUnLock"
- 1106      7276 6F55 
- 1106      6E4C 6F63 
- 1106      6B00 
- 1107               	.LASF17:
- 1108 008c 665F 4C6F 		.string	"f_LockUnLock"
- 1108      636B 556E 
- 1108      4C6F 636B 
- 1108      00
- 1109               	.LASF20:
- 1110 0099 665F 496E 		.string	"f_Init_Applic"
- 1110      6974 5F41 
- 1110      7070 6C69 
- 1110      6300 
- 1111               	.LASF21:
- 1112 00a7 765F 5377 		.string	"v_SwTimer_mS"
- 1112      5469 6D65 
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 22
+ 1105               	.LASF17:
+ 1106 0083 665F 4C6F 		.string	"f_LockUnLock"
+ 1106      636B 556E 
+ 1106      4C6F 636B 
+ 1106      00
+ 1107               	.LASF20:
+ 1108 0090 665F 496E 		.string	"f_Init_Applic"
+ 1108      6974 5F41 
+ 1108      7070 6C69 
+ 1108      6300 
+ 1109               	.LASF21:
+ 1110 009e 765F 5377 		.string	"v_SwTimer_mS"
+ 1110      5469 6D65 
+ 1110      725F 6D53 
+ 1110      00
+ 1111               	.LASF13:
+ 1112 00ab 7374 6174 		.string	"state_WaitTO2Lock"
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 22
 
 
- 1112      725F 6D53 
- 1112      00
- 1113               	.LASF13:
- 1114 00b4 7374 6174 		.string	"state_WaitTO2Lock"
- 1114      655F 5761 
- 1114      6974 544F 
- 1114      324C 6F63 
- 1114      6B00 
- 1115               	.LASF2:
- 1116 00c6 756E 7369 		.string	"unsigned int"
- 1116      676E 6564 
- 1116      2069 6E74 
- 1116      00
- 1117               	.LASF10:
- 1118 00d3 494E 5438 		.string	"INT8U"
- 1118      5500 
- 1119               	.LASF6:
- 1120 00d9 6C6F 6E67 		.string	"long long unsigned int"
- 1120      206C 6F6E 
- 1120      6720 756E 
- 1120      7369 676E 
- 1120      6564 2069 
- 1121               	.LASF22:
- 1122 00f0 7374 6174 		.string	"state_Lock"
- 1122      655F 4C6F 
+ 1112      655F 5761 
+ 1112      6974 544F 
+ 1112      324C 6F63 
+ 1112      6B00 
+ 1113               	.LASF2:
+ 1114 00bd 756E 7369 		.string	"unsigned int"
+ 1114      676E 6564 
+ 1114      2069 6E74 
+ 1114      00
+ 1115               	.LASF10:
+ 1116 00ca 494E 5438 		.string	"INT8U"
+ 1116      5500 
+ 1117               	.LASF6:
+ 1118 00d0 6C6F 6E67 		.string	"long long unsigned int"
+ 1118      206C 6F6E 
+ 1118      6720 756E 
+ 1118      7369 676E 
+ 1118      6564 2069 
+ 1119               	.LASF22:
+ 1120 00e7 7374 6174 		.string	"state_Lock"
+ 1120      655F 4C6F 
+ 1120      636B 00
+ 1121               	.LASF18:
+ 1122 00f2 665F 4C6F 		.string	"f_LockLock"
+ 1122      636B 4C6F 
  1122      636B 00
- 1123               	.LASF18:
- 1124 00fb 665F 4C6F 		.string	"f_LockLock"
- 1124      636B 4C6F 
- 1124      636B 00
- 1125               	.LASF26:
- 1126 0106 7372 632F 		.string	"src/applic/applic.c"
- 1126      6170 706C 
- 1126      6963 2F61 
- 1126      7070 6C69 
- 1126      632E 6300 
- 1127               	.LASF5:
- 1128 011a 6C6F 6E67 		.string	"long long int"
- 1128      206C 6F6E 
- 1128      6720 696E 
- 1128      7400 
- 1129               	.LASF29:
- 1130 0128 665F 4C6F 		.string	"f_LockFSM"
- 1130      636B 4653 
- 1130      4D00 
- 1131               	.LASF7:
- 1132 0132 6368 6172 		.string	"char"
- 1132      00
- 1133               	.LASF14:
- 1134 0137 7374 6174 		.string	"state_ARM"
- 1134      655F 4152 
- 1134      4D00 
- 1135               	.LASF9:
- 1136 0141 7368 6F72 		.string	"short int"
- 1136      7420 696E 
- 1136      7400 
- 1137               	.LASF23:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 23
+ 1123               	.LASF26:
+ 1124 00fd 7372 632F 		.string	"src/applic/applic.c"
+ 1124      6170 706C 
+ 1124      6963 2F61 
+ 1124      7070 6C69 
+ 1124      632E 6300 
+ 1125               	.LASF5:
+ 1126 0111 6C6F 6E67 		.string	"long long int"
+ 1126      206C 6F6E 
+ 1126      6720 696E 
+ 1126      7400 
+ 1127               	.LASF29:
+ 1128 011f 665F 4C6F 		.string	"f_LockFSM"
+ 1128      636B 4653 
+ 1128      4D00 
+ 1129               	.LASF7:
+ 1130 0129 6368 6172 		.string	"char"
+ 1130      00
+ 1131               	.LASF27:
+ 1132 012e 5A3A 5C68 		.ascii	"Z:\\home\\mohammadreza\\t"
+ 1132      6F6D 655C 
+ 1132      6D6F 6861 
+ 1132      6D6D 6164 
+ 1132      7265 7A61 
+ 1133 0144 656D 6F5C 		.string	"emo\\Simple-AVR-OS-plus-some-improvement-\\avr16_CodeProj_Compiled"
+ 1133      5369 6D70 
+ 1133      6C65 2D41 
+ 1133      5652 2D4F 
+ 1133      532D 706C 
+ 1134               	.LASF14:
+ 1135 0185 7374 6174 		.string	"state_ARM"
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 23
 
 
- 1138 014b 765F 5365 		.string	"v_ServoLock"
- 1138      7276 6F4C 
- 1138      6F63 6B00 
- 1139               	.LASF27:
- 1140 0157 433A 5C44 		.ascii	"C:\\Documents and "
- 1140      6F63 756D 
- 1140      656E 7473 
- 1140      2061 6E64 
- 1140      20
- 1141 0168 5365 7474 		.string	"Settings\\Administrator\\Desktop\\avr16_CodeProj_v11\\avr16_CodeProj"
- 1141      696E 6773 
- 1141      5C41 646D 
- 1141      696E 6973 
- 1141      7472 6174 
+ 1135      655F 4152 
+ 1135      4D00 
+ 1136               	.LASF9:
+ 1137 018f 7368 6F72 		.string	"short int"
+ 1137      7420 696E 
+ 1137      7400 
+ 1138               	.LASF23:
+ 1139 0199 765F 5365 		.string	"v_ServoLock"
+ 1139      7276 6F4C 
+ 1139      6F63 6B00 
+ 1140               	.LASF3:
+ 1141 01a5 6C6F 6E67 		.string	"long int"
+ 1141      2069 6E74 
+ 1141      00
  1142               	.LASF28:
- 1143 01a9 665F 4C6F 		.string	"f_LockIdle"
+ 1143 01ae 665F 4C6F 		.string	"f_LockIdle"
  1143      636B 4964 
  1143      6C65 00
  1144               	.LASF0:
- 1145 01b4 7369 676E 		.string	"signed char"
+ 1145 01b9 7369 676E 		.string	"signed char"
  1145      6564 2063 
  1145      6861 7200 
  1146               	.LASF30:
- 1147 01c0 765F 7374 		.string	"v_status"
+ 1147 01c5 765F 7374 		.string	"v_status"
  1147      6174 7573 
  1147      00
  1148               	.LASF19:
- 1149 01c9 665F 4170 		.string	"f_Applic"
+ 1149 01ce 665F 4170 		.string	"f_Applic"
  1149      706C 6963 
  1149      00
  1150               	.global __do_copy_data
  1151               	.global __do_clear_bss
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s 			page 24
+GAS LISTING C:\users\mohammadreza\Temp/cckxZXLM.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 applic.c
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:2      *ABS*:0000003f __SREG__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:3      *ABS*:0000003e __SP_H__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:4      *ABS*:0000003d __SP_L__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:5      *ABS*:00000034 __CCP__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:6      *ABS*:00000000 __tmp_reg__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:7      *ABS*:00000001 __zero_reg__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:22     .text:00000000 f_LockUnLock
+C:\users\mohammadreza\Temp/cckxZXLM.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/cckxZXLM.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/cckxZXLM.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/cckxZXLM.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/cckxZXLM.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/cckxZXLM.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/cckxZXLM.s:22     .text:00000000 f_LockUnLock
                             *COM*:00000001 v_ServoUnLock
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:49     .text:0000001a f_LockIdle
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:69     .text:00000024 f_LockLock
+C:\users\mohammadreza\Temp/cckxZXLM.s:49     .text:0000001a f_LockIdle
+C:\users\mohammadreza\Temp/cckxZXLM.s:69     .text:00000024 f_LockLock
                             *COM*:00000001 v_ServoLock
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:92     .text:0000003e f_LockFSM
+C:\users\mohammadreza\Temp/cckxZXLM.s:92     .text:0000003e f_LockFSM
                             *COM*:00000002 state_Lock
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:196    .text:000000f2 f_Applic
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4wffkt.s:210    .text:000000f8 f_Init_Applic
+C:\users\mohammadreza\Temp/cckxZXLM.s:196    .text:000000f2 f_Applic
+C:\users\mohammadreza\Temp/cckxZXLM.s:210    .text:000000f8 f_Init_Applic
 
 UNDEFINED SYMBOLS
 f_PWM1Enable

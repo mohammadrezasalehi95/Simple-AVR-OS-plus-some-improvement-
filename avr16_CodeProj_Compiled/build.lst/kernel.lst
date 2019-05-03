@@ -1,4 +1,4 @@
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 1
 
 
    1               		.file	"kernel.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
   41               	.LM7:
   42 0014 0E94 0000 		call f_InitPWM1
   43               	.LM8:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 2
 
 
   44 0018 0E94 0000 		call f_Init_SCard
@@ -118,7 +118,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
   98 000e 20        		.uleb128 0x20
   99 000f 00        		.uleb128 0x0
  100               		.p2align	2
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 3
 
 
  101               	.LECIE0:
@@ -178,7 +178,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  155 0058 07        		.byte	0x7
  156 0059 0000 0000 		.long	.LASF6
  157 005d 04        		.uleb128 0x4
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 4
 
 
  158 005e 01        		.byte	0x1
@@ -238,7 +238,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  212 00ca 09        		.uleb128 0x9
  213 00cb D100 0000 		.long	0xd1
  214 00cf 08        		.byte	0x8
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 5
 
 
  215 00d0 00        		.byte	0x0
@@ -298,7 +298,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  269 001c 00        		.byte	0x0
  270 001d 00        		.byte	0x0
  271 001e 03        		.uleb128 0x3
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 6
 
 
  272 001f 24        		.uleb128 0x24
@@ -358,7 +358,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  326 0055 13        		.uleb128 0x13
  327 0056 00        		.byte	0x0
  328 0057 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 7
 
 
  329 0058 07        		.uleb128 0x7
@@ -418,7 +418,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  383 008e 00        		.byte	0x0
  384 008f 00        		.byte	0x0
  385               		.section	.debug_pubnames,"",@progbits
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 8
 
 
  386 0000 3300 0000 		.long	0x33
@@ -478,7 +478,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  431      6963 2F2E 
  431      2E2F 696E 
  431      636C 7564 
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 9
 
 
  432 0039 00        		.byte	0
@@ -538,7 +538,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  480 0098 05        		.uleb128 0x5
  481 0099 02        		.byte	0x2
  482 009a 0000 0000 		.long	.LM8
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 10
 
 
  483 009e 18        		.byte	0x18
@@ -598,7 +598,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  537 00f2 0000 0000 		.long	.LM19
  538 00f6 16        		.byte	0x16
  539 00f7 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 11
 
 
  540 00f8 05        		.uleb128 0x5
@@ -625,108 +625,108 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 1
  555               	.LASF11:
  556 000a 765F 6B65 		.string	"v_key"
  556      7900 
- 557               	.LASF3:
- 558 0010 6C6F 6E67 		.string	"long int"
- 558      2069 6E74 
- 558      00
- 559               	.LASF10:
- 560 0019 765F 6C65 		.string	"v_led"
- 560      6400 
- 561               	.LASF16:
- 562 001f 7372 632F 		.string	"src/applic/kernel.c"
- 562      6170 706C 
- 562      6963 2F6B 
- 562      6572 6E65 
- 562      6C2E 6300 
- 563               	.LASF1:
- 564 0033 756E 7369 		.string	"unsigned char"
- 564      676E 6564 
- 564      2063 6861 
- 564      7200 
- 565               	.LASF4:
- 566 0041 6C6F 6E67 		.string	"long unsigned int"
- 566      2075 6E73 
- 566      6967 6E65 
- 566      6420 696E 
- 566      7400 
- 567               	.LASF14:
- 568 0053 765F 5374 		.string	"v_StatReg"
- 568      6174 5265 
- 568      6700 
- 569               	.LASF8:
- 570 005d 7368 6F72 		.string	"short unsigned int"
- 570      7420 756E 
- 570      7369 676E 
- 570      6564 2069 
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 12
+ 557               	.LASF10:
+ 558 0010 765F 6C65 		.string	"v_led"
+ 558      6400 
+ 559               	.LASF16:
+ 560 0016 7372 632F 		.string	"src/applic/kernel.c"
+ 560      6170 706C 
+ 560      6963 2F6B 
+ 560      6572 6E65 
+ 560      6C2E 6300 
+ 561               	.LASF1:
+ 562 002a 756E 7369 		.string	"unsigned char"
+ 562      676E 6564 
+ 562      2063 6861 
+ 562      7200 
+ 563               	.LASF4:
+ 564 0038 6C6F 6E67 		.string	"long unsigned int"
+ 564      2075 6E73 
+ 564      6967 6E65 
+ 564      6420 696E 
+ 564      7400 
+ 565               	.LASF14:
+ 566 004a 765F 5374 		.string	"v_StatReg"
+ 566      6174 5265 
+ 566      6700 
+ 567               	.LASF8:
+ 568 0054 7368 6F72 		.string	"short unsigned int"
+ 568      7420 756E 
+ 568      7369 676E 
+ 568      6564 2069 
+ 568      6E74 00
+ 569               	.LASF15:
+ 570 0067 474E 5520 		.string	"GNU C 4.3.3"
+ 570      4320 342E 
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 12
 
 
- 570      6E74 00
- 571               	.LASF15:
- 572 0070 474E 5520 		.string	"GNU C 4.3.3"
- 572      4320 342E 
- 572      332E 3300 
- 573               	.LASF19:
- 574 007c 6D61 696E 		.string	"main"
+ 570      332E 3300 
+ 571               	.LASF19:
+ 572 0073 6D61 696E 		.string	"main"
+ 572      00
+ 573               	.LASF2:
+ 574 0078 756E 7369 		.string	"unsigned int"
+ 574      676E 6564 
+ 574      2069 6E74 
  574      00
- 575               	.LASF2:
- 576 0081 756E 7369 		.string	"unsigned int"
- 576      676E 6564 
- 576      2069 6E74 
- 576      00
- 577               	.LASF18:
- 578 008e 494E 5438 		.string	"INT8U"
- 578      5500 
- 579               	.LASF6:
- 580 0094 6C6F 6E67 		.string	"long long unsigned int"
+ 575               	.LASF18:
+ 576 0085 494E 5438 		.string	"INT8U"
+ 576      5500 
+ 577               	.LASF6:
+ 578 008b 6C6F 6E67 		.string	"long long unsigned int"
+ 578      206C 6F6E 
+ 578      6720 756E 
+ 578      7369 676E 
+ 578      6564 2069 
+ 579               	.LASF5:
+ 580 00a2 6C6F 6E67 		.string	"long long int"
  580      206C 6F6E 
- 580      6720 756E 
- 580      7369 676E 
- 580      6564 2069 
- 581               	.LASF5:
- 582 00ab 6C6F 6E67 		.string	"long long int"
- 582      206C 6F6E 
- 582      6720 696E 
- 582      7400 
- 583               	.LASF7:
- 584 00b9 6368 6172 		.string	"char"
- 584      00
- 585               	.LASF9:
- 586 00be 7368 6F72 		.string	"short int"
- 586      7420 696E 
- 586      7400 
- 587               	.LASF17:
- 588 00c8 433A 5C44 		.ascii	"C:\\Documents and "
- 588      6F63 756D 
- 588      656E 7473 
- 588      2061 6E64 
- 588      20
- 589 00d9 5365 7474 		.string	"Settings\\Administrator\\Desktop\\avr16_CodeProj_v11\\avr16_CodeProj"
- 589      696E 6773 
- 589      5C41 646D 
- 589      696E 6973 
- 589      7472 6174 
+ 580      6720 696E 
+ 580      7400 
+ 581               	.LASF7:
+ 582 00b0 6368 6172 		.string	"char"
+ 582      00
+ 583               	.LASF17:
+ 584 00b5 5A3A 5C68 		.ascii	"Z:\\home\\mohammadreza\\t"
+ 584      6F6D 655C 
+ 584      6D6F 6861 
+ 584      6D6D 6164 
+ 584      7265 7A61 
+ 585 00cb 656D 6F5C 		.string	"emo\\Simple-AVR-OS-plus-some-improvement-\\avr16_CodeProj_Compiled"
+ 585      5369 6D70 
+ 585      6C65 2D41 
+ 585      5652 2D4F 
+ 585      532D 706C 
+ 586               	.LASF9:
+ 587 010c 7368 6F72 		.string	"short int"
+ 587      7420 696E 
+ 587      7400 
+ 588               	.LASF3:
+ 589 0116 6C6F 6E67 		.string	"long int"
+ 589      2069 6E74 
+ 589      00
  590               	.LASF0:
- 591 011a 7369 676E 		.string	"signed char"
+ 591 011f 7369 676E 		.string	"signed char"
  591      6564 2063 
  591      6861 7200 
  592               	.LASF12:
- 593 0126 6275 665F 		.string	"buf_g"
+ 593 012b 6275 665F 		.string	"buf_g"
  593      6700 
  594               	.global __do_copy_data
  595               	.global __do_clear_bss
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/ccQgoguG.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 kernel.c
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:2      *ABS*:0000003f __SREG__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:3      *ABS*:0000003e __SP_H__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:4      *ABS*:0000003d __SP_L__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:5      *ABS*:00000034 __CCP__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:6      *ABS*:00000000 __tmp_reg__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:7      *ABS*:00000001 __zero_reg__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc1RUTx6.s:26     .text:00000000 main
+C:\users\mohammadreza\Temp/ccQgoguG.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/ccQgoguG.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/ccQgoguG.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/ccQgoguG.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/ccQgoguG.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/ccQgoguG.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/ccQgoguG.s:26     .text:00000000 main
                             *COM*:00000001 v_SysStat
                             *COM*:00000001 v_StatReg
 

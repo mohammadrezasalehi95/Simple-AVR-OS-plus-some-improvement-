@@ -1,4 +1,4 @@
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 1
 
 
    1               		.file	"adc.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
   55               	.L5:
   56 0034 EB81      		ldd r30,Y+3
   57 0036 FC81      		ldd r31,Y+4
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 2
 
 
   58 0038 EE0F      		lsl r30
@@ -118,7 +118,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  112 0072 8091 0000 		lds r24,v_SysStat
  113 0076 83FF      		sbrs r24,3
  114 0078 00C0      		rjmp .L12
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 3
 
 
  115               	.LBB4:
@@ -178,7 +178,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  169 00bc 97B1      		in r25,39-32
  170               	.LVL5:
  171               	.LM20:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 4
 
 
  172 00be 892F      		mov r24,r25
@@ -238,7 +238,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  226 0018 0000 0000 		.long	.LFB2
  227 001c 6400 0000 		.long	.LFE2-.LFB2
  228               		.p2align	2
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 5
 
 
  229               	.LEFDE0:
@@ -298,7 +298,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  283 0004 0200      		.word	0x2
  284 0006 0000 0000 		.long	.Ldebug_abbrev0
  285 000a 04        		.byte	0x4
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 6
 
 
  286 000b 01        		.uleb128 0x1
@@ -358,7 +358,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  340 0077 02        		.byte	0x2
  341 0078 0D        		.byte	0xd
  342 0079 2C00 0000 		.long	0x2c
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 7
 
 
  343 007d 04        		.uleb128 0x4
@@ -418,7 +418,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  397 00e1 59        		.byte	0x59
  398 00e2 01        		.byte	0x1
  399 00e3 0000 0000 		.long	.LFB4
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 8
 
 
  400 00e7 0000 0000 		.long	.LFE4
@@ -478,7 +478,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  454 0156 0000 0000 		.long	.LASF18
  455 015a 01        		.byte	0x1
  456 015b 28        		.byte	0x28
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 9
 
 
  457 015c 6701 0000 		.long	0x167
@@ -538,7 +538,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  511 002d 0E        		.uleb128 0xe
  512 002e 3A        		.uleb128 0x3a
  513 002f 0B        		.uleb128 0xb
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 10
 
 
  514 0030 3B        		.uleb128 0x3b
@@ -598,7 +598,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  568 0066 0B        		.uleb128 0xb
  569 0067 49        		.uleb128 0x49
  570 0068 13        		.uleb128 0x13
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 11
 
 
  571 0069 02        		.uleb128 0x2
@@ -658,7 +658,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  625 009f 0C        		.uleb128 0xc
  626 00a0 34        		.uleb128 0x34
  627 00a1 00        		.byte	0x0
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 12
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 12
 
 
  628 00a2 03        		.uleb128 0x3
@@ -718,7 +718,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  682 00d8 49        		.uleb128 0x49
  683 00d9 13        		.uleb128 0x13
  684 00da 2F        		.uleb128 0x2f
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 13
 
 
  685 00db 0B        		.uleb128 0xb
@@ -778,7 +778,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  730 0055 0000 0000 		.long	0x0
  731               		.section	.debug_aranges,"",@progbits
  732 0000 1C00 0000 		.long	0x1c
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 14
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 14
 
 
  733 0004 0200      		.word	0x2
@@ -838,7 +838,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  775 0060 00        		.uleb128 0x0
  776 0061 00        		.byte	0x0
  777               	.LELTP0:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 15
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 15
 
 
  778 0062 00        		.byte	0x0
@@ -898,7 +898,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  832 00b9 17        		.byte	0x17
  833 00ba 00        		.byte	0x0
  834 00bb 05        		.uleb128 0x5
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 16
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 16
 
 
  835 00bc 02        		.byte	0x2
@@ -958,7 +958,7 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  889 0113 16        		.byte	0x16
  890 0114 00        		.byte	0x0
  891 0115 05        		.uleb128 0x5
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 17
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 17
 
 
  892 0116 02        		.byte	0x2
@@ -995,119 +995,119 @@ GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 1
  911 002a 765F 6368 		.string	"v_chan_idx"
  911      616E 5F69 
  911      6478 00
- 912               	.LASF3:
- 913 0035 6C6F 6E67 		.string	"long int"
- 913      2069 6E74 
- 913      00
- 914               	.LASF11:
- 915 003e 494E 5431 		.string	"INT16U"
- 915      3655 00
- 916               	.LASF15:
- 917 0045 5F5F 7665 		.string	"__vector_14"
- 917      6374 6F72 
- 917      5F31 3400 
- 918               	.LASF1:
- 919 0051 756E 7369 		.string	"unsigned char"
- 919      676E 6564 
- 919      2063 6861 
- 919      7200 
- 920               	.LASF4:
- 921 005f 6C6F 6E67 		.string	"long unsigned int"
- 921      2075 6E73 
- 921      6967 6E65 
- 921      6420 696E 
- 921      7400 
- 922               	.LASF8:
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 18
+ 912               	.LASF11:
+ 913 0035 494E 5431 		.string	"INT16U"
+ 913      3655 00
+ 914               	.LASF15:
+ 915 003c 5F5F 7665 		.string	"__vector_14"
+ 915      6374 6F72 
+ 915      5F31 3400 
+ 916               	.LASF1:
+ 917 0048 756E 7369 		.string	"unsigned char"
+ 917      676E 6564 
+ 917      2063 6861 
+ 917      7200 
+ 918               	.LASF4:
+ 919 0056 6C6F 6E67 		.string	"long unsigned int"
+ 919      2075 6E73 
+ 919      6967 6E65 
+ 919      6420 696E 
+ 919      7400 
+ 920               	.LASF8:
+ 921 0068 7368 6F72 		.string	"short unsigned int"
+ 921      7420 756E 
+ 921      7369 676E 
+ 921      6564 2069 
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 18
 
 
- 923 0071 7368 6F72 		.string	"short unsigned int"
- 923      7420 756E 
- 923      7369 676E 
- 923      6564 2069 
- 923      6E74 00
- 924               	.LASF19:
- 925 0084 474E 5520 		.string	"GNU C 4.3.3"
- 925      4320 342E 
- 925      332E 3300 
- 926               	.LASF23:
- 927 0090 765F 6461 		.string	"v_data"
- 927      7461 00
- 928               	.LASF2:
- 929 0097 756E 7369 		.string	"unsigned int"
- 929      676E 6564 
- 929      2069 6E74 
- 929      00
- 930               	.LASF10:
- 931 00a4 494E 5438 		.string	"INT8U"
- 931      5500 
- 932               	.LASF6:
- 933 00aa 6C6F 6E67 		.string	"long long unsigned int"
- 933      206C 6F6E 
- 933      6720 756E 
- 933      7369 676E 
- 933      6564 2069 
- 934               	.LASF12:
- 935 00c1 765F 7465 		.string	"v_temp"
- 935      6D70 00
- 936               	.LASF22:
- 937 00c8 665F 5374 		.string	"f_StartADC"
- 937      6172 7441 
- 937      4443 00
- 938               	.LASF5:
- 939 00d3 6C6F 6E67 		.string	"long long int"
- 939      206C 6F6E 
- 939      6720 696E 
- 939      7400 
- 940               	.LASF14:
- 941 00e1 665F 5379 		.string	"f_SysADC"
- 941      7341 4443 
+ 921      6E74 00
+ 922               	.LASF19:
+ 923 007b 474E 5520 		.string	"GNU C 4.3.3"
+ 923      4320 342E 
+ 923      332E 3300 
+ 924               	.LASF23:
+ 925 0087 765F 6461 		.string	"v_data"
+ 925      7461 00
+ 926               	.LASF2:
+ 927 008e 756E 7369 		.string	"unsigned int"
+ 927      676E 6564 
+ 927      2069 6E74 
+ 927      00
+ 928               	.LASF10:
+ 929 009b 494E 5438 		.string	"INT8U"
+ 929      5500 
+ 930               	.LASF6:
+ 931 00a1 6C6F 6E67 		.string	"long long unsigned int"
+ 931      206C 6F6E 
+ 931      6720 756E 
+ 931      7369 676E 
+ 931      6564 2069 
+ 932               	.LASF12:
+ 933 00b8 765F 7465 		.string	"v_temp"
+ 933      6D70 00
+ 934               	.LASF22:
+ 935 00bf 665F 5374 		.string	"f_StartADC"
+ 935      6172 7441 
+ 935      4443 00
+ 936               	.LASF5:
+ 937 00ca 6C6F 6E67 		.string	"long long int"
+ 937      206C 6F6E 
+ 937      6720 696E 
+ 937      7400 
+ 938               	.LASF14:
+ 939 00d8 665F 5379 		.string	"f_SysADC"
+ 939      7341 4443 
+ 939      00
+ 940               	.LASF7:
+ 941 00e1 6368 6172 		.string	"char"
  941      00
- 942               	.LASF7:
- 943 00ea 6368 6172 		.string	"char"
- 943      00
- 944               	.LASF9:
- 945 00ef 7368 6F72 		.string	"short int"
- 945      7420 696E 
- 945      7400 
- 946               	.LASF21:
- 947 00f9 433A 5C44 		.ascii	"C:\\Documents and "
- 947      6F63 756D 
- 947      656E 7473 
- 947      2061 6E64 
- 947      20
- 948 010a 5365 7474 		.string	"Settings\\Administrator\\Desktop\\avr16_CodeProj_v11\\avr16_CodeProj"
- 948      696E 6773 
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 19
+ 942               	.LASF21:
+ 943 00e6 5A3A 5C68 		.ascii	"Z:\\home\\mohammadreza\\t"
+ 943      6F6D 655C 
+ 943      6D6F 6861 
+ 943      6D6D 6164 
+ 943      7265 7A61 
+ 944 00fc 656D 6F5C 		.string	"emo\\Simple-AVR-OS-plus-some-improvement-\\avr16_CodeProj_Compiled"
+ 944      5369 6D70 
+ 944      6C65 2D41 
+ 944      5652 2D4F 
+ 944      532D 706C 
+ 945               	.LASF9:
+ 946 013d 7368 6F72 		.string	"short int"
+ 946      7420 696E 
+ 946      7400 
+ 947               	.LASF3:
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 19
 
 
- 948      5C41 646D 
- 948      696E 6973 
- 948      7472 6174 
+ 948 0147 6C6F 6E67 		.string	"long int"
+ 948      2069 6E74 
+ 948      00
  949               	.LASF18:
- 950 014b 765F 4368 		.string	"v_Chan"
+ 950 0150 765F 4368 		.string	"v_Chan"
  950      616E 00
  951               	.LASF0:
- 952 0152 7369 676E 		.string	"signed char"
+ 952 0157 7369 676E 		.string	"signed char"
  952      6564 2063 
  952      6861 7200 
  953               	.global __do_clear_bss
-GAS LISTING C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s 			page 20
+GAS LISTING C:\users\mohammadreza\Temp/cc3qWytT.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 adc.c
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:2      *ABS*:0000003f __SREG__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:3      *ABS*:0000003e __SP_H__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:4      *ABS*:0000003d __SP_L__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:5      *ABS*:00000034 __CCP__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:6      *ABS*:00000000 __tmp_reg__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:7      *ABS*:00000001 __zero_reg__
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:18     .text:00000000 f_ConfigADC
+C:\users\mohammadreza\Temp/cc3qWytT.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/cc3qWytT.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/cc3qWytT.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/cc3qWytT.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/cc3qWytT.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/cc3qWytT.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/cc3qWytT.s:18     .text:00000000 f_ConfigADC
                             *COM*:00000010 v_Chan
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:88     .text:00000064 f_StartADC
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:106    .text:00000072 f_SysADC
-C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccITXkhO.s:130    .text:00000084 __vector_14
+C:\users\mohammadreza\Temp/cc3qWytT.s:88     .text:00000064 f_StartADC
+C:\users\mohammadreza\Temp/cc3qWytT.s:106    .text:00000072 f_SysADC
+C:\users\mohammadreza\Temp/cc3qWytT.s:130    .text:00000084 __vector_14
 
 UNDEFINED SYMBOLS
 v_SysStat
