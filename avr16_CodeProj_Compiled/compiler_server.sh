@@ -1,12 +1,6 @@
 #!/bin/sh
 SERVER_PORT=4444
-nc -k -l ${SERVER_PORT} > watcher.out &
-trap ctrl_c INT
-function ctrl_c() {
-        rm watcher.out
-        echo exited
-        exit
-}
+nc -k -l $SERVER_PORT > watcher.out &
 while true; do
     inotifywait watcher.out
     git pull origin master
