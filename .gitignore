@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+avr16_CodeProj_Compiled/build.err/
+avr16_CodeProj_Compiled/build.dep/
+avr16_CodeProj_Compiled/watcher.out

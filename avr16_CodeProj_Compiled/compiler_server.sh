@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 SERVER_PORT=4444
 nc -k -l ${SERVER_PORT} > watcher.out &
 trap ctrl_c INT
