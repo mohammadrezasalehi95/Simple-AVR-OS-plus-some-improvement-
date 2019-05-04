@@ -1,4 +1,4 @@
-git pull origin master
+git pull origin magit pull origin master
 git add .
 git commit -m $1
 git push origin master
@@ -9,7 +9,5 @@ while true; do
     sleep 10s
     git pull origin master
 done
-
-    sleep 10s
-    git pull origin master
+ git pull origin master
 done
