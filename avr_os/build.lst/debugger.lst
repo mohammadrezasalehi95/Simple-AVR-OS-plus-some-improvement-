@@ -1,4 +1,4 @@
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 1
 
 
    1               		.file	"debugger.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
   55               	.LFB28:
   56               	.LM7:
   57 0006 1F93      		push r17
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 2
 
 
   58               	/* prologue: function */
@@ -118,7 +118,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  112 004c 1F91      		pop r17
  113 004e 0895      		ret
  114               	.LVL5:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 3
 
 
  115               	.L22:
@@ -178,7 +178,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  166               	.LFB27:
  167               	.LM30:
  168               	/* prologue: function */
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 4
 
 
  169               	/* frame size = 0 */
@@ -238,7 +238,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  222               	/* #NOAPP */
  223               	.LBE5:
  224 00a4 8091 0000 		lds r24,buf_debugentry
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 5
 
 
  225 00a8 9817      		cp r25,r24
@@ -298,7 +298,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  277               	.LM42:
  278 00e4 8E01      		movw r16,r28
  279 00e6 0F5F      		subi r16,lo8(-(1))
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 6
 
 
  280 00e8 1F4F      		sbci r17,hi8(-(1))
@@ -358,7 +358,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  334               	.LM49:
  335 0132 8F92      		push r8
  336 0134 9F92      		push r9
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 7
 
 
  337 0136 AF92      		push r10
@@ -418,7 +418,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  391 018a 0F91      		pop r16
  392               	.LVL35:
  393 018c FF90      		pop r15
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 8
 
 
  394 018e EF90      		pop r14
@@ -478,7 +478,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  448 01da 8701      		movw r16,r14
  449 01dc FF24      		clr r15
  450 01de EE24      		clr r14
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 9
 
 
  451               	.LVL42:
@@ -538,7 +538,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  505               	/* prologue: function */
  506               	/* frame size = 0 */
  507               	.LM68:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 10
 
 
  508 0218 80E0      		ldi r24,lo8(buf_debugentry+2)
@@ -598,7 +598,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  559               		.type	f_debug_bintab, @function
  560               	f_debug_bintab:
  561               	.LFB11:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 11
 
 
  562               	.LM76:
@@ -658,7 +658,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  616 02aa 0E94 0000 		call f_BinHex
  617               	.LM80:
  618 02ae 0E5F      		subi r16,lo8(-(2))
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 12
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 12
 
 
  619 02b0 1F4F      		sbci r17,hi8(-(2))
@@ -718,7 +718,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  673 02f8 4091 0000 		lds r20,(.LC5)+2
  674 02fc 5091 0000 		lds r21,(.LC5)+3
  675 0300 2983      		std Y+1,r18
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 13
 
 
  676 0302 3A83      		std Y+2,r19
@@ -778,7 +778,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  730 0352 5C83      		std Y+4,r21
  731               	.LM91:
  732 0354 8E01      		movw r16,r28
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 14
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 14
 
 
  733 0356 0F5F      		subi r16,lo8(-(1))
@@ -838,7 +838,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  785 0398 8181      		ldd r24,Z+1
  786               	.LVL62:
  787 039a 0E94 0000 		call f_debug_port_v
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 15
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 15
 
 
  788               	.LVL63:
@@ -898,7 +898,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  842               	.LM106:
  843 03e0 0895      		ret
  844               	.L76:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 16
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 16
 
 
  845               	.LM107:
@@ -958,7 +958,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  899               	.LM124:
  900 0418 0895      		ret
  901               	.L70:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 17
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 17
 
 
  902               	.LM125:
@@ -1018,7 +1018,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  956 0454 0496      		adiw r24,4
  957 0456 0E94 0000 		call f_HexBin
  958               	.LM137:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 18
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 18
 
 
  959 045a 00E0      		ldi r16,lo8(0)
@@ -1078,7 +1078,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1013 04b6 011D      		adc r16,__zero_reg__
  1014 04b8 111D      		adc r17,__zero_reg__
  1015 04ba C801      		movw r24,r16
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 19
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 19
 
 
  1016 04bc B701      		movw r22,r14
@@ -1138,7 +1138,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1070               	.LFE18:
  1071               		.size	f_debug_fpga_read, .-f_debug_fpga_read
  1072               	.global	f_debug_writeEEbyte
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 20
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 20
 
 
  1073               		.type	f_debug_writeEEbyte, @function
@@ -1198,7 +1198,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1127 0536 0E94 0000 		call f_debug_port
  1128               	/* epilogue start */
  1129               	.LM167:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 21
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 21
 
 
  1130 053a 0895      		ret
@@ -1258,7 +1258,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1184 0552 0895      		ret
  1185               	.LFE13:
  1186               		.size	f_debug_PinB, .-f_debug_PinB
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 22
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 22
 
 
  1187               	.global	f_debug_PinA
@@ -1318,7 +1318,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1241 0588 0895      		ret
  1242               	.LFE9:
  1243               		.size	f_debug_writebyte, .-f_debug_writebyte
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 23
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 23
 
 
  1244               	.global	f_debug_readbyte
@@ -1378,7 +1378,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1296               	.LVL116:
  1297 05b0 8FEF      		ldi r24,hi8(-1)
  1298 05b2 2F3F      		cpi r18,lo8(-1)
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 24
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 24
 
 
  1299 05b4 3807      		cpc r19,r24
@@ -1438,7 +1438,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1353               	.LC10:
  1354 004f 636F 6465 		.string	"code 114"
  1354      2031 3134 
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 25
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 25
 
 
  1354      00
@@ -1498,7 +1498,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1408 0013 53        		.byte	83
  1409 0014 73        		.byte	115
  1410 0015 74        		.byte	116
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 26
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 26
 
 
  1411 0016 2A        		.byte	42
@@ -1524,14 +1524,14 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1431 0072 0000      		.word	gs(f_debug_lcm_read)
  1432 0074 0000      		.word	gs(f_debug_lcm_wrcmd)
  1433 0076 0000      		.word	gs(f_debug_lcm_wrdata)
- 1434 0078 0000      		.word	gs(f_debug_Port_write)
- 1435 007a 0000      		.word	gs(f_debug_Port_read)
- 1436 007c 0000      		.word	gs(f_debug_AnalogRead)
- 1437 007e 0000      		.word	gs(f_debug_lpc_read)
- 1438 0080 0000      		.word	gs(f_debug_lpc_write)
- 1439 0082 0000      		.word	gs(f_debug_sst_write)
- 1440 0084 0000      		.word	gs(f_debug_disable)
- 1441 0086 0000      		.word	gs(f_debug_spi_rd)
+ 1434 0078 0000      		.word	gs(f_debug_Port_read)
+ 1435 007a 0000      		.word	gs(f_debug_AnalogRead)
+ 1436 007c 0000      		.word	gs(f_debug_lpc_read)
+ 1437 007e 0000      		.word	gs(f_debug_lpc_write)
+ 1438 0080 0000      		.word	gs(f_debug_sst_write)
+ 1439 0082 0000      		.word	gs(f_debug_disable)
+ 1440 0084 0000      		.word	gs(f_debug_spi_rd)
+ 1441 0086 0000      		.skip 2,0
  1442               		.comm v_debugcnt,1,1
  1443               		.comm buf_debugentry,16,1
  1444               		.section	.debug_frame,"",@progbits
@@ -1558,7 +1558,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1465               		.p2align	2
  1466               	.LEFDE0:
  1467               	.LSFDE2:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 27
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 27
 
 
  1468 0020 0C00 0000 		.long	.LEFDE2-.LASFDE2
@@ -1618,7 +1618,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1522               	.LEFDE14:
  1523               	.LSFDE16:
  1524 0090 0C00 0000 		.long	.LEFDE16-.LASFDE16
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 28
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 28
 
 
  1525               	.LASFDE16:
@@ -1678,7 +1678,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1579               	.LSFDE30:
  1580 0100 0C00 0000 		.long	.LEFDE30-.LASFDE30
  1581               	.LASFDE30:
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 29
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 29
 
 
  1582 0104 0000 0000 		.long	.Lframe0
@@ -1738,7 +1738,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1636 0170 0C00 0000 		.long	.LEFDE44-.LASFDE44
  1637               	.LASFDE44:
  1638 0174 0000 0000 		.long	.Lframe0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 30
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 30
 
 
  1639 0178 0000 0000 		.long	.LFB15
@@ -1798,7 +1798,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1693               	.LASFDE58:
  1694 01e4 0000 0000 		.long	.Lframe0
  1695 01e8 0000 0000 		.long	.LFB2
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 31
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 31
 
 
  1696 01ec 2400 0000 		.long	.LFE2-.LFB2
@@ -1858,7 +1858,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1750 0079 93        		.byte	0x93
  1751 007a 01        		.uleb128 0x1
  1752 007b C200 0000 		.long	.LVL22-.Ltext0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 32
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 32
 
 
  1753 007f CA00 0000 		.long	.LVL23-.Ltext0
@@ -1918,7 +1918,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1807 0102 0C00      		.word	0xc
  1808 0104 5E        		.byte	0x5e
  1809 0105 93        		.byte	0x93
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 33
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 33
 
 
  1810 0106 01        		.uleb128 0x1
@@ -1978,7 +1978,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1864 0165 0000 0000 		.long	0x0
  1865               	.LLST18:
  1866 0169 C201 0000 		.long	.LVL38-.Ltext0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 34
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 34
 
 
  1867 016d DA01 0000 		.long	.LVL41-.Ltext0
@@ -2038,7 +2038,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1921 01c8 93        		.byte	0x93
  1922 01c9 01        		.uleb128 0x1
  1923 01ca 5B        		.byte	0x5b
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 35
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 35
 
 
  1924 01cb 93        		.byte	0x93
@@ -2098,7 +2098,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  1978 0249 93        		.byte	0x93
  1979 024a 01        		.uleb128 0x1
  1980 024b 69        		.byte	0x69
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 36
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 36
 
 
  1981 024c 93        		.byte	0x93
@@ -2158,7 +2158,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2035 02d5 5E04 0000 		.long	.LVL86-.Ltext0
  2036 02d9 0600      		.word	0x6
  2037 02db 5E        		.byte	0x5e
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 37
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 37
 
 
  2038 02dc 93        		.byte	0x93
@@ -2218,7 +2218,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2092 0331 93        		.byte	0x93
  2093 0332 01        		.uleb128 0x1
  2094 0333 7E04 0000 		.long	.LVL90-.Ltext0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 38
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 38
 
 
  2095 0337 9804 0000 		.long	.LVL92-.Ltext0
@@ -2278,7 +2278,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2149 03a4 5205 0000 		.long	.LVL104-.Ltext0
  2150 03a8 0100      		.word	0x1
  2151 03aa 68        		.byte	0x68
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 39
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 39
 
 
  2152 03ab 0000 0000 		.long	0x0
@@ -2338,7 +2338,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2206 0424 93        		.byte	0x93
  2207 0425 01        		.uleb128 0x1
  2208 0426 63        		.byte	0x63
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 40
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 40
 
 
  2209 0427 93        		.byte	0x93
@@ -2398,7 +2398,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2263 0045 03        		.uleb128 0x3
  2264 0046 0000 0000 		.long	.LASF3
  2265 004a 02        		.byte	0x2
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 41
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 41
 
 
  2266 004b 7C        		.byte	0x7c
@@ -2458,7 +2458,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2320 00ab 8000 0000 		.long	0x80
  2321 00af 03        		.uleb128 0x3
  2322 00b0 0000 0000 		.long	.LASF15
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 42
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 42
 
 
  2323 00b4 03        		.byte	0x3
@@ -2498,7 +2498,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2357 00f5 01        		.byte	0x1
  2358 00f6 0000 0000 		.long	.LASF18
  2359 00fa 01        		.byte	0x1
- 2360 00fb 4C02      		.word	0x24c
+ 2360 00fb 4B02      		.word	0x24b
  2361 00fd 01        		.byte	0x1
  2362 00fe 0000 0000 		.long	.LFB31
  2363 0102 0000 0000 		.long	.LFE31
@@ -2509,7 +2509,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2368 010a 01        		.byte	0x1
  2369 010b 0000 0000 		.long	.LASF22
  2370 010f 01        		.byte	0x1
- 2371 0110 D801      		.word	0x1d8
+ 2371 0110 D701      		.word	0x1d7
  2372 0112 01        		.byte	0x1
  2373 0113 0000 0000 		.long	.LFB28
  2374 0117 0000 0000 		.long	.LFE28
@@ -2518,23 +2518,23 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2377 011d 20        		.uleb128 0x20
  2378 011e 4B01 0000 		.long	0x14b
  2379 0122 0A        		.uleb128 0xa
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 43
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 43
 
 
  2380 0123 0000 0000 		.long	.LASF24
  2381 0127 01        		.byte	0x1
- 2382 0128 D901      		.word	0x1d9
+ 2382 0128 D801      		.word	0x1d8
  2383 012a 8E00 0000 		.long	0x8e
  2384 012e 0000 0000 		.long	.LLST4
  2385 0132 0B        		.uleb128 0xb
  2386 0133 0000 0000 		.long	.LASF19
  2387 0137 01        		.byte	0x1
- 2388 0138 DA01      		.word	0x1da
+ 2388 0138 D901      		.word	0x1d9
  2389 013a A400 0000 		.long	0xa4
  2390 013e 0B        		.uleb128 0xb
  2391 013f 0000 0000 		.long	.LASF20
  2392 0143 01        		.byte	0x1
- 2393 0144 DB01      		.word	0x1db
+ 2393 0144 DA01      		.word	0x1da
  2394 0146 4B01 0000 		.long	0x14b
  2395 014a 00        		.byte	0x0
  2396 014b 0C        		.uleb128 0xc
@@ -2544,7 +2544,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2400 0152 01        		.byte	0x1
  2401 0153 0000 0000 		.long	.LASF21
  2402 0157 01        		.byte	0x1
- 2403 0158 D101      		.word	0x1d1
+ 2403 0158 D001      		.word	0x1d0
  2404 015a 01        		.byte	0x1
  2405 015b 0000 0000 		.long	.LFB27
  2406 015f 0000 0000 		.long	.LFE27
@@ -2578,7 +2578,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2434 019c A3        		.byte	0xa3
  2435 019d 4500 0000 		.long	0x45
  2436 01a1 11        		.uleb128 0x11
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 44
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 44
 
 
  2437 01a2 0000 0000 		.long	.LASF26
@@ -2638,7 +2638,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2491 0215 1B02 0000 		.long	0x21b
  2492 0219 09        		.byte	0x9
  2493 021a 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 45
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 45
 
 
  2494 021b 05        		.uleb128 0x5
@@ -2648,7 +2648,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2498 021f 01        		.byte	0x1
  2499 0220 0000 0000 		.long	.LASF28
  2500 0224 01        		.byte	0x1
- 2501 0225 BE01      		.word	0x1be
+ 2501 0225 BD01      		.word	0x1bd
  2502 0227 01        		.byte	0x1
  2503 0228 0000 0000 		.long	.LFB26
  2504 022c 0000 0000 		.long	.LFE26
@@ -2659,37 +2659,37 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2509 0237 0A        		.uleb128 0xa
  2510 0238 0000 0000 		.long	.LASF24
  2511 023c 01        		.byte	0x1
- 2512 023d BF01      		.word	0x1bf
+ 2512 023d BE01      		.word	0x1be
  2513 023f 8E00 0000 		.long	0x8e
  2514 0243 0000 0000 		.long	.LLST13
  2515 0247 0A        		.uleb128 0xa
  2516 0248 0000 0000 		.long	.LASF29
  2517 024c 01        		.byte	0x1
- 2518 024d C001      		.word	0x1c0
+ 2518 024d BF01      		.word	0x1bf
  2519 024f A400 0000 		.long	0xa4
  2520 0253 0000 0000 		.long	.LLST14
  2521 0257 0A        		.uleb128 0xa
  2522 0258 0000 0000 		.long	.LASF30
  2523 025c 01        		.byte	0x1
- 2524 025d C001      		.word	0x1c0
+ 2524 025d BF01      		.word	0x1bf
  2525 025f A400 0000 		.long	0xa4
  2526 0263 0000 0000 		.long	.LLST15
  2527 0267 0B        		.uleb128 0xb
  2528 0268 0000 0000 		.long	.LASF19
  2529 026c 01        		.byte	0x1
- 2530 026d C101      		.word	0x1c1
+ 2530 026d C001      		.word	0x1c0
  2531 026f BA00 0000 		.long	0xba
  2532 0273 0B        		.uleb128 0xb
  2533 0274 0000 0000 		.long	.LASF20
  2534 0278 01        		.byte	0x1
- 2535 0279 C201      		.word	0x1c2
+ 2535 0279 C101      		.word	0x1c1
  2536 027b 4B01 0000 		.long	0x14b
  2537 027f 00        		.byte	0x0
  2538 0280 09        		.uleb128 0x9
  2539 0281 01        		.byte	0x1
  2540 0282 0000 0000 		.long	.LASF31
  2541 0286 01        		.byte	0x1
- 2542 0287 AB01      		.word	0x1ab
+ 2542 0287 AA01      		.word	0x1aa
  2543 0289 01        		.byte	0x1
  2544 028a 0000 0000 		.long	.LFB25
  2545 028e 0000 0000 		.long	.LFE25
@@ -2698,42 +2698,42 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2548 0294 20        		.uleb128 0x20
  2549 0295 E202 0000 		.long	0x2e2
  2550 0299 0A        		.uleb128 0xa
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 46
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 46
 
 
  2551 029a 0000 0000 		.long	.LASF24
  2552 029e 01        		.byte	0x1
- 2553 029f AC01      		.word	0x1ac
+ 2553 029f AB01      		.word	0x1ab
  2554 02a1 8E00 0000 		.long	0x8e
  2555 02a5 0000 0000 		.long	.LLST17
  2556 02a9 0A        		.uleb128 0xa
  2557 02aa 0000 0000 		.long	.LASF29
  2558 02ae 01        		.byte	0x1
- 2559 02af AD01      		.word	0x1ad
+ 2559 02af AC01      		.word	0x1ac
  2560 02b1 A400 0000 		.long	0xa4
  2561 02b5 0000 0000 		.long	.LLST18
  2562 02b9 0A        		.uleb128 0xa
  2563 02ba 0000 0000 		.long	.LASF30
  2564 02be 01        		.byte	0x1
- 2565 02bf AD01      		.word	0x1ad
+ 2565 02bf AC01      		.word	0x1ac
  2566 02c1 A400 0000 		.long	0xa4
  2567 02c5 0000 0000 		.long	.LLST19
  2568 02c9 0B        		.uleb128 0xb
  2569 02ca 0000 0000 		.long	.LASF19
  2570 02ce 01        		.byte	0x1
- 2571 02cf AE01      		.word	0x1ae
+ 2571 02cf AD01      		.word	0x1ad
  2572 02d1 BA00 0000 		.long	0xba
  2573 02d5 0B        		.uleb128 0xb
  2574 02d6 0000 0000 		.long	.LASF20
  2575 02da 01        		.byte	0x1
- 2576 02db AF01      		.word	0x1af
+ 2576 02db AE01      		.word	0x1ae
  2577 02dd 4B01 0000 		.long	0x14b
  2578 02e1 00        		.byte	0x0
  2579 02e2 09        		.uleb128 0x9
  2580 02e3 01        		.byte	0x1
  2581 02e4 0000 0000 		.long	.LASF32
  2582 02e8 01        		.byte	0x1
- 2583 02e9 7B01      		.word	0x17b
+ 2583 02e9 7A01      		.word	0x17a
  2584 02eb 01        		.byte	0x1
  2585 02ec 0000 0000 		.long	.LFB22
  2586 02f0 0000 0000 		.long	.LFE22
@@ -2744,21 +2744,21 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2591 02fb 0B        		.uleb128 0xb
  2592 02fc 0000 0000 		.long	.LASF24
  2593 0300 01        		.byte	0x1
- 2594 0301 7C01      		.word	0x17c
+ 2594 0301 7B01      		.word	0x17b
  2595 0303 8E00 0000 		.long	0x8e
  2596 0307 0B        		.uleb128 0xb
  2597 0308 0000 0000 		.long	.LASF20
  2598 030c 01        		.byte	0x1
- 2599 030d 7D01      		.word	0x17d
+ 2599 030d 7C01      		.word	0x17c
  2600 030f 4B01 0000 		.long	0x14b
  2601 0313 00        		.byte	0x0
  2602 0314 09        		.uleb128 0x9
  2603 0315 01        		.byte	0x1
  2604 0316 0000 0000 		.long	.LASF33
  2605 031a 01        		.byte	0x1
- 2606 031b 7001      		.word	0x170
+ 2606 031b 6F01      		.word	0x16f
  2607 031d 01        		.byte	0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 47
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 47
 
 
  2608 031e 0000 0000 		.long	.LFB21
@@ -2770,12 +2770,12 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2614 032d 0B        		.uleb128 0xb
  2615 032e 0000 0000 		.long	.LASF24
  2616 0332 01        		.byte	0x1
- 2617 0333 7101      		.word	0x171
+ 2617 0333 7001      		.word	0x170
  2618 0335 8E00 0000 		.long	0x8e
  2619 0339 0B        		.uleb128 0xb
  2620 033a 0000 0000 		.long	.LASF20
  2621 033e 01        		.byte	0x1
- 2622 033f 7201      		.word	0x172
+ 2622 033f 7101      		.word	0x171
  2623 0341 4B01 0000 		.long	0x14b
  2624 0345 00        		.byte	0x0
  2625 0346 09        		.uleb128 0x9
@@ -2818,7 +2818,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2662 0399 02        		.byte	0x2
  2663 039a 90        		.byte	0x90
  2664 039b 20        		.uleb128 0x20
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 48
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 48
 
 
  2665 039c E103 0000 		.long	0x3e1
@@ -2878,7 +2878,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2719 040f BA        		.byte	0xba
  2720 0410 8E00 0000 		.long	0x8e
  2721 0414 0000 0000 		.long	.LLST28
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 49
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 49
 
 
  2722 0418 12        		.uleb128 0x12
@@ -2928,7 +2928,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2766 046e 01        		.byte	0x1
  2767 046f 0000 0000 		.long	.LASF39
  2768 0473 01        		.byte	0x1
- 2769 0474 3302      		.word	0x233
+ 2769 0474 3202      		.word	0x232
  2770 0476 01        		.byte	0x1
  2771 0477 0000 0000 		.long	.LFB30
  2772 047b 0000 0000 		.long	.LFE30
@@ -2938,29 +2938,29 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2776 0482 AF04 0000 		.long	0x4af
  2777 0486 0B        		.uleb128 0xb
  2778 0487 0000 0000 		.long	.LASF24
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 50
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 50
 
 
  2779 048b 01        		.byte	0x1
- 2780 048c 3402      		.word	0x234
+ 2780 048c 3302      		.word	0x233
  2781 048e 8E00 0000 		.long	0x8e
  2782 0492 0A        		.uleb128 0xa
  2783 0493 0000 0000 		.long	.LASF19
  2784 0497 01        		.byte	0x1
- 2785 0498 3502      		.word	0x235
+ 2785 0498 3402      		.word	0x234
  2786 049a A400 0000 		.long	0xa4
  2787 049e 0000 0000 		.long	.LLST32
  2788 04a2 0B        		.uleb128 0xb
  2789 04a3 0000 0000 		.long	.LASF20
  2790 04a7 01        		.byte	0x1
- 2791 04a8 3602      		.word	0x236
+ 2791 04a8 3502      		.word	0x235
  2792 04aa 4B01 0000 		.long	0x14b
  2793 04ae 00        		.byte	0x0
  2794 04af 09        		.uleb128 0x9
  2795 04b0 01        		.byte	0x1
  2796 04b1 0000 0000 		.long	.LASF40
  2797 04b5 01        		.byte	0x1
- 2798 04b6 0502      		.word	0x205
+ 2798 04b6 0402      		.word	0x204
  2799 04b8 01        		.byte	0x1
  2800 04b9 0000 0000 		.long	.LFB29
  2801 04bd 0000 0000 		.long	.LFE29
@@ -2971,25 +2971,25 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2806 04c8 0A        		.uleb128 0xa
  2807 04c9 0000 0000 		.long	.LASF24
  2808 04cd 01        		.byte	0x1
- 2809 04ce 0602      		.word	0x206
+ 2809 04ce 0502      		.word	0x205
  2810 04d0 8E00 0000 		.long	0x8e
  2811 04d4 0000 0000 		.long	.LLST34
  2812 04d8 0B        		.uleb128 0xb
  2813 04d9 0000 0000 		.long	.LASF19
  2814 04dd 01        		.byte	0x1
- 2815 04de 0702      		.word	0x207
+ 2815 04de 0602      		.word	0x206
  2816 04e0 A400 0000 		.long	0xa4
  2817 04e4 0B        		.uleb128 0xb
  2818 04e5 0000 0000 		.long	.LASF20
  2819 04e9 01        		.byte	0x1
- 2820 04ea 0802      		.word	0x208
+ 2820 04ea 0702      		.word	0x207
  2821 04ec 4B01 0000 		.long	0x14b
  2822 04f0 00        		.byte	0x0
  2823 04f1 09        		.uleb128 0x9
  2824 04f2 01        		.byte	0x1
  2825 04f3 0000 0000 		.long	.LASF41
  2826 04f7 01        		.byte	0x1
- 2827 04f8 9001      		.word	0x190
+ 2827 04f8 8F01      		.word	0x18f
  2828 04fa 01        		.byte	0x1
  2829 04fb 0000 0000 		.long	.LFB24
  2830 04ff 0000 0000 		.long	.LFE24
@@ -2998,42 +2998,42 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2833 0505 20        		.uleb128 0x20
  2834 0506 5305 0000 		.long	0x553
  2835 050a 0B        		.uleb128 0xb
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 51
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 51
 
 
  2836 050b 0000 0000 		.long	.LASF24
  2837 050f 01        		.byte	0x1
- 2838 0510 9101      		.word	0x191
+ 2838 0510 9001      		.word	0x190
  2839 0512 8E00 0000 		.long	0x8e
  2840 0516 0A        		.uleb128 0xa
  2841 0517 0000 0000 		.long	.LASF29
  2842 051b 01        		.byte	0x1
- 2843 051c 9201      		.word	0x192
+ 2843 051c 9101      		.word	0x191
  2844 051e A400 0000 		.long	0xa4
  2845 0522 0000 0000 		.long	.LLST36
  2846 0526 0A        		.uleb128 0xa
  2847 0527 0000 0000 		.long	.LASF30
  2848 052b 01        		.byte	0x1
- 2849 052c 9201      		.word	0x192
+ 2849 052c 9101      		.word	0x191
  2850 052e A400 0000 		.long	0xa4
  2851 0532 0000 0000 		.long	.LLST37
  2852 0536 0A        		.uleb128 0xa
  2853 0537 0000 0000 		.long	.LASF19
  2854 053b 01        		.byte	0x1
- 2855 053c 9301      		.word	0x193
+ 2855 053c 9201      		.word	0x192
  2856 053e BA00 0000 		.long	0xba
  2857 0542 0000 0000 		.long	.LLST38
  2858 0546 0B        		.uleb128 0xb
  2859 0547 0000 0000 		.long	.LASF20
  2860 054b 01        		.byte	0x1
- 2861 054c 9401      		.word	0x194
+ 2861 054c 9301      		.word	0x193
  2862 054e 4B01 0000 		.long	0x14b
  2863 0552 00        		.byte	0x0
  2864 0553 09        		.uleb128 0x9
  2865 0554 01        		.byte	0x1
  2866 0555 0000 0000 		.long	.LASF42
  2867 0559 01        		.byte	0x1
- 2868 055a 8601      		.word	0x186
+ 2868 055a 8501      		.word	0x185
  2869 055c 01        		.byte	0x1
  2870 055d 0000 0000 		.long	.LFB23
  2871 0561 0000 0000 		.long	.LFE23
@@ -3044,7 +3044,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2876 056c 0B        		.uleb128 0xb
  2877 056d 0000 0000 		.long	.LASF24
  2878 0571 01        		.byte	0x1
- 2879 0572 8701      		.word	0x187
+ 2879 0572 8601      		.word	0x186
  2880 0574 8E00 0000 		.long	0x8e
  2881 0578 00        		.byte	0x0
  2882 0579 09        		.uleb128 0x9
@@ -3058,7 +3058,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2890 058b 02        		.byte	0x2
  2891 058c 90        		.byte	0x90
  2892 058d 20        		.uleb128 0x20
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 52
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 52
 
 
  2893 058e B705 0000 		.long	0x5b7
@@ -3118,7 +3118,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  2947 060b 02        		.byte	0x2
  2948 060c 90        		.byte	0x90
  2949 060d 20        		.uleb128 0x20
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 53
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 53
 
 
  2950 060e 3706 0000 		.long	0x637
@@ -3178,7 +3178,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3004 068a 00        		.byte	0x0
  3005 068b 09        		.uleb128 0x9
  3006 068c 01        		.byte	0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 54
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 54
 
 
  3007 068d 0000 0000 		.long	.LASF48
@@ -3238,7 +3238,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3061 0706 11        		.uleb128 0x11
  3062 0707 0000 0000 		.long	.LASF19
  3063 070b 01        		.byte	0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 55
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 55
 
 
  3064 070c D0        		.byte	0xd0
@@ -3298,7 +3298,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3118 077e AF00 0000 		.long	0xaf
  3119 0782 0000 0000 		.long	.LLST58
  3120 0786 0E        		.uleb128 0xe
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 56
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 56
 
 
  3121 0787 6368 00   		.string	"ch"
@@ -3358,7 +3358,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3175 07f5 1A        		.uleb128 0x1a
  3176 07f6 0000 0000 		.long	.LASF58
  3177 07fa 01        		.byte	0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 57
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 57
 
 
  3178 07fb 52        		.byte	0x52
@@ -3418,7 +3418,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3232 0005 13        		.uleb128 0x13
  3233 0006 0B        		.uleb128 0xb
  3234 0007 03        		.uleb128 0x3
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 58
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 58
 
 
  3235 0008 0E        		.uleb128 0xe
@@ -3478,7 +3478,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3289 003e 00        		.byte	0x0
  3290 003f 06        		.uleb128 0x6
  3291 0040 2E        		.uleb128 0x2e
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 59
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 59
 
 
  3292 0041 00        		.byte	0x0
@@ -3538,7 +3538,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3346 0077 03        		.uleb128 0x3
  3347 0078 0E        		.uleb128 0xe
  3348 0079 3A        		.uleb128 0x3a
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 60
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 60
 
 
  3349 007a 0B        		.uleb128 0xb
@@ -3598,7 +3598,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3403 00b0 01        		.byte	0x1
  3404 00b1 3F        		.uleb128 0x3f
  3405 00b2 0C        		.uleb128 0xc
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 61
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 61
 
 
  3406 00b3 03        		.uleb128 0x3
@@ -3658,7 +3658,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3460 00e9 00        		.byte	0x0
  3461 00ea 11        		.uleb128 0x11
  3462 00eb 34        		.uleb128 0x34
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 62
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 62
 
 
  3463 00ec 00        		.byte	0x0
@@ -3718,7 +3718,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3517 0122 13        		.uleb128 0x13
  3518 0123 2F        		.uleb128 0x2f
  3519 0124 0B        		.uleb128 0xb
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 63
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 63
 
 
  3520 0125 00        		.byte	0x0
@@ -3778,7 +3778,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3574 015b 3F        		.uleb128 0x3f
  3575 015c 0C        		.uleb128 0xc
  3576 015d 3C        		.uleb128 0x3c
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 64
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 64
 
 
  3577 015e 0C        		.uleb128 0xc
@@ -3838,7 +3838,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3627      6275 675F 
  3627      7573 6572 
  3627      5F63 6D64 
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 65
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 65
 
 
  3627      00
@@ -3898,7 +3898,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3647      6670 6761 
  3647      5F77 7269 
  3647      7465 00
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 66
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 66
 
 
  3648 0107 8803 0000 		.long	0x388
@@ -3958,7 +3958,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3667      7265 6164 
  3667      4545 4279 
  3667      7465 00
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 67
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 67
 
 
  3668 01da 3706 0000 		.long	0x637
@@ -4018,7 +4018,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3690 029d 4B08 0000 		.long	0x84b
  3691 02a1 665F 6C75 		.string	"f_lut_dbgfunc"
  3691      745F 6462 
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 68
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 68
 
 
  3691      6766 756E 
@@ -4078,7 +4078,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3731      2F70 6572 
  3731      6970 6869 
  3732 007b 00        		.byte	0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 69
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 69
 
 
  3733 007c 00        		.byte	0x0
@@ -4131,14 +4131,14 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3768 00de 05        		.uleb128 0x5
  3769 00df 02        		.byte	0x2
  3770 00e0 0000 0000 		.long	.LM4
- 3771 00e4 16        		.byte	0x16
+ 3771 00e4 15        		.byte	0x15
  3772 00e5 00        		.byte	0x0
  3773 00e6 05        		.uleb128 0x5
  3774 00e7 02        		.byte	0x2
  3775 00e8 0000 0000 		.long	.LM5
  3776 00ec F3        		.byte	0xf3
  3777 00ed 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 70
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 70
 
 
  3778 00ee 05        		.uleb128 0x5
@@ -4198,7 +4198,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3832 0143 05        		.uleb128 0x5
  3833 0144 02        		.byte	0x2
  3834 0145 0000 0000 		.long	.LM16
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 71
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 71
 
 
  3835 0149 03        		.byte	0x3
@@ -4258,7 +4258,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3889 019a 00        		.byte	0x0
  3890 019b 05        		.uleb128 0x5
  3891 019c 02        		.byte	0x2
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 72
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 72
 
 
  3892 019d 0000 0000 		.long	.LM26
@@ -4309,7 +4309,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3937 01e2 02        		.byte	0x2
  3938 01e3 0000 0000 		.long	.LM34
  3939 01e7 03        		.byte	0x3
- 3940 01e8 C87D      		.sleb128 -312
+ 3940 01e8 C97D      		.sleb128 -311
  3941 01ea 01        		.byte	0x1
  3942 01eb 00        		.byte	0x0
  3943 01ec 05        		.uleb128 0x5
@@ -4318,7 +4318,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  3946 01f2 16        		.byte	0x16
  3947 01f3 00        		.byte	0x0
  3948 01f4 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 73
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 73
 
 
  3949 01f5 02        		.byte	0x2
@@ -4378,7 +4378,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4003 024c 05        		.uleb128 0x5
  4004 024d 02        		.byte	0x2
  4005 024e 0000 0000 		.long	.LM47
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 74
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 74
 
 
  4006 0252 1B        		.byte	0x1b
@@ -4391,7 +4391,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4013 025c 05        		.uleb128 0x5
  4014 025d 02        		.byte	0x2
  4015 025e 0000 0000 		.long	.LM49
- 4016 0262 E1        		.byte	0xe1
+ 4016 0262 E0        		.byte	0xe0
  4017 0263 00        		.byte	0x0
  4018 0264 05        		.uleb128 0x5
  4019 0265 02        		.byte	0x2
@@ -4438,7 +4438,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4060 02a6 05        		.uleb128 0x5
  4061 02a7 02        		.byte	0x2
  4062 02a8 0000 0000 		.long	.LM58
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 75
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 75
 
 
  4063 02ac 16        		.byte	0x16
@@ -4498,7 +4498,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4117 0300 19        		.byte	0x19
  4118 0301 00        		.byte	0x0
  4119 0302 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 76
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 76
 
 
  4120 0303 02        		.byte	0x2
@@ -4514,7 +4514,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4130 0313 02        		.byte	0x2
  4131 0314 0000 0000 		.long	.LM71
  4132 0318 03        		.byte	0x3
- 4133 0319 64        		.sleb128 -28
+ 4133 0319 65        		.sleb128 -27
  4134 031a 01        		.byte	0x1
  4135 031b 00        		.byte	0x0
  4136 031c 05        		.uleb128 0x5
@@ -4558,7 +4558,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4174 0358 02        		.byte	0x2
  4175 0359 0000 0000 		.long	.LM79
  4176 035d 1B        		.byte	0x1b
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 77
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 77
 
 
  4177 035e 00        		.byte	0x0
@@ -4618,7 +4618,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4231 03b3 75        		.sleb128 -11
  4232 03b4 01        		.byte	0x1
  4233 03b5 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 78
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 78
 
 
  4234 03b6 05        		.uleb128 0x5
@@ -4645,7 +4645,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4255 03d7 02        		.byte	0x2
  4256 03d8 0000 0000 		.long	.LM94
  4257 03dc 03        		.byte	0x3
- 4258 03dd FB02      		.sleb128 379
+ 4258 03dd FA02      		.sleb128 378
  4259 03df 01        		.byte	0x1
  4260 03e0 00        		.byte	0x0
  4261 03e1 05        		.uleb128 0x5
@@ -4678,7 +4678,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4288 040b 0000 0000 		.long	.LM100
  4289 040f 03        		.byte	0x3
  4290 0410 75        		.sleb128 -11
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 79
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 79
 
 
  4291 0411 01        		.byte	0x1
@@ -4738,7 +4738,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4345 0466 16        		.byte	0x16
  4346 0467 00        		.byte	0x0
  4347 0468 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 80
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 80
 
 
  4348 0469 02        		.byte	0x2
@@ -4798,7 +4798,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4402 04bd 02        		.byte	0x2
  4403 04be 0000 0000 		.long	.LM121
  4404 04c2 16        		.byte	0x16
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 81
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 81
 
 
  4405 04c3 00        		.byte	0x0
@@ -4858,7 +4858,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4459 0514 0000 0000 		.long	.LM131
  4460 0518 03        		.byte	0x3
  4461 0519 6A        		.sleb128 -22
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 82
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 82
 
 
  4462 051a 01        		.byte	0x1
@@ -4918,7 +4918,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4516 056f 05        		.uleb128 0x5
  4517 0570 02        		.byte	0x2
  4518 0571 0000 0000 		.long	.LM142
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 83
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 83
 
 
  4519 0575 16        		.byte	0x16
@@ -4969,7 +4969,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4564 05ba 02        		.byte	0x2
  4565 05bb 0000 0000 		.long	.LM151
  4566 05bf 03        		.byte	0x3
- 4567 05c0 43        		.sleb128 -61
+ 4567 05c0 44        		.sleb128 -60
  4568 05c1 01        		.byte	0x1
  4569 05c2 00        		.byte	0x0
  4570 05c3 05        		.uleb128 0x5
@@ -4978,7 +4978,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4573 05c9 1A        		.byte	0x1a
  4574 05ca 00        		.byte	0x0
  4575 05cb 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 84
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 84
 
 
  4576 05cc 02        		.byte	0x2
@@ -5038,7 +5038,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4630 0623 03        		.byte	0x3
  4631 0624 5D        		.sleb128 -35
  4632 0625 01        		.byte	0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 85
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 85
 
 
  4633 0626 00        		.byte	0x0
@@ -5098,7 +5098,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4687 067a 00        		.byte	0x0
  4688 067b 05        		.uleb128 0x5
  4689 067c 02        		.byte	0x2
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 86
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 86
 
 
  4690 067d 0000 0000 		.long	.LM174
@@ -5158,7 +5158,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4744 06d1 0000 0000 		.long	.LM184
  4745 06d5 03        		.byte	0x3
  4746 06d6 BE7F      		.sleb128 -66
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 87
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 87
 
 
  4747 06d8 01        		.byte	0x1
@@ -5218,7 +5218,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4801 072d 01        		.byte	0x1
  4802 072e 00        		.byte	0x0
  4803 072f 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 88
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 88
 
 
  4804 0730 02        		.byte	0x2
@@ -5278,7 +5278,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4858 0787 15        		.byte	0x15
  4859 0788 00        		.byte	0x0
  4860 0789 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 89
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 89
 
 
  4861 078a 02        		.byte	0x2
@@ -5338,7 +5338,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4915 07de 02        		.byte	0x2
  4916 07df 0000 0000 		.long	.LM216
  4917 07e3 15        		.byte	0x15
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 90
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 90
 
 
  4918 07e4 00        		.byte	0x0
@@ -5398,7 +5398,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4946               	.LASF59:
  4947 00a6 6C75 745F 		.string	"lut_dbgcmd"
  4947      6462 6763 
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 91
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 91
 
 
  4947      6D64 00
@@ -5458,7 +5458,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4973      6275 675F 
  4973      6469 7361 
  4973      626C 6500 
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 92
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 92
 
 
  4974               	.LASF40:
@@ -5518,7 +5518,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  4997      6400 
  4998               	.LASF0:
  4999 01dd 7369 676E 		.string	"signed char"
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 93
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 93
 
 
  4999      6564 2063 
@@ -5578,7 +5578,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  5021 027e 665F 5072 		.string	"f_ProcessCMD"
  5021      6F63 6573 
  5021      7343 4D44 
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 94
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 94
 
 
  5021      00
@@ -5638,7 +5638,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  5043      736B 4465 
  5043      6275 6767 
  5043      6572 00
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 95
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 95
 
 
  5044               	.LASF49:
@@ -5676,51 +5676,51 @@ GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 1
  5057      7400 
  5058               	.global __do_copy_data
  5059               	.global __do_clear_bss
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 96
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 96
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 debugger.c
-C:\users\mohammadreza\Temp/ccQwDB2C.s:2      *ABS*:0000003f __SREG__
-C:\users\mohammadreza\Temp/ccQwDB2C.s:3      *ABS*:0000003e __SP_H__
-C:\users\mohammadreza\Temp/ccQwDB2C.s:4      *ABS*:0000003d __SP_L__
-C:\users\mohammadreza\Temp/ccQwDB2C.s:5      *ABS*:00000034 __CCP__
-C:\users\mohammadreza\Temp/ccQwDB2C.s:6      *ABS*:00000000 __tmp_reg__
-C:\users\mohammadreza\Temp/ccQwDB2C.s:7      *ABS*:00000001 __zero_reg__
-C:\users\mohammadreza\Temp/ccQwDB2C.s:18     .text:00000000 f_CheckSyntax
-C:\users\mohammadreza\Temp/ccQwDB2C.s:30     .text:00000002 f_debug_user_cmd
-C:\users\mohammadreza\Temp/ccQwDB2C.s:42     .text:00000004 f_debug_spi_rd
-C:\users\mohammadreza\Temp/ccQwDB2C.s:54     .text:00000006 f_debug_Port_write
+C:\users\mohammadreza\Temp/ccmbjZck.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/ccmbjZck.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/ccmbjZck.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/ccmbjZck.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/ccmbjZck.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/ccmbjZck.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/ccmbjZck.s:18     .text:00000000 f_CheckSyntax
+C:\users\mohammadreza\Temp/ccmbjZck.s:30     .text:00000002 f_debug_user_cmd
+C:\users\mohammadreza\Temp/ccmbjZck.s:42     .text:00000004 f_debug_spi_rd
+C:\users\mohammadreza\Temp/ccmbjZck.s:54     .text:00000006 f_debug_Port_write
                             *COM*:00000010 buf_debugentry
-C:\users\mohammadreza\Temp/ccQwDB2C.s:165    .text:00000072 f_debug_disable
-C:\users\mohammadreza\Temp/ccQwDB2C.s:191    .text:00000086 f_ProcessCMD
+C:\users\mohammadreza\Temp/ccmbjZck.s:165    .text:00000072 f_debug_disable
+C:\users\mohammadreza\Temp/ccmbjZck.s:191    .text:00000086 f_ProcessCMD
                             *COM*:00000001 v_debugcnt
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1388   .progmem.data:00000000 lut_dbgcmd
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1417   .data:00000058 f_lut_dbgfunc
-C:\users\mohammadreza\Temp/ccQwDB2C.s:260    .text:000000cc f_debug_asctab
-C:\users\mohammadreza\Temp/ccQwDB2C.s:332    .text:00000132 f_debug_sst_write
-C:\users\mohammadreza\Temp/ccQwDB2C.s:408    .text:0000019e f_debug_lpc_write
-C:\users\mohammadreza\Temp/ccQwDB2C.s:484    .text:0000020a f_debug_lcm_wrdata
-C:\users\mohammadreza\Temp/ccQwDB2C.s:502    .text:00000218 f_debug_lcm_wrcmd
-C:\users\mohammadreza\Temp/ccQwDB2C.s:520    .text:00000226 f_debug_fpga_write
-C:\users\mohammadreza\Temp/ccQwDB2C.s:560    .text:00000250 f_debug_bintab
-C:\users\mohammadreza\Temp/ccQwDB2C.s:656    .text:000002e0 f_debug_port_v
-C:\users\mohammadreza\Temp/ccQwDB2C.s:708    .text:0000032c f_debug_port
-C:\users\mohammadreza\Temp/ccQwDB2C.s:760    .text:00000378 f_debug_AnalogRead
-C:\users\mohammadreza\Temp/ccQwDB2C.s:814    .text:000003ba f_debug_Port_read
-C:\users\mohammadreza\Temp/ccQwDB2C.s:932    .text:00000432 f_debug_lpc_read
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1037   .text:000004d8 f_debug_lcm_read
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1054   .text:000004e4 f_debug_fpga_read
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1074   .text:000004f6 f_debug_writeEEbyte
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1115   .text:0000052a f_debug_readEEByte
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1135   .text:0000053c f_debug_PinD
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1153   .text:00000544 f_debug_PinC
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1171   .text:0000054c f_debug_PinB
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1189   .text:00000554 f_debug_PinA
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1207   .text:0000055c f_debug_writebyte
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1246   .text:0000058a f_debug_readbyte
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1274   .text:0000059c f_TaskDebugger
-C:\users\mohammadreza\Temp/ccQwDB2C.s:1358   .text:0000060e f_InitDebug
+C:\users\mohammadreza\Temp/ccmbjZck.s:1388   .progmem.data:00000000 lut_dbgcmd
+C:\users\mohammadreza\Temp/ccmbjZck.s:1417   .data:00000058 f_lut_dbgfunc
+C:\users\mohammadreza\Temp/ccmbjZck.s:260    .text:000000cc f_debug_asctab
+C:\users\mohammadreza\Temp/ccmbjZck.s:332    .text:00000132 f_debug_sst_write
+C:\users\mohammadreza\Temp/ccmbjZck.s:408    .text:0000019e f_debug_lpc_write
+C:\users\mohammadreza\Temp/ccmbjZck.s:484    .text:0000020a f_debug_lcm_wrdata
+C:\users\mohammadreza\Temp/ccmbjZck.s:502    .text:00000218 f_debug_lcm_wrcmd
+C:\users\mohammadreza\Temp/ccmbjZck.s:520    .text:00000226 f_debug_fpga_write
+C:\users\mohammadreza\Temp/ccmbjZck.s:560    .text:00000250 f_debug_bintab
+C:\users\mohammadreza\Temp/ccmbjZck.s:656    .text:000002e0 f_debug_port_v
+C:\users\mohammadreza\Temp/ccmbjZck.s:708    .text:0000032c f_debug_port
+C:\users\mohammadreza\Temp/ccmbjZck.s:760    .text:00000378 f_debug_AnalogRead
+C:\users\mohammadreza\Temp/ccmbjZck.s:814    .text:000003ba f_debug_Port_read
+C:\users\mohammadreza\Temp/ccmbjZck.s:932    .text:00000432 f_debug_lpc_read
+C:\users\mohammadreza\Temp/ccmbjZck.s:1037   .text:000004d8 f_debug_lcm_read
+C:\users\mohammadreza\Temp/ccmbjZck.s:1054   .text:000004e4 f_debug_fpga_read
+C:\users\mohammadreza\Temp/ccmbjZck.s:1074   .text:000004f6 f_debug_writeEEbyte
+C:\users\mohammadreza\Temp/ccmbjZck.s:1115   .text:0000052a f_debug_readEEByte
+C:\users\mohammadreza\Temp/ccmbjZck.s:1135   .text:0000053c f_debug_PinD
+C:\users\mohammadreza\Temp/ccmbjZck.s:1153   .text:00000544 f_debug_PinC
+C:\users\mohammadreza\Temp/ccmbjZck.s:1171   .text:0000054c f_debug_PinB
+C:\users\mohammadreza\Temp/ccmbjZck.s:1189   .text:00000554 f_debug_PinA
+C:\users\mohammadreza\Temp/ccmbjZck.s:1207   .text:0000055c f_debug_writebyte
+C:\users\mohammadreza\Temp/ccmbjZck.s:1246   .text:0000058a f_debug_readbyte
+C:\users\mohammadreza\Temp/ccmbjZck.s:1274   .text:0000059c f_TaskDebugger
+C:\users\mohammadreza\Temp/ccmbjZck.s:1358   .text:0000060e f_InitDebug
 
 UNDEFINED SYMBOLS
 f_HexBinByte
@@ -5736,7 +5736,7 @@ f_BinHex
 v_Chan
 f_DebugLPCRd
 f_DebugLCMRd
-GAS LISTING C:\users\mohammadreza\Temp/ccQwDB2C.s 			page 97
+GAS LISTING C:\users\mohammadreza\Temp/ccmbjZck.s 			page 97
 
 
 f_DebugFPGARd
