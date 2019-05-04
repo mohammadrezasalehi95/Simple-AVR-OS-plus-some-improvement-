@@ -118,6 +118,7 @@ void f_InitDebug(void)
 
 void f_TaskDebugger(void)
 {
+    			f_Uart_PutStr("\ncode 121d\n");
 	INT16 result;
 	INT8U ch;
 

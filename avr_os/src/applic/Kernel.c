@@ -164,7 +164,6 @@ int main(void) {
         f_Uart_PutStr("\ncode 171k\n");
             //if ( (v_key = f_GetKey()) != c_NOKEY) f_LCM_PutChar(v_key+'A');
 #endif
-
         if ((v_SysStat & (1 << b_AppTick)) != 0) {
             v_SysStat &= ~(1 << b_AppTick);
             f_Applic();

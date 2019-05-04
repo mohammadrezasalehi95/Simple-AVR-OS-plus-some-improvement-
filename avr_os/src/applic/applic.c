@@ -98,7 +98,7 @@ void f_Init_Applic(void)
 void f_Applic(void)
 {
     // Execute the State Machine
-    f_LockFSM();    
+    f_LockFSM();
 }
 
 // Utility functions needed by the FSM (Finite State Machine)
