@@ -1,6 +1,4 @@
-#!/bin/sh
-SERVER_PORT=4444
-nc -k -l $SERVER_PORT > watcher.out &
+nc -k -l 4444 > watcher.out &
 while true; do
     inotifywait watcher.out
     git pull origin master
