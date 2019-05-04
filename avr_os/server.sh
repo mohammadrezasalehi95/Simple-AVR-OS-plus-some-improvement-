@@ -3,7 +3,7 @@ while true; do
     inotifywait watcher.out
     git pull origin master
     echo salam
-    echo 'make clean' | wine cmd
+    echo make clean| wine cmd
     echo make | wine cmd
     now=$(date +"%T")
     last_line=$(tail -1 watcher.out)
