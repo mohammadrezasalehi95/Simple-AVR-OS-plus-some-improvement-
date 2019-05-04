@@ -1,0 +1,4 @@
+typeconv.o: src/Utils/typeconv.c src/Utils/../includes/types.h \
+  src/Utils/../includes/settings.h src/Utils/../includes/legacy.h
+src/Utils/typeconv.c src/Utils/../includes/types.h \ :
+  src/Utils/../includes/settings.h src/Utils/../includes/legacy.h :
