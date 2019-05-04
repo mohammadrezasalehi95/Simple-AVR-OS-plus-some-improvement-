@@ -111,6 +111,7 @@ void f_InitDebug(void)
 {
 	v_debugcnt = 0;
 	f_Uart_ClrScr();
+	f_Uart_PutStr("code 114");
 	f_Uart_PutStr("? ");
 	v_SysStat |= (1 << b_DBG);
 }
