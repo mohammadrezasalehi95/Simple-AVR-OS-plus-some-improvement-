@@ -132,6 +132,7 @@ int main(void)
 	//f_LCM_WrMsgF(c_LCML2, c_VERAPPSTR);
 	f_LCM_WrMsgUnBufF(c_LCML1, c_VEROSSTR);
 	f_LCM_WrMsgUnBufF(c_LCML2, c_VERAPPSTR);
+	f_LCM_WrMsgUnBufF(c_LCML2, "dg vaghean salam");
 	f_LCM_WrMsgUnBufF(c_LCML3, "AVRILOS Demo");
 	f_LCM_WrMsgUnBufF(c_LCML4, "CodeProject!");
 #endif
