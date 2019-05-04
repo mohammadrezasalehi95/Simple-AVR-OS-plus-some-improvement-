@@ -26,6 +26,8 @@ void f_debug_adisbias_read(void);
 void f_debug_adis_write(void);
 void f_debug_adis_rd(void);
 void f_debug_spi_rd(void);
+void f_mm_on_led(void);
+void f_mm_off_led(void);
 
 
 
