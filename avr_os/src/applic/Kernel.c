@@ -143,22 +143,18 @@ int main(void)
 			f_SysTick();
 
 			#ifdef MOD_ADC8_ON
-        f_Uart_PutStr("\ncode 146k\n");
 			f_SysADC();
 			#endif
 			
 			#if defined (MOD_DEBUGGER_ON)
-        f_Uart_PutStr("\ncode 151k\n");
 			f_TaskDebugger();
 			#endif
 
 			#ifdef	MOD_SERAPP_ON
-        f_Uart_PutStr("\ncode 156k\n");
 			f_SerApp();
 			#endif
 			
             #ifdef MOD_SCARD_ON
-        f_Uart_PutStr("\ncode 161k\n");
             //f_SCard_CheckCardIn();
             #endif
 
