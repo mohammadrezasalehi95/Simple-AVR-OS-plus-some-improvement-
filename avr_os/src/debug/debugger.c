@@ -165,7 +165,6 @@ void f_ProcessCMD(void)
 
 	while( (idx < c_CMDAVAIL) && (PRG_RDB(&lut_dbgcmd[idx]) != buf_debugentry[0]) )
 	{
-	    f_Uart_PutStr("\ncode 168d\n");
 		idx++;
 	}
 
