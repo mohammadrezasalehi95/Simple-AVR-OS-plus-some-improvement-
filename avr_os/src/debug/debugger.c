@@ -118,7 +118,6 @@ void f_InitDebug(void)
 
 void f_TaskDebugger(void)
 {
-    f_Uart_PutStr("\ncode 121d\n");
 	INT16 result;
 	INT8U ch;
 
@@ -126,9 +125,9 @@ void f_TaskDebugger(void)
 
 	if ( ( result = f_Uart_GetChar() ) != (-1) )
 	{
+	    f_Uart_PutStr("\ncode 128d\n");
 		ch = result & 0xff;
 		buf_debugentry[v_debugcnt] = ch;
-
 		v_debugcnt++;
 		if (v_debugcnt == c_DEBUGBUFLEN)
 		{
@@ -140,8 +139,10 @@ void f_TaskDebugger(void)
 		else
 		{
 			f_Uart_PutChar(ch);
+			f_Uart_PutStr("\ncode 142d\n");
 			if ( ch == c_ENTER)
 			{
+			    f_Uart_PutStr("\ncode 145d\n");
 				f_ProcessCMD();
 				f_Uart_PutStr("? ");
 			}
