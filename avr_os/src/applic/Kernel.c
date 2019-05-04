@@ -125,7 +125,7 @@ int main(void)
 	f_Uart_ClrScr();
 	f_Uart_PutStr(c_VEROSSTR);
 	f_Uart_PutStr(c_VERAPPSTR);
-	f_Uart_PutStr("\nsalam slaam dastoor bedid\n");
+    f_Uart_PutStr("\nsalam slaam dastoor bedid\n");
 
 #ifdef MOD_LCMCHAR_ON
 	//f_LCM_WrMsgUnBuf(c_LCML1, c_VEROSSTR, c_FLASH);

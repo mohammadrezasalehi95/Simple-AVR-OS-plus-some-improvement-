@@ -137,10 +137,12 @@ void f_StopTimerKey(void)
 
 void f_SysTick(void)
 {
+ 	f_Uart_PutStr("\ncode 140t\n");
     INT8U v_idx;
 
     if ( (v_SysStat & (1 << b_SysTick ) ) != 0 )
   	{
+ 	f_Uart_PutStr("\ncode 145t\n");
   		v_SysStat &= ~(1 << b_SysTick );
         v_SysTimer++;
         
@@ -171,8 +173,9 @@ void f_SysTick(void)
                 v_SwTimer_mS[v_idx]--;
             }
         }
-        
+
 #ifdef MOD_KEY44_ON
+         	f_Uart_PutStr("\ncode 178t\n");
         if ( (v_SysTimer % c_KEYPAD_ticks) == 0) f_SwTimerKey();	    	
 #endif 
 #ifdef MOD_LCMCHAR_ON
