@@ -1,9 +1,11 @@
 kernel.o: src/applic/kernel.c \
+  c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h \
+  c:/winavr-20100110/lib/gcc/../../avr/include/inttypes.h \
+  c:/winavr-20100110/lib/gcc/../../avr/include/stdint.h \
+  c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/interrupt.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/sfr_defs.h \
-  c:/winavr-20100110/lib/gcc/../../avr/include/inttypes.h \
-  c:/winavr-20100110/lib/gcc/../../avr/include/stdint.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/portpins.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/common.h \
@@ -23,11 +25,13 @@ kernel.o: src/applic/kernel.c \
   src/applic/../periphext/scard.h src/applic/../Applic/cfg/xcs05_cfg.h \
   src/applic/../applic/serapp.h src/applic/../applic/applic.h
 src/applic/kernel.c \ :
+/winavr-20100110/lib/gcc/../../avr/include/util/delay.h \ :
+/winavr-20100110/lib/gcc/../../avr/include/inttypes.h \ :
+/winavr-20100110/lib/gcc/../../avr/include/stdint.h \ :
+/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/interrupt.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/io.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/sfr_defs.h \ :
-/winavr-20100110/lib/gcc/../../avr/include/inttypes.h \ :
-/winavr-20100110/lib/gcc/../../avr/include/stdint.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/iom16.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/portpins.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/common.h \ :
