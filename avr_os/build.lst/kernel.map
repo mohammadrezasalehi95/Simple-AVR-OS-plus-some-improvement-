@@ -878,7 +878,6 @@ f_Uart_NL                                         build.obj/Uart.o
 f_Uart_PutChar                                    build.obj/Uart.o
                                                   build.obj/serapp.o
                                                   build.obj/debugger.o
-                                                  build.obj/kernel.o
 f_Uart_PutStr                                     build.obj/Uart.o
                                                   build.obj/scard.o
                                                   build.obj/serapp.o
