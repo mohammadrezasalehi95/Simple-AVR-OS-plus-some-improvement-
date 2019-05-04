@@ -1,8 +1,0 @@
-dbgext.o: src/debug/dbgext.c src/debug/../includes/types.h \
-  src/debug/../includes/settings.h src/debug/../includes/legacy.h \
-  src/debug/../periphext/lcm_char.h src/debug/../periphext/lpc.h \
-  src/debug/../periphext/sst.h
-src/debug/dbgext.c src/debug/../includes/types.h \ :
-  src/debug/../includes/settings.h src/debug/../includes/legacy.h \ :
-  src/debug/../periphext/lcm_char.h src/debug/../periphext/lpc.h \ :
-  src/debug/../periphext/sst.h :
