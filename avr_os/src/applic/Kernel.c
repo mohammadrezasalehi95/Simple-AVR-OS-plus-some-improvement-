@@ -155,7 +155,7 @@ int main(void)
 			#endif
 			
             #ifdef MOD_SCARD_ON
-            //f_SCard_CheckCardIn();
+			//f_SCard_CheckCardIn();
             #endif
 
 			#ifdef MOD_KEY44_ON			

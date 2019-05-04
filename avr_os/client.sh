@@ -2,7 +2,7 @@ git pull origin master
 git add .
 git commit -m $1
 git push origin master
-echo fire|netcat 192.168.8.100 4444
+netcat 192.168.8.100 4444<client.sh
 sleep 2s
 echo ended
 while true; do
