@@ -116,7 +116,7 @@ void (*f_lut_dbgfunc[c_CMDAVAIL])(void)  =
 
 
 void f_InitDebug(void)
-{
+
     v_debugcnt = 0;
     f_Uart_ClrScr();
     f_Uart_PutStr("code 114");
