@@ -92,9 +92,14 @@ void f_Init_Applic(void)
     v_ServoUnLock = c_SERVOUnLock;
     
 }
-
+INT8U c=0;
 // Function called by the main kernel loop (task)
 // Should not block
+void my_Applic(void){
+    c++;
+    f_Delay_ms(100);
+    outp(c,PORTA);
+}
 void f_Applic(void)
 {
     // Execute the State Machine
@@ -123,7 +128,7 @@ void f_LockIdle(void)
 
 void f_LockUnLock(void)
 {
-    f_PWM1Enable(0);    
+    f_PWM1Enable(0);
     f_PWM1Set(0, v_ServoUnLock);    
     // Debug info to serial port
     f_Uart_PutStr("\nUnlock\n");

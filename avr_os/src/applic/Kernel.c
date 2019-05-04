@@ -34,7 +34,7 @@
 	I2C	
 
 ***************************************************************************/
-
+#include <util/delay.h>
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
 
@@ -138,7 +138,6 @@ int main(void) {
 
     for (;;) {
         f_SysTick();
-
 #ifdef MOD_ADC8_ON
         f_SysADC();
 #endif
@@ -146,7 +145,6 @@ int main(void) {
 #if defined (MOD_DEBUGGER_ON)
         f_TaskDebugger();
 #endif
-
 #ifdef    MOD_SERAPP_ON
         f_SerApp();
 #endif
@@ -167,6 +165,7 @@ int main(void) {
         if ((v_SysStat & (1 << b_AppTick)) != 0) {
             v_SysStat &= ~(1 << b_AppTick);
             f_Applic();
+            my_Applic();
         }
 
 #ifdef DCFG_LOWPOW

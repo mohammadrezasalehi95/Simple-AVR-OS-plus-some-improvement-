@@ -99,7 +99,7 @@ void (*f_lut_dbgfunc[c_CMDAVAIL])(void)  =
 	f_debug_readEEByte, f_debug_writeEEbyte,
 	f_debug_fpga_read, f_debug_fpga_write, f_debug_user_cmd,
 	f_debug_lcm_read, f_debug_lcm_wrcmd, f_debug_lcm_wrdata,
-	f_debug_Port_write, f_debug_Port_read, f_debug_AnalogRead,
+	, f_debug_Port_read, f_debug_AnalogRead,
 	f_debug_lpc_read, f_debug_lpc_write, f_debug_sst_write,
 	f_debug_disable,
 	f_debug_spi_rd
@@ -361,7 +361,6 @@ void f_debug_fpga_write  (void)
 
 void f_debug_user_cmd    (void)
 {
-
 }
 
 void f_debug_lcm_wrcmd(void)
