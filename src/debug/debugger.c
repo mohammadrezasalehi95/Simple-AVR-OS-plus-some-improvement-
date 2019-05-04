@@ -82,6 +82,8 @@ void f_ProcessCMD(void) {}
 #else
 
 extern INT8U v_SysStat;
+INT8U app_subscription=0b0;
+
 
 volatile INT8U v_debugcnt;
 volatile INT8U buf_debugentry[c_DEBUGBUFLEN];
@@ -98,8 +100,7 @@ INT8U __attribute__ ((progmem)) lut_dbgcmd[]={ \
         };
 
 void (*f_lut_dbgfunc[c_CMDAVAIL])(void)  =
-{
-    f_debug_readbyte, f_debug_writebyte, f_debug_asctab, f_debug_bintab,
+{f_debug_readbyte, f_debug_writebyte, f_debug_asctab, f_debug_bintab,
     f_debug_PinA, f_debug_PinB, f_debug_PinC,	f_debug_PinD,
     f_debug_readEEByte, f_debug_writeEEbyte,
     f_debug_fpga_read, f_debug_fpga_write, f_debug_user_cmd,
@@ -109,8 +110,6 @@ void (*f_lut_dbgfunc[c_CMDAVAIL])(void)  =
     f_debug_disable,
     f_debug_spi_rd
 };
-
-
 
 void f_InitDebug(void)
 {
@@ -363,10 +362,52 @@ void f_debug_fpga_write  (void)
     f_DebugFPGAWr((INT8U) (addr & 0xff), v_data);
 
 }
-
 void f_debug_user_cmd    (void)
 {
-        f_Uart_PutStr("-cmd hanooz nazadimesh\n");
+        INT8U v_data;
+    INT16U addr;
+    INT8 *p_str;
+
+    p_str = (INT8 *) &buf_debugentry[2];
+    addr = f_HexBinByte(p_str);
+    p_str = (INT8 *) &buf_debugentry[2+2+1];
+    v_data = f_HexBinByte(p_str);
+    if (v_data==1){
+        app_subscription=app_
+    }else{
+
+    }
+    switch (addr)
+    {
+        case 0x01:
+            outp(v_data, PORTA);
+            break;
+        case 0x02:
+            outp(v_data, PORTB);
+            break;
+        case 0x03:
+            outp(v_data, PORTC);
+            break;
+        case 0x04:
+            outp(v_data, PORTD);
+            break;
+        case 0x05:
+            outp(v_data, PORTD);
+            break;
+        case 0x06:
+            outp(v_data, PORTD);
+            break;
+        case 0x07:
+            outp(v_data, PORTD);
+            break;
+        case 0x08:
+            outp(v_data, PORTD);
+            break;
+        default:
+            break;
+
+    }
+
 }
 
 void f_debug_lcm_wrcmd(void)
@@ -434,7 +475,6 @@ void f_debug_lpc_write(void)
     INT16U addr1, addr2;
     INT32U addr;
     INT8 *p_str;
-
     p_str = (INT8 *) &buf_debugentry[2];
     addr1 = f_HexBin(p_str);
     p_str = (INT8 *) &buf_debugentry[2+4];

@@ -39,7 +39,7 @@
 #define c_SSTLEN        0x040000
 
 extern INT8U v_SysStat;
-
+extern INT8U subscribe_list;
 volatile INT8U v_appcnt;
 volatile INT8U v_pwmcnt;
 volatile INT8U buf_appentry[c_APPENTRYBUFLEN];

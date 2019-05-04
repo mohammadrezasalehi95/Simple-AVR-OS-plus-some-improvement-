@@ -1,6 +1,10 @@
-
 .idea/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+cmake-build-debug/
+include/
+lib/
+test/
+.pioenvs/
+.travis.yml
+netcat
+watcher.out
+telnet

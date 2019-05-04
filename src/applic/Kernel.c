@@ -60,6 +60,7 @@
 
 volatile INT8U v_SysStat;
 volatile INT8U v_StatReg;
+extern INT8U app_subscription;
 
 
 int main(void) {
@@ -124,7 +125,8 @@ int main(void) {
     f_Uart_ClrScr();
     f_Uart_PutStr(c_VEROSSTR);
     f_Uart_PutStr(c_VERAPPSTR);
-    f_Uart_PutStr("\nsalam slaam dastoor bedid\n");
+    f_Uart_PutStr("\nsalam type a command please\n");
+    f_Uart_PutStr("\n");
 
 #ifdef MOD_LCMCHAR_ON
     //f_LCM_WrMsgUnBuf(c_LCML1, c_VEROSSTR, c_FLASH);
@@ -175,4 +177,3 @@ int main(void) {
 
     };              /* loop forever */
 }
-
