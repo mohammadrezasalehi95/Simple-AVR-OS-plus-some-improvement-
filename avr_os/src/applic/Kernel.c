@@ -72,45 +72,58 @@ int main(void)
 	f_InitSysTimer();
 
 #ifdef MOD_UART_ON
+
+    f_Uart_PutStr("\ncode 76k\n");
 	f_ConfigSerial();
 #else
 #warning "No UART"
 #endif
 
 #ifdef MOD_ADC8_ON	
+    f_Uart_PutStr("\ncode 83k\n");
+
 	f_ConfigADC();
 #endif
 
-#ifdef MOD_DEBUGGER_ON	
+#ifdef MOD_DEBUGGER_ON
+    f_Uart_PutStr("\ncode 89k\n");
+
 	f_InitDebug();
 #endif
 
 #ifdef MOD_FPGAXCS_ON	
+    f_Uart_PutStr("\ncode 95k\n");
 	f_CfgSPIFPGA();
 #endif
 	
 #ifdef MOD_LCMCHAR_ON	
+    f_Uart_PutStr("\ncode 100k\n");
 	f_ConfigLCM();
 #endif
 
 #ifdef MOD_KEY44_ON	
+    f_Uart_PutStr("\ncode 105k\n");
 	f_ConfigKeyb4x4();
 #endif
 
 #ifdef MOD_LPC_ON
+    f_Uart_PutStr("\ncode 110k\n");
 	f_ConfigLPC();
 #endif
 
 #ifdef MOD_PWMTIMER_ON
+    f_Uart_PutStr("\ncode 115k\n");
     f_InitPWM1();
 #endif 
 
 #ifdef MOD_SCARD_ON
+    f_Uart_PutStr("\ncode 120k\n");
     f_Init_SCard();
 #endif 
 
 #ifdef	MOD_SERAPP_ON
 	// Application Level Init
+    f_Uart_PutStr("\ncode 126k\n");
 	f_InitSerApp();
 #endif
 
