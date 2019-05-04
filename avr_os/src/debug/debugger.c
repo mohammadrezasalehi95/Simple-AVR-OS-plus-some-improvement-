@@ -132,6 +132,7 @@ void f_TaskDebugger(void)
 		{
 			v_debugcnt = 0;
 			f_Uart_PutStr("\nErr\n");
+			f_Uart_PutStr("\ncode 135\n");
 			f_Uart_PutStr("? ");
 		}
 		else
