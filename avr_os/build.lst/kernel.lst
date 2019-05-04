@@ -1,4 +1,4 @@
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 1
 
 
    1               		.file	"kernel.c"
@@ -18,22 +18,22 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
   15               	.Ltext0:
   16               		.data
   17               	.LC0:
-  18 0000 0A20 0A20 		.ascii	"\n \n {NOTICE!} \n [Hi this "
-  18      7B4E 4F54 
+  18 0000 7B4E 4F54 		.ascii	"{NOTICE!} [Hi this "
   18      4943 4521 
-  18      7D20 0A20 
-  18      5B48 6920 
-  19 0019 6973 206D 		.string	"is my compiled version of AVRILOS]\n \n AVRILOS V1.00 started...\r\n"
+  18      7D20 5B48 
+  18      6920 7468 
+  18      6973 20
+  19 0013 6973 206D 		.string	"is my compiled version of AVRILOS]\n \n AVRILOS V1.00 started...\r\n"
   19      7920 636F 
   19      6D70 696C 
   19      6564 2076 
   19      6572 7369 
   20               	.LC1:
-  21 005a 4150 5020 		.string	"APP Version V0.00\r\n"
-  21      5665 7273 
-  21      696F 6E20 
-  21      5630 2E30 
-  21      300D 0A00 
+  21 0054 6D6F 6861 		.string	"mohammadreza salehi APP Version V0.00\r\n "
+  21      6D6D 6164 
+  21      7265 7A61 
+  21      2073 616C 
+  21      6568 6920 
   22               		.text
   23               	.global	main
   24               		.type	main, @function
@@ -58,7 +58,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
   43 0018 0E94 0000 		call f_Init_SCard
   44               	.LM9:
   45 001c 0E94 0000 		call f_InitSerApp
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 2
 
 
   46               	.LM10:
@@ -118,7 +118,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  100               	.LECIE0:
  101               	.LSFDE0:
  102 0010 0C00 0000 		.long	.LEFDE0-.LASFDE0
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 3
 
 
  103               	.LASFDE0:
@@ -178,7 +178,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  157 005e 01        		.byte	0x1
  158 005f 06        		.byte	0x6
  159 0060 04        		.uleb128 0x4
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 4
 
 
  160 0061 01        		.byte	0x1
@@ -238,7 +238,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  214 00d0 00        		.byte	0x0
  215 00d1 04        		.uleb128 0x4
  216 00d2 02        		.byte	0x2
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 5
 
 
  217 00d3 07        		.byte	0x7
@@ -298,7 +298,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  271 001f 24        		.uleb128 0x24
  272 0020 00        		.byte	0x0
  273 0021 0B        		.uleb128 0xb
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 6
 
 
  274 0022 0B        		.uleb128 0xb
@@ -358,7 +358,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  328 0058 07        		.uleb128 0x7
  329 0059 34        		.uleb128 0x34
  330 005a 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 7
 
 
  331 005b 03        		.uleb128 0x3
@@ -418,7 +418,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  385 0000 3300 0000 		.long	0x33
  386 0004 0200      		.word	0x2
  387 0006 0000 0000 		.long	.Ldebug_info0
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 8
 
 
  388 000a FE00 0000 		.long	0xfe
@@ -478,7 +478,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  431 0039 00        		.byte	0
  432 003a 00        		.byte	0x0
  433 003b 6B65 726E 		.string	"kernel.c"
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 9
 
 
  433      656C 2E63 
@@ -538,7 +538,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  482 009e 18        		.byte	0x18
  483 009f 00        		.byte	0x0
  484 00a0 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 10
 
 
  485 00a1 02        		.byte	0x2
@@ -598,7 +598,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  539 00f8 05        		.uleb128 0x5
  540 00f9 02        		.byte	0x2
  541 00fa 0000 0000 		.long	.LM20
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 11
 
 
  542 00fe 15        		.byte	0x15
@@ -636,94 +636,91 @@ GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 1
  561      676E 6564 
  561      2063 6861 
  561      7200 
- 562               	.LASF4:
- 563 0038 6C6F 6E67 		.string	"long unsigned int"
- 563      2075 6E73 
- 563      6967 6E65 
- 563      6420 696E 
- 563      7400 
- 564               	.LASF14:
- 565 004a 765F 5374 		.string	"v_StatReg"
- 565      6174 5265 
- 565      6700 
- 566               	.LASF8:
- 567 0054 7368 6F72 		.string	"short unsigned int"
- 567      7420 756E 
- 567      7369 676E 
- 567      6564 2069 
- 567      6E74 00
- 568               	.LASF15:
- 569 0067 474E 5520 		.string	"GNU C 4.3.3"
- 569      4320 342E 
- 569      332E 3300 
- 570               	.LASF19:
- 571 0073 6D61 696E 		.string	"main"
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 12
+ 562               	.LASF17:
+ 563 0038 5A3A 5C68 		.ascii	"Z:\\ho"
+ 563      6F
+ 564 003d 6D65 5C6D 		.string	"me\\mohammadreza\\temo\\Simple-AVR-OS-plus-some-improvement-\\avr_os"
+ 564      6F68 616D 
+ 564      6D61 6472 
+ 564      657A 615C 
+ 564      7465 6D6F 
+ 565               	.LASF4:
+ 566 007e 6C6F 6E67 		.string	"long unsigned int"
+ 566      2075 6E73 
+ 566      6967 6E65 
+ 566      6420 696E 
+ 566      7400 
+ 567               	.LASF14:
+ 568 0090 765F 5374 		.string	"v_StatReg"
+ 568      6174 5265 
+ 568      6700 
+ 569               	.LASF8:
+ 570 009a 7368 6F72 		.string	"short unsigned int"
+ 570      7420 756E 
+ 570      7369 676E 
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 12
 
 
- 571      00
- 572               	.LASF2:
- 573 0078 756E 7369 		.string	"unsigned int"
- 573      676E 6564 
- 573      2069 6E74 
- 573      00
- 574               	.LASF18:
- 575 0085 494E 5438 		.string	"INT8U"
- 575      5500 
- 576               	.LASF6:
- 577 008b 6C6F 6E67 		.string	"long long unsigned int"
- 577      206C 6F6E 
- 577      6720 756E 
- 577      7369 676E 
- 577      6564 2069 
- 578               	.LASF5:
- 579 00a2 6C6F 6E67 		.string	"long long int"
- 579      206C 6F6E 
- 579      6720 696E 
- 579      7400 
- 580               	.LASF7:
- 581 00b0 6368 6172 		.string	"char"
- 581      00
- 582               	.LASF17:
- 583 00b5 5A3A 5C68 		.ascii	"Z:\\home\\mohammadreza\\t"
- 583      6F6D 655C 
- 583      6D6F 6861 
- 583      6D6D 6164 
- 583      7265 7A61 
- 584 00cb 656D 6F5C 		.string	"emo\\Simple-AVR-OS-plus-some-improvement-\\avr16_CodeProj_Compiled"
- 584      5369 6D70 
- 584      6C65 2D41 
- 584      5652 2D4F 
- 584      532D 706C 
+ 570      6564 2069 
+ 570      6E74 00
+ 571               	.LASF15:
+ 572 00ad 474E 5520 		.string	"GNU C 4.3.3"
+ 572      4320 342E 
+ 572      332E 3300 
+ 573               	.LASF19:
+ 574 00b9 6D61 696E 		.string	"main"
+ 574      00
+ 575               	.LASF2:
+ 576 00be 756E 7369 		.string	"unsigned int"
+ 576      676E 6564 
+ 576      2069 6E74 
+ 576      00
+ 577               	.LASF18:
+ 578 00cb 494E 5438 		.string	"INT8U"
+ 578      5500 
+ 579               	.LASF6:
+ 580 00d1 6C6F 6E67 		.string	"long long unsigned int"
+ 580      206C 6F6E 
+ 580      6720 756E 
+ 580      7369 676E 
+ 580      6564 2069 
+ 581               	.LASF5:
+ 582 00e8 6C6F 6E67 		.string	"long long int"
+ 582      206C 6F6E 
+ 582      6720 696E 
+ 582      7400 
+ 583               	.LASF7:
+ 584 00f6 6368 6172 		.string	"char"
+ 584      00
  585               	.LASF9:
- 586 010c 7368 6F72 		.string	"short int"
+ 586 00fb 7368 6F72 		.string	"short int"
  586      7420 696E 
  586      7400 
  587               	.LASF3:
- 588 0116 6C6F 6E67 		.string	"long int"
+ 588 0105 6C6F 6E67 		.string	"long int"
  588      2069 6E74 
  588      00
  589               	.LASF0:
- 590 011f 7369 676E 		.string	"signed char"
+ 590 010e 7369 676E 		.string	"signed char"
  590      6564 2063 
  590      6861 7200 
  591               	.LASF12:
- 592 012b 6275 665F 		.string	"buf_g"
+ 592 011a 6275 665F 		.string	"buf_g"
  592      6700 
  593               	.global __do_copy_data
  594               	.global __do_clear_bss
-GAS LISTING C:\users\mohammadreza\Temp/ccVJ5zcj.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/ccjlVkGa.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 kernel.c
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:2      *ABS*:0000003f __SREG__
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:3      *ABS*:0000003e __SP_H__
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:4      *ABS*:0000003d __SP_L__
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:5      *ABS*:00000034 __CCP__
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:6      *ABS*:00000000 __tmp_reg__
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:7      *ABS*:00000001 __zero_reg__
-C:\users\mohammadreza\Temp/ccVJ5zcj.s:25     .text:00000000 main
+C:\users\mohammadreza\Temp/ccjlVkGa.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/ccjlVkGa.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/ccjlVkGa.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/ccjlVkGa.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/ccjlVkGa.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/ccjlVkGa.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/ccjlVkGa.s:25     .text:00000000 main
                             *COM*:00000001 v_SysStat
                             *COM*:00000001 v_StatReg
 
