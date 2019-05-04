@@ -125,7 +125,6 @@ void f_TaskDebugger(void)
 
 	if ( ( result = f_Uart_GetChar() ) != (-1) )
 	{
-	    f_Uart_PutStr("\ncode 128d\n");
 		ch = result & 0xff;
 		buf_debugentry[v_debugcnt] = ch;
 		v_debugcnt++;
@@ -139,7 +138,6 @@ void f_TaskDebugger(void)
 		else
 		{
 			f_Uart_PutChar(ch);
-			f_Uart_PutStr("\ncode 142d\n");
 			if ( ch == c_ENTER)
 			{
 			    f_Uart_PutStr("\ncode 145d\n");
@@ -159,7 +157,7 @@ void f_CheckSyntax(void)
 void f_ProcessCMD(void)
 {
 	INT8U idx;
-
+	f_Uart_PutStr("\ncode 160d\n");
 	f_Uart_PutStr("\n");
 	v_debugcnt = 0;
 	f_CheckSyntax();
@@ -167,6 +165,7 @@ void f_ProcessCMD(void)
 
 	while( (idx < c_CMDAVAIL) && (PRG_RDB(&lut_dbgcmd[idx]) != buf_debugentry[0]) )
 	{
+	    f_Uart_PutStr("\ncode 168d\n");
 		idx++;
 	}
 
