@@ -141,39 +141,47 @@ int main(void)
     for(;;)
     {
 			f_SysTick();
-			
-			#ifdef MOD_ADC8_ON	
+
+			#ifdef MOD_ADC8_ON
+        f_Uart_PutStr("\ncode 146k\n");
 			f_SysADC();
 			#endif
 			
 			#if defined (MOD_DEBUGGER_ON)
+        f_Uart_PutStr("\ncode 151k\n");
 			f_TaskDebugger();
 			#endif
 
 			#ifdef	MOD_SERAPP_ON
+        f_Uart_PutStr("\ncode 156k\n");
 			f_SerApp();
 			#endif
 			
             #ifdef MOD_SCARD_ON
+        f_Uart_PutStr("\ncode 161k\n");
             //f_SCard_CheckCardIn();
             #endif
 
 			#ifdef MOD_KEY44_ON			
+        f_Uart_PutStr("\ncode 166k\n");
 			if ( (v_key = f_GetKey()) != c_NOKEY) f_Uart_PutChar( v_key+'A');
 			#endif	
 			
 			#ifdef MOD_LCMCHAR_ON			
+        f_Uart_PutStr("\ncode 171k\n");
 			//if ( (v_key = f_GetKey()) != c_NOKEY) f_LCM_PutChar(v_key+'A');
 			#endif	
 			
 			if ( ( v_SysStat & (1 << b_AppTick) ) != 0)
 			{
+                f_Uart_PutStr("\ncode 177k\n");
 				v_SysStat &= ~(1 << b_AppTick);
 				f_Applic();
 				
 			}
 			
 			#ifdef DCFG_LOWPOW
+        f_Uart_PutStr("\ncode 184k\n");
 			asm("sleep"::);
 			#endif
 
