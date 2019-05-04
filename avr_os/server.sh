@@ -8,7 +8,7 @@ while true; do
     mkdir build.obj
     mkdir build.rom
     echo salam
-    echo make clean| wine cmd
+#    echo make clean| wine cmd
     echo make | wine cmd
     now=$(date +"%T")
     last_line=$(tail -1 watcher.out)
