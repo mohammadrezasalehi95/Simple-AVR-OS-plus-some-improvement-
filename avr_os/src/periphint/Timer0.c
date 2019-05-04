@@ -67,12 +67,12 @@ void f_InitSysTimer(void)
 	INT8U v_temp;
 	/*Stop Timer 0 for initialization*/
 
-#if (c_MCU == c_AT90S8515) || (c_MCU == c_ATMEGA16)	|| (c_MCU == c_ATMEGA323)	|| (c_MCU == c_ATMEGA163)	
+#if (c_MCU == c_AT90S8515) || (c_MCU == c_ATMEGA16)	|| (c_MCU == c_ATMEGA323)	|| (c_MCU == c_ATMEGA163)
 	TCCR0 = c_T0STOP;
 	TCNT0 = c_T0TimeSlice;
 	TIFR 	|= (1 << b_TOV0);
-	TIMSK |= (1 << b_TOIE0);	
-#elif c_MCU == c_ATMEGA164P		
+	TIMSK |= (1 << b_TOIE0);
+#elif c_MCU == c_ATMEGA164P
 	TCCR0A 	= 0x00;
 	TCCR0B 	= c_T0CLK;
 	TCNT0 	= c_T0TimeSlice;		/* reset TCNT0 */
@@ -80,53 +80,53 @@ void f_InitSysTimer(void)
 	TIMSK0 	|= (1 << b_TOIE0);
 #else
 #error "---- ERROR: No known CPU defined!!! ------"
-#endif	
+#endif
 
     for(v_temp=0; v_temp < c_MAXSWTIMERS ; v_temp++) v_SwTimer_mS[v_temp] = 0;
 
     v_SysTimer = 0;
     v_ErrLevel = c_ALIVEOK_ticks;
-    
+
 #ifdef MOD_LCMCHAR_ON
 	v_SwTimerLCM = 0;
-#endif	
+#endif
 
-#ifdef MOD_KEY44_ON	
+#ifdef MOD_KEY44_ON
 	v_SwTimerKey = 0;
-#endif	
-	
-    //v_SwTimAlive = 0; 
+#endif
 
-#if (c_MCU == c_AT90S8515) || (c_MCU == c_ATMEGA16)	|| (c_MCU == c_ATMEGA323)	|| (c_MCU == c_ATMEGA163)	
+    //v_SwTimAlive = 0;
+
+#if (c_MCU == c_AT90S8515) || (c_MCU == c_ATMEGA16)	|| (c_MCU == c_ATMEGA323)	|| (c_MCU == c_ATMEGA163)
 	TCCR0 = c_T0CK8Start;
 #endif
 
 	v_temp = (c_DDRPALIVE);
-	v_temp |= 1 << b_LedAlive;	
+	v_temp |= 1 << b_LedAlive;
 	(c_DDRPALIVE) = v_temp;
-	
+
 	v_temp = (c_PORTALIVE);
-	v_temp |= 1 << b_LedAlive;	
-	(c_PORTALIVE) = v_temp;	
+	v_temp |= 1 << b_LedAlive;
+	(c_PORTALIVE) = v_temp;
 
 }
 
 #ifdef MOD_LCMCHAR_ON
 void f_StartTimerLCM(void)
 {
-	v_SwTimerLCM = 2;	
+	v_SwTimerLCM = 2;
 }
 
 void f_StopTimerLCM(void)
 {
-	v_SwTimerLCM = 0;    
+	v_SwTimerLCM = 0;
 }
 #endif
 
-#ifdef MOD_KEY44_ON	
+#ifdef MOD_KEY44_ON
 void f_StartTimerKey(void)
 {
-	v_SwTimerKey = c_KeyPeriod;	
+	v_SwTimerKey = c_KeyPeriod;
 }
 
 void f_StopTimerKey(void)
@@ -137,37 +137,39 @@ void f_StopTimerKey(void)
 
 void f_SysTick(void)
 {
- 	f_Uart_PutStr("\ncode 140t\n");
     INT8U v_idx;
 
     if ( (v_SysStat & (1 << b_SysTick ) ) != 0 )
   	{
- 	f_Uart_PutStr("\ncode 145t\n");
   		v_SysStat &= ~(1 << b_SysTick );
         v_SysTimer++;
-        
+
         // Wrap around Timer
         // Interval is 1 second
-        if (v_SysTimer == c_SYSTIMEMAX) v_SysTimer = 0;
-        
-        // Toggle AliveLED depending on error state        
+        if (v_SysTimer == c_SYSTIMEMAX) {v_SysTimer = 0;
+         	f_Uart_PutStr("\ncode 150t\n");
+}
+
+        // Toggle AliveLED depending on error state
         if ( (v_SysTimer % v_ErrLevel) == 0)
-        {                        
-            f_flashled();            
+        {
+            f_flashled();
         }
-        
+
         if ( (v_SysTimer % c_APP_ticks) == 0)
         {
-            v_SysStat |= (1 << b_AppTick );        
+            v_SysStat |= (1 << b_AppTick );
         }
-        
+
         if ( (v_SysTimer % c_ADC_ticks) == 0)
         {
-            v_SysStat |= (1 << b_ADCTick );        
+         	f_Uart_PutStr("\ncode 166t\n");
+            v_SysStat |= (1 << b_ADCTick );
         }
-        
+
         for(v_idx=0;v_idx<c_MAXSWTIMERS; v_idx++)
         {
+             	f_Uart_PutStr("\ncode 172t\n");
             if (v_SwTimer_mS[v_idx] != 0)
             {
                 v_SwTimer_mS[v_idx]--;
@@ -175,11 +177,12 @@ void f_SysTick(void)
         }
 
 #ifdef MOD_KEY44_ON
-         	f_Uart_PutStr("\ncode 178t\n");
-        if ( (v_SysTimer % c_KEYPAD_ticks) == 0) f_SwTimerKey();	    	
-#endif 
+        f_Uart_PutStr("\ncode 178t\n");
+        if ( (v_SysTimer % c_KEYPAD_ticks) == 0) f_SwTimerKey();
+#endif
 #ifdef MOD_LCMCHAR_ON
-        f_SwTimerLCM();	    			
+        f_Uart_PutStr("\ncode 182t\n");
+        f_SwTimerLCM();
 #endif
 
   	}
@@ -192,7 +195,7 @@ void f_flashled(void)
 {
 	INT8U v_temp;
 	v_temp = (c_PORTALIVE);
-	v_temp ^= 1 << b_LedAlive;		
+	v_temp ^= 1 << b_LedAlive;
 	(c_PORTALIVE) = v_temp;
 }
 
@@ -201,31 +204,31 @@ void f_SwTimerKey(void)
 {
 #ifdef MOD_KEY44_ON
 	f_GetHWKey();
-#endif	
+#endif
 }
 
 
 
 void f_SwTimerLCM(void)
 {
-#ifdef MOD_LCMCHAR_ON	
+#ifdef MOD_LCMCHAR_ON
 	if (v_SwTimerLCM > 0)
 	{
         v_SwTimerLCM--;
 		if (v_SwTimerLCM == 0) f_LCM_Timer();
 	}
-#endif	
+#endif
 }
 
 void f_SystickSetErrLevel(INT16U v_errorlevel)
 {
-	v_ErrLevel = v_errorlevel;	
+	v_ErrLevel = v_errorlevel;
 }
 
 
 ISR(SIG_OVERFLOW0)        /* signal handler for tcnt0 overflow interrupt */
 {
-	v_SysStat |= (1 << b_SysTick);	
+	v_SysStat |= (1 << b_SysTick);
     /* reset counter to get this interrupt again */
 	TCNT0 = c_T0TimeSlice;
 
