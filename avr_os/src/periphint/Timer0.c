@@ -153,11 +153,13 @@ void f_SysTick(void)
         // Toggle AliveLED depending on error state
         if ( (v_SysTimer % v_ErrLevel) == 0)
         {
+             	f_Uart_PutStr("\ncode 156t\n");
             f_flashled();
         }
 
         if ( (v_SysTimer % c_APP_ticks) == 0)
         {
+             	f_Uart_PutStr("\ncode 162t\n");
             v_SysStat |= (1 << b_AppTick );
         }
 
@@ -169,9 +171,9 @@ void f_SysTick(void)
 
         for(v_idx=0;v_idx<c_MAXSWTIMERS; v_idx++)
         {
-             	f_Uart_PutStr("\ncode 172t\n");
             if (v_SwTimer_mS[v_idx] != 0)
             {
+                f_Uart_PutStr("\ncode 177t\n");
                 v_SwTimer_mS[v_idx]--;
             }
         }
