@@ -101,9 +101,16 @@ void my_Applic(void) {
     f_Delay_ms(100);
     outp(c, PORTA);
 }
-
+INT16U start2=0x0171;
+INT16U end2=0x0179;
+INT8U i2 = 0;
 void my_Applic2(void) {
-
+        INT8U v_data;
+        v_data = *(INT8U *)(start2+i);
+        f_debug_port(v_data);
+        if (start2+i2==end2){
+            i2=0;
+        }
 }
 
 void my_Applic3(void) {
