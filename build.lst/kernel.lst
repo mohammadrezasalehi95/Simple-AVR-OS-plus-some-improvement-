@@ -1,4 +1,4 @@
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
 
 
    1               		.file	"kernel.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 1
   39               	.LM4:
   40 000a 0E94 0000 		call f_ConfigSerial
   41               	.LM5:
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 2
 
 
   42 000e 0E94 0000 		call f_ConfigADC
@@ -118,690 +118,699 @@ GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 1
   96               	.LM22:
   97 006c 812F      		mov r24,r17
   98 006e 0E94 0000 		call applications_reducer
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 3
 
 
   99               	.LM23:
  100 0072 1F5F      		subi r17,lo8(-(1))
  101 0074 1830      		cpi r17,lo8(8)
  102 0076 01F4      		brne .L3
- 103 0078 00C0      		rjmp .L8
- 104               	.LBE2:
- 105               	.LFE6:
- 106               		.size	main, .-main
- 107               		.comm v_SysStat,1,1
- 108               		.comm v_StatReg,1,1
- 109               		.section	.debug_frame,"",@progbits
- 110               	.Lframe0:
- 111 0000 0C00 0000 		.long	.LECIE0-.LSCIE0
- 112               	.LSCIE0:
- 113 0004 FFFF FFFF 		.long	0xffffffff
- 114 0008 01        		.byte	0x1
- 115 0009 00        		.string	""
- 116 000a 01        		.uleb128 0x1
- 117 000b 7F        		.sleb128 -1
- 118 000c 24        		.byte	0x24
- 119 000d 0C        		.byte	0xc
- 120 000e 20        		.uleb128 0x20
- 121 000f 00        		.uleb128 0x0
- 122               		.p2align	2
- 123               	.LECIE0:
- 124               	.LSFDE0:
- 125 0010 0C00 0000 		.long	.LEFDE0-.LASFDE0
- 126               	.LASFDE0:
- 127 0014 0000 0000 		.long	.Lframe0
- 128 0018 0000 0000 		.long	.LFB6
- 129 001c 7A00 0000 		.long	.LFE6-.LFB6
- 130               		.p2align	2
- 131               	.LEFDE0:
- 132               		.text
- 133               	.Letext0:
- 134               		.section	.debug_info
- 135 0000 0F01 0000 		.long	0x10f
- 136 0004 0200      		.word	0x2
- 137 0006 0000 0000 		.long	.Ldebug_abbrev0
- 138 000a 04        		.byte	0x4
- 139 000b 01        		.uleb128 0x1
- 140 000c 0000 0000 		.long	.LASF15
- 141 0010 01        		.byte	0x1
- 142 0011 0000 0000 		.long	.LASF16
- 143 0015 0000 0000 		.long	.LASF17
- 144 0019 0000 0000 		.long	.Ltext0
- 145 001d 0000 0000 		.long	.Letext0
- 146 0021 0000 0000 		.long	.Ldebug_line0
- 147 0025 02        		.uleb128 0x2
- 148 0026 01        		.byte	0x1
- 149 0027 06        		.byte	0x6
- 150 0028 0000 0000 		.long	.LASF0
- 151 002c 02        		.uleb128 0x2
- 152 002d 01        		.byte	0x1
- 153 002e 08        		.byte	0x8
- 154 002f 0000 0000 		.long	.LASF1
- 155 0033 03        		.uleb128 0x3
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 4
+ 103               	.LM24:
+ 104 0078 88EE      		ldi r24,lo8(1000)
+ 105 007a 93E0      		ldi r25,hi8(1000)
+ 106 007c 0E94 0000 		call f_Delay_ms
+ 107 0080 00C0      		rjmp .L8
+ 108               	.LBE2:
+ 109               	.LFE6:
+ 110               		.size	main, .-main
+ 111               		.comm v_SysStat,1,1
+ 112               		.comm v_StatReg,1,1
+ 113               		.section	.debug_frame,"",@progbits
+ 114               	.Lframe0:
+ 115 0000 0C00 0000 		.long	.LECIE0-.LSCIE0
+ 116               	.LSCIE0:
+ 117 0004 FFFF FFFF 		.long	0xffffffff
+ 118 0008 01        		.byte	0x1
+ 119 0009 00        		.string	""
+ 120 000a 01        		.uleb128 0x1
+ 121 000b 7F        		.sleb128 -1
+ 122 000c 24        		.byte	0x24
+ 123 000d 0C        		.byte	0xc
+ 124 000e 20        		.uleb128 0x20
+ 125 000f 00        		.uleb128 0x0
+ 126               		.p2align	2
+ 127               	.LECIE0:
+ 128               	.LSFDE0:
+ 129 0010 0C00 0000 		.long	.LEFDE0-.LASFDE0
+ 130               	.LASFDE0:
+ 131 0014 0000 0000 		.long	.Lframe0
+ 132 0018 0000 0000 		.long	.LFB6
+ 133 001c 8200 0000 		.long	.LFE6-.LFB6
+ 134               		.p2align	2
+ 135               	.LEFDE0:
+ 136               		.text
+ 137               	.Letext0:
+ 138               		.section	.debug_info
+ 139 0000 0F01 0000 		.long	0x10f
+ 140 0004 0200      		.word	0x2
+ 141 0006 0000 0000 		.long	.Ldebug_abbrev0
+ 142 000a 04        		.byte	0x4
+ 143 000b 01        		.uleb128 0x1
+ 144 000c 0000 0000 		.long	.LASF15
+ 145 0010 01        		.byte	0x1
+ 146 0011 0000 0000 		.long	.LASF16
+ 147 0015 0000 0000 		.long	.LASF17
+ 148 0019 0000 0000 		.long	.Ltext0
+ 149 001d 0000 0000 		.long	.Letext0
+ 150 0021 0000 0000 		.long	.Ldebug_line0
+ 151 0025 02        		.uleb128 0x2
+ 152 0026 01        		.byte	0x1
+ 153 0027 06        		.byte	0x6
+ 154 0028 0000 0000 		.long	.LASF0
+ 155 002c 02        		.uleb128 0x2
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 4
 
 
- 156 0034 02        		.byte	0x2
- 157 0035 05        		.byte	0x5
- 158 0036 696E 7400 		.string	"int"
- 159 003a 02        		.uleb128 0x2
- 160 003b 02        		.byte	0x2
- 161 003c 07        		.byte	0x7
- 162 003d 0000 0000 		.long	.LASF2
- 163 0041 02        		.uleb128 0x2
- 164 0042 04        		.byte	0x4
- 165 0043 05        		.byte	0x5
- 166 0044 0000 0000 		.long	.LASF3
- 167 0048 02        		.uleb128 0x2
- 168 0049 04        		.byte	0x4
- 169 004a 07        		.byte	0x7
- 170 004b 0000 0000 		.long	.LASF4
- 171 004f 02        		.uleb128 0x2
- 172 0050 08        		.byte	0x8
- 173 0051 05        		.byte	0x5
- 174 0052 0000 0000 		.long	.LASF5
- 175 0056 02        		.uleb128 0x2
- 176 0057 08        		.byte	0x8
- 177 0058 07        		.byte	0x7
- 178 0059 0000 0000 		.long	.LASF6
- 179 005d 04        		.uleb128 0x4
- 180 005e 01        		.byte	0x1
- 181 005f 06        		.byte	0x6
- 182 0060 04        		.uleb128 0x4
- 183 0061 01        		.byte	0x1
- 184 0062 08        		.byte	0x8
- 185 0063 02        		.uleb128 0x2
- 186 0064 01        		.byte	0x1
- 187 0065 06        		.byte	0x6
- 188 0066 0000 0000 		.long	.LASF7
- 189 006a 02        		.uleb128 0x2
- 190 006b 02        		.byte	0x2
- 191 006c 07        		.byte	0x7
- 192 006d 0000 0000 		.long	.LASF8
- 193 0071 02        		.uleb128 0x2
- 194 0072 02        		.byte	0x2
- 195 0073 05        		.byte	0x5
- 196 0074 0000 0000 		.long	.LASF9
- 197 0078 05        		.uleb128 0x5
- 198 0079 0000 0000 		.long	.LASF18
- 199 007d 02        		.byte	0x2
- 200 007e 0D        		.byte	0xd
- 201 007f 2C00 0000 		.long	0x2c
- 202 0083 06        		.uleb128 0x6
- 203 0084 01        		.byte	0x1
- 204 0085 0000 0000 		.long	.LASF19
- 205 0089 01        		.byte	0x1
- 206 008a 43        		.byte	0x43
- 207 008b 01        		.byte	0x1
- 208 008c 3300 0000 		.long	0x33
- 209 0090 0000 0000 		.long	.LFB6
- 210 0094 0000 0000 		.long	.LFE6
- 211 0098 02        		.byte	0x2
- 212 0099 90        		.byte	0x90
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 5
+ 156 002d 01        		.byte	0x1
+ 157 002e 08        		.byte	0x8
+ 158 002f 0000 0000 		.long	.LASF1
+ 159 0033 03        		.uleb128 0x3
+ 160 0034 02        		.byte	0x2
+ 161 0035 05        		.byte	0x5
+ 162 0036 696E 7400 		.string	"int"
+ 163 003a 02        		.uleb128 0x2
+ 164 003b 02        		.byte	0x2
+ 165 003c 07        		.byte	0x7
+ 166 003d 0000 0000 		.long	.LASF2
+ 167 0041 02        		.uleb128 0x2
+ 168 0042 04        		.byte	0x4
+ 169 0043 05        		.byte	0x5
+ 170 0044 0000 0000 		.long	.LASF3
+ 171 0048 02        		.uleb128 0x2
+ 172 0049 04        		.byte	0x4
+ 173 004a 07        		.byte	0x7
+ 174 004b 0000 0000 		.long	.LASF4
+ 175 004f 02        		.uleb128 0x2
+ 176 0050 08        		.byte	0x8
+ 177 0051 05        		.byte	0x5
+ 178 0052 0000 0000 		.long	.LASF5
+ 179 0056 02        		.uleb128 0x2
+ 180 0057 08        		.byte	0x8
+ 181 0058 07        		.byte	0x7
+ 182 0059 0000 0000 		.long	.LASF6
+ 183 005d 04        		.uleb128 0x4
+ 184 005e 01        		.byte	0x1
+ 185 005f 06        		.byte	0x6
+ 186 0060 04        		.uleb128 0x4
+ 187 0061 01        		.byte	0x1
+ 188 0062 08        		.byte	0x8
+ 189 0063 02        		.uleb128 0x2
+ 190 0064 01        		.byte	0x1
+ 191 0065 06        		.byte	0x6
+ 192 0066 0000 0000 		.long	.LASF7
+ 193 006a 02        		.uleb128 0x2
+ 194 006b 02        		.byte	0x2
+ 195 006c 07        		.byte	0x7
+ 196 006d 0000 0000 		.long	.LASF8
+ 197 0071 02        		.uleb128 0x2
+ 198 0072 02        		.byte	0x2
+ 199 0073 05        		.byte	0x5
+ 200 0074 0000 0000 		.long	.LASF9
+ 201 0078 05        		.uleb128 0x5
+ 202 0079 0000 0000 		.long	.LASF18
+ 203 007d 02        		.byte	0x2
+ 204 007e 0D        		.byte	0xd
+ 205 007f 2C00 0000 		.long	0x2c
+ 206 0083 06        		.uleb128 0x6
+ 207 0084 01        		.byte	0x1
+ 208 0085 0000 0000 		.long	.LASF19
+ 209 0089 01        		.byte	0x1
+ 210 008a 43        		.byte	0x43
+ 211 008b 01        		.byte	0x1
+ 212 008c 3300 0000 		.long	0x33
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 5
 
 
- 213 009a 20        		.uleb128 0x20
- 214 009b D600 0000 		.long	0xd6
- 215 009f 07        		.uleb128 0x7
- 216 00a0 0000 0000 		.long	.LASF10
- 217 00a4 01        		.byte	0x1
- 218 00a5 45        		.byte	0x45
- 219 00a6 7800 0000 		.long	0x78
- 220 00aa 07        		.uleb128 0x7
- 221 00ab 0000 0000 		.long	.LASF11
- 222 00af 01        		.byte	0x1
- 223 00b0 46        		.byte	0x46
- 224 00b1 7800 0000 		.long	0x78
- 225 00b5 07        		.uleb128 0x7
- 226 00b6 0000 0000 		.long	.LASF12
- 227 00ba 01        		.byte	0x1
- 228 00bb 47        		.byte	0x47
- 229 00bc D600 0000 		.long	0xd6
- 230 00c0 08        		.uleb128 0x8
- 231 00c1 0000 0000 		.long	.LBB2
- 232 00c5 0000 0000 		.long	.LBE2
- 233 00c9 09        		.uleb128 0x9
- 234 00ca 6900      		.string	"i"
- 235 00cc 01        		.byte	0x1
- 236 00cd AC        		.byte	0xac
- 237 00ce 7800 0000 		.long	0x78
- 238 00d2 01        		.byte	0x1
- 239 00d3 61        		.byte	0x61
- 240 00d4 00        		.byte	0x0
- 241 00d5 00        		.byte	0x0
- 242 00d6 0A        		.uleb128 0xa
- 243 00d7 7800 0000 		.long	0x78
- 244 00db E600 0000 		.long	0xe6
- 245 00df 0B        		.uleb128 0xb
- 246 00e0 E600 0000 		.long	0xe6
- 247 00e4 08        		.byte	0x8
- 248 00e5 00        		.byte	0x0
- 249 00e6 04        		.uleb128 0x4
- 250 00e7 02        		.byte	0x2
- 251 00e8 07        		.byte	0x7
- 252 00e9 0C        		.uleb128 0xc
- 253 00ea 0000 0000 		.long	.LASF13
- 254 00ee 01        		.byte	0x1
- 255 00ef 3D        		.byte	0x3d
- 256 00f0 FB00 0000 		.long	0xfb
- 257 00f4 01        		.byte	0x1
- 258 00f5 05        		.byte	0x5
- 259 00f6 03        		.byte	0x3
- 260 00f7 0000 0000 		.long	v_SysStat
- 261 00fb 0D        		.uleb128 0xd
- 262 00fc 7800 0000 		.long	0x78
- 263 0100 0C        		.uleb128 0xc
- 264 0101 0000 0000 		.long	.LASF14
- 265 0105 01        		.byte	0x1
- 266 0106 3E        		.byte	0x3e
- 267 0107 FB00 0000 		.long	0xfb
- 268 010b 01        		.byte	0x1
- 269 010c 05        		.byte	0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 6
+ 213 0090 0000 0000 		.long	.LFB6
+ 214 0094 0000 0000 		.long	.LFE6
+ 215 0098 02        		.byte	0x2
+ 216 0099 90        		.byte	0x90
+ 217 009a 20        		.uleb128 0x20
+ 218 009b D600 0000 		.long	0xd6
+ 219 009f 07        		.uleb128 0x7
+ 220 00a0 0000 0000 		.long	.LASF10
+ 221 00a4 01        		.byte	0x1
+ 222 00a5 45        		.byte	0x45
+ 223 00a6 7800 0000 		.long	0x78
+ 224 00aa 07        		.uleb128 0x7
+ 225 00ab 0000 0000 		.long	.LASF11
+ 226 00af 01        		.byte	0x1
+ 227 00b0 46        		.byte	0x46
+ 228 00b1 7800 0000 		.long	0x78
+ 229 00b5 07        		.uleb128 0x7
+ 230 00b6 0000 0000 		.long	.LASF12
+ 231 00ba 01        		.byte	0x1
+ 232 00bb 47        		.byte	0x47
+ 233 00bc D600 0000 		.long	0xd6
+ 234 00c0 08        		.uleb128 0x8
+ 235 00c1 0000 0000 		.long	.LBB2
+ 236 00c5 0000 0000 		.long	.LBE2
+ 237 00c9 09        		.uleb128 0x9
+ 238 00ca 6900      		.string	"i"
+ 239 00cc 01        		.byte	0x1
+ 240 00cd AC        		.byte	0xac
+ 241 00ce 7800 0000 		.long	0x78
+ 242 00d2 01        		.byte	0x1
+ 243 00d3 61        		.byte	0x61
+ 244 00d4 00        		.byte	0x0
+ 245 00d5 00        		.byte	0x0
+ 246 00d6 0A        		.uleb128 0xa
+ 247 00d7 7800 0000 		.long	0x78
+ 248 00db E600 0000 		.long	0xe6
+ 249 00df 0B        		.uleb128 0xb
+ 250 00e0 E600 0000 		.long	0xe6
+ 251 00e4 08        		.byte	0x8
+ 252 00e5 00        		.byte	0x0
+ 253 00e6 04        		.uleb128 0x4
+ 254 00e7 02        		.byte	0x2
+ 255 00e8 07        		.byte	0x7
+ 256 00e9 0C        		.uleb128 0xc
+ 257 00ea 0000 0000 		.long	.LASF13
+ 258 00ee 01        		.byte	0x1
+ 259 00ef 3D        		.byte	0x3d
+ 260 00f0 FB00 0000 		.long	0xfb
+ 261 00f4 01        		.byte	0x1
+ 262 00f5 05        		.byte	0x5
+ 263 00f6 03        		.byte	0x3
+ 264 00f7 0000 0000 		.long	v_SysStat
+ 265 00fb 0D        		.uleb128 0xd
+ 266 00fc 7800 0000 		.long	0x78
+ 267 0100 0C        		.uleb128 0xc
+ 268 0101 0000 0000 		.long	.LASF14
+ 269 0105 01        		.byte	0x1
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 6
 
 
- 270 010d 03        		.byte	0x3
- 271 010e 0000 0000 		.long	v_StatReg
- 272 0112 00        		.byte	0x0
- 273               		.section	.debug_abbrev
- 274 0000 01        		.uleb128 0x1
- 275 0001 11        		.uleb128 0x11
- 276 0002 01        		.byte	0x1
- 277 0003 25        		.uleb128 0x25
- 278 0004 0E        		.uleb128 0xe
- 279 0005 13        		.uleb128 0x13
- 280 0006 0B        		.uleb128 0xb
- 281 0007 03        		.uleb128 0x3
- 282 0008 0E        		.uleb128 0xe
- 283 0009 1B        		.uleb128 0x1b
- 284 000a 0E        		.uleb128 0xe
- 285 000b 11        		.uleb128 0x11
- 286 000c 01        		.uleb128 0x1
- 287 000d 12        		.uleb128 0x12
- 288 000e 01        		.uleb128 0x1
- 289 000f 10        		.uleb128 0x10
- 290 0010 06        		.uleb128 0x6
- 291 0011 00        		.byte	0x0
- 292 0012 00        		.byte	0x0
- 293 0013 02        		.uleb128 0x2
- 294 0014 24        		.uleb128 0x24
- 295 0015 00        		.byte	0x0
- 296 0016 0B        		.uleb128 0xb
- 297 0017 0B        		.uleb128 0xb
- 298 0018 3E        		.uleb128 0x3e
- 299 0019 0B        		.uleb128 0xb
- 300 001a 03        		.uleb128 0x3
- 301 001b 0E        		.uleb128 0xe
- 302 001c 00        		.byte	0x0
- 303 001d 00        		.byte	0x0
- 304 001e 03        		.uleb128 0x3
- 305 001f 24        		.uleb128 0x24
- 306 0020 00        		.byte	0x0
- 307 0021 0B        		.uleb128 0xb
- 308 0022 0B        		.uleb128 0xb
- 309 0023 3E        		.uleb128 0x3e
- 310 0024 0B        		.uleb128 0xb
- 311 0025 03        		.uleb128 0x3
- 312 0026 08        		.uleb128 0x8
- 313 0027 00        		.byte	0x0
- 314 0028 00        		.byte	0x0
- 315 0029 04        		.uleb128 0x4
- 316 002a 24        		.uleb128 0x24
- 317 002b 00        		.byte	0x0
- 318 002c 0B        		.uleb128 0xb
- 319 002d 0B        		.uleb128 0xb
- 320 002e 3E        		.uleb128 0x3e
- 321 002f 0B        		.uleb128 0xb
- 322 0030 00        		.byte	0x0
- 323 0031 00        		.byte	0x0
- 324 0032 05        		.uleb128 0x5
- 325 0033 16        		.uleb128 0x16
- 326 0034 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 7
+ 270 0106 3E        		.byte	0x3e
+ 271 0107 FB00 0000 		.long	0xfb
+ 272 010b 01        		.byte	0x1
+ 273 010c 05        		.byte	0x5
+ 274 010d 03        		.byte	0x3
+ 275 010e 0000 0000 		.long	v_StatReg
+ 276 0112 00        		.byte	0x0
+ 277               		.section	.debug_abbrev
+ 278 0000 01        		.uleb128 0x1
+ 279 0001 11        		.uleb128 0x11
+ 280 0002 01        		.byte	0x1
+ 281 0003 25        		.uleb128 0x25
+ 282 0004 0E        		.uleb128 0xe
+ 283 0005 13        		.uleb128 0x13
+ 284 0006 0B        		.uleb128 0xb
+ 285 0007 03        		.uleb128 0x3
+ 286 0008 0E        		.uleb128 0xe
+ 287 0009 1B        		.uleb128 0x1b
+ 288 000a 0E        		.uleb128 0xe
+ 289 000b 11        		.uleb128 0x11
+ 290 000c 01        		.uleb128 0x1
+ 291 000d 12        		.uleb128 0x12
+ 292 000e 01        		.uleb128 0x1
+ 293 000f 10        		.uleb128 0x10
+ 294 0010 06        		.uleb128 0x6
+ 295 0011 00        		.byte	0x0
+ 296 0012 00        		.byte	0x0
+ 297 0013 02        		.uleb128 0x2
+ 298 0014 24        		.uleb128 0x24
+ 299 0015 00        		.byte	0x0
+ 300 0016 0B        		.uleb128 0xb
+ 301 0017 0B        		.uleb128 0xb
+ 302 0018 3E        		.uleb128 0x3e
+ 303 0019 0B        		.uleb128 0xb
+ 304 001a 03        		.uleb128 0x3
+ 305 001b 0E        		.uleb128 0xe
+ 306 001c 00        		.byte	0x0
+ 307 001d 00        		.byte	0x0
+ 308 001e 03        		.uleb128 0x3
+ 309 001f 24        		.uleb128 0x24
+ 310 0020 00        		.byte	0x0
+ 311 0021 0B        		.uleb128 0xb
+ 312 0022 0B        		.uleb128 0xb
+ 313 0023 3E        		.uleb128 0x3e
+ 314 0024 0B        		.uleb128 0xb
+ 315 0025 03        		.uleb128 0x3
+ 316 0026 08        		.uleb128 0x8
+ 317 0027 00        		.byte	0x0
+ 318 0028 00        		.byte	0x0
+ 319 0029 04        		.uleb128 0x4
+ 320 002a 24        		.uleb128 0x24
+ 321 002b 00        		.byte	0x0
+ 322 002c 0B        		.uleb128 0xb
+ 323 002d 0B        		.uleb128 0xb
+ 324 002e 3E        		.uleb128 0x3e
+ 325 002f 0B        		.uleb128 0xb
+ 326 0030 00        		.byte	0x0
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 7
 
 
- 327 0035 03        		.uleb128 0x3
- 328 0036 0E        		.uleb128 0xe
- 329 0037 3A        		.uleb128 0x3a
- 330 0038 0B        		.uleb128 0xb
- 331 0039 3B        		.uleb128 0x3b
- 332 003a 0B        		.uleb128 0xb
- 333 003b 49        		.uleb128 0x49
- 334 003c 13        		.uleb128 0x13
- 335 003d 00        		.byte	0x0
- 336 003e 00        		.byte	0x0
- 337 003f 06        		.uleb128 0x6
- 338 0040 2E        		.uleb128 0x2e
- 339 0041 01        		.byte	0x1
- 340 0042 3F        		.uleb128 0x3f
- 341 0043 0C        		.uleb128 0xc
- 342 0044 03        		.uleb128 0x3
- 343 0045 0E        		.uleb128 0xe
- 344 0046 3A        		.uleb128 0x3a
- 345 0047 0B        		.uleb128 0xb
- 346 0048 3B        		.uleb128 0x3b
- 347 0049 0B        		.uleb128 0xb
- 348 004a 27        		.uleb128 0x27
- 349 004b 0C        		.uleb128 0xc
- 350 004c 49        		.uleb128 0x49
- 351 004d 13        		.uleb128 0x13
- 352 004e 11        		.uleb128 0x11
- 353 004f 01        		.uleb128 0x1
- 354 0050 12        		.uleb128 0x12
- 355 0051 01        		.uleb128 0x1
- 356 0052 40        		.uleb128 0x40
- 357 0053 0A        		.uleb128 0xa
- 358 0054 01        		.uleb128 0x1
- 359 0055 13        		.uleb128 0x13
- 360 0056 00        		.byte	0x0
- 361 0057 00        		.byte	0x0
- 362 0058 07        		.uleb128 0x7
- 363 0059 34        		.uleb128 0x34
- 364 005a 00        		.byte	0x0
- 365 005b 03        		.uleb128 0x3
- 366 005c 0E        		.uleb128 0xe
- 367 005d 3A        		.uleb128 0x3a
- 368 005e 0B        		.uleb128 0xb
- 369 005f 3B        		.uleb128 0x3b
- 370 0060 0B        		.uleb128 0xb
- 371 0061 49        		.uleb128 0x49
- 372 0062 13        		.uleb128 0x13
- 373 0063 00        		.byte	0x0
- 374 0064 00        		.byte	0x0
- 375 0065 08        		.uleb128 0x8
- 376 0066 0B        		.uleb128 0xb
- 377 0067 01        		.byte	0x1
- 378 0068 11        		.uleb128 0x11
- 379 0069 01        		.uleb128 0x1
- 380 006a 12        		.uleb128 0x12
- 381 006b 01        		.uleb128 0x1
- 382 006c 00        		.byte	0x0
- 383 006d 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 8
+ 327 0031 00        		.byte	0x0
+ 328 0032 05        		.uleb128 0x5
+ 329 0033 16        		.uleb128 0x16
+ 330 0034 00        		.byte	0x0
+ 331 0035 03        		.uleb128 0x3
+ 332 0036 0E        		.uleb128 0xe
+ 333 0037 3A        		.uleb128 0x3a
+ 334 0038 0B        		.uleb128 0xb
+ 335 0039 3B        		.uleb128 0x3b
+ 336 003a 0B        		.uleb128 0xb
+ 337 003b 49        		.uleb128 0x49
+ 338 003c 13        		.uleb128 0x13
+ 339 003d 00        		.byte	0x0
+ 340 003e 00        		.byte	0x0
+ 341 003f 06        		.uleb128 0x6
+ 342 0040 2E        		.uleb128 0x2e
+ 343 0041 01        		.byte	0x1
+ 344 0042 3F        		.uleb128 0x3f
+ 345 0043 0C        		.uleb128 0xc
+ 346 0044 03        		.uleb128 0x3
+ 347 0045 0E        		.uleb128 0xe
+ 348 0046 3A        		.uleb128 0x3a
+ 349 0047 0B        		.uleb128 0xb
+ 350 0048 3B        		.uleb128 0x3b
+ 351 0049 0B        		.uleb128 0xb
+ 352 004a 27        		.uleb128 0x27
+ 353 004b 0C        		.uleb128 0xc
+ 354 004c 49        		.uleb128 0x49
+ 355 004d 13        		.uleb128 0x13
+ 356 004e 11        		.uleb128 0x11
+ 357 004f 01        		.uleb128 0x1
+ 358 0050 12        		.uleb128 0x12
+ 359 0051 01        		.uleb128 0x1
+ 360 0052 40        		.uleb128 0x40
+ 361 0053 0A        		.uleb128 0xa
+ 362 0054 01        		.uleb128 0x1
+ 363 0055 13        		.uleb128 0x13
+ 364 0056 00        		.byte	0x0
+ 365 0057 00        		.byte	0x0
+ 366 0058 07        		.uleb128 0x7
+ 367 0059 34        		.uleb128 0x34
+ 368 005a 00        		.byte	0x0
+ 369 005b 03        		.uleb128 0x3
+ 370 005c 0E        		.uleb128 0xe
+ 371 005d 3A        		.uleb128 0x3a
+ 372 005e 0B        		.uleb128 0xb
+ 373 005f 3B        		.uleb128 0x3b
+ 374 0060 0B        		.uleb128 0xb
+ 375 0061 49        		.uleb128 0x49
+ 376 0062 13        		.uleb128 0x13
+ 377 0063 00        		.byte	0x0
+ 378 0064 00        		.byte	0x0
+ 379 0065 08        		.uleb128 0x8
+ 380 0066 0B        		.uleb128 0xb
+ 381 0067 01        		.byte	0x1
+ 382 0068 11        		.uleb128 0x11
+ 383 0069 01        		.uleb128 0x1
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 8
 
 
- 384 006e 09        		.uleb128 0x9
- 385 006f 34        		.uleb128 0x34
- 386 0070 00        		.byte	0x0
- 387 0071 03        		.uleb128 0x3
- 388 0072 08        		.uleb128 0x8
- 389 0073 3A        		.uleb128 0x3a
- 390 0074 0B        		.uleb128 0xb
- 391 0075 3B        		.uleb128 0x3b
- 392 0076 0B        		.uleb128 0xb
- 393 0077 49        		.uleb128 0x49
- 394 0078 13        		.uleb128 0x13
- 395 0079 02        		.uleb128 0x2
- 396 007a 0A        		.uleb128 0xa
- 397 007b 00        		.byte	0x0
- 398 007c 00        		.byte	0x0
- 399 007d 0A        		.uleb128 0xa
- 400 007e 01        		.uleb128 0x1
- 401 007f 01        		.byte	0x1
- 402 0080 49        		.uleb128 0x49
- 403 0081 13        		.uleb128 0x13
- 404 0082 01        		.uleb128 0x1
- 405 0083 13        		.uleb128 0x13
- 406 0084 00        		.byte	0x0
- 407 0085 00        		.byte	0x0
- 408 0086 0B        		.uleb128 0xb
- 409 0087 21        		.uleb128 0x21
- 410 0088 00        		.byte	0x0
- 411 0089 49        		.uleb128 0x49
- 412 008a 13        		.uleb128 0x13
- 413 008b 2F        		.uleb128 0x2f
- 414 008c 0B        		.uleb128 0xb
- 415 008d 00        		.byte	0x0
- 416 008e 00        		.byte	0x0
- 417 008f 0C        		.uleb128 0xc
- 418 0090 34        		.uleb128 0x34
- 419 0091 00        		.byte	0x0
- 420 0092 03        		.uleb128 0x3
- 421 0093 0E        		.uleb128 0xe
- 422 0094 3A        		.uleb128 0x3a
- 423 0095 0B        		.uleb128 0xb
- 424 0096 3B        		.uleb128 0x3b
- 425 0097 0B        		.uleb128 0xb
- 426 0098 49        		.uleb128 0x49
- 427 0099 13        		.uleb128 0x13
- 428 009a 3F        		.uleb128 0x3f
- 429 009b 0C        		.uleb128 0xc
- 430 009c 02        		.uleb128 0x2
- 431 009d 0A        		.uleb128 0xa
- 432 009e 00        		.byte	0x0
- 433 009f 00        		.byte	0x0
- 434 00a0 0D        		.uleb128 0xd
- 435 00a1 35        		.uleb128 0x35
- 436 00a2 00        		.byte	0x0
- 437 00a3 49        		.uleb128 0x49
- 438 00a4 13        		.uleb128 0x13
- 439 00a5 00        		.byte	0x0
- 440 00a6 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 9
+ 384 006a 12        		.uleb128 0x12
+ 385 006b 01        		.uleb128 0x1
+ 386 006c 00        		.byte	0x0
+ 387 006d 00        		.byte	0x0
+ 388 006e 09        		.uleb128 0x9
+ 389 006f 34        		.uleb128 0x34
+ 390 0070 00        		.byte	0x0
+ 391 0071 03        		.uleb128 0x3
+ 392 0072 08        		.uleb128 0x8
+ 393 0073 3A        		.uleb128 0x3a
+ 394 0074 0B        		.uleb128 0xb
+ 395 0075 3B        		.uleb128 0x3b
+ 396 0076 0B        		.uleb128 0xb
+ 397 0077 49        		.uleb128 0x49
+ 398 0078 13        		.uleb128 0x13
+ 399 0079 02        		.uleb128 0x2
+ 400 007a 0A        		.uleb128 0xa
+ 401 007b 00        		.byte	0x0
+ 402 007c 00        		.byte	0x0
+ 403 007d 0A        		.uleb128 0xa
+ 404 007e 01        		.uleb128 0x1
+ 405 007f 01        		.byte	0x1
+ 406 0080 49        		.uleb128 0x49
+ 407 0081 13        		.uleb128 0x13
+ 408 0082 01        		.uleb128 0x1
+ 409 0083 13        		.uleb128 0x13
+ 410 0084 00        		.byte	0x0
+ 411 0085 00        		.byte	0x0
+ 412 0086 0B        		.uleb128 0xb
+ 413 0087 21        		.uleb128 0x21
+ 414 0088 00        		.byte	0x0
+ 415 0089 49        		.uleb128 0x49
+ 416 008a 13        		.uleb128 0x13
+ 417 008b 2F        		.uleb128 0x2f
+ 418 008c 0B        		.uleb128 0xb
+ 419 008d 00        		.byte	0x0
+ 420 008e 00        		.byte	0x0
+ 421 008f 0C        		.uleb128 0xc
+ 422 0090 34        		.uleb128 0x34
+ 423 0091 00        		.byte	0x0
+ 424 0092 03        		.uleb128 0x3
+ 425 0093 0E        		.uleb128 0xe
+ 426 0094 3A        		.uleb128 0x3a
+ 427 0095 0B        		.uleb128 0xb
+ 428 0096 3B        		.uleb128 0x3b
+ 429 0097 0B        		.uleb128 0xb
+ 430 0098 49        		.uleb128 0x49
+ 431 0099 13        		.uleb128 0x13
+ 432 009a 3F        		.uleb128 0x3f
+ 433 009b 0C        		.uleb128 0xc
+ 434 009c 02        		.uleb128 0x2
+ 435 009d 0A        		.uleb128 0xa
+ 436 009e 00        		.byte	0x0
+ 437 009f 00        		.byte	0x0
+ 438 00a0 0D        		.uleb128 0xd
+ 439 00a1 35        		.uleb128 0x35
+ 440 00a2 00        		.byte	0x0
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 9
 
 
- 441 00a7 00        		.byte	0x0
- 442               		.section	.debug_pubnames,"",@progbits
- 443 0000 3300 0000 		.long	0x33
- 444 0004 0200      		.word	0x2
- 445 0006 0000 0000 		.long	.Ldebug_info0
- 446 000a 1301 0000 		.long	0x113
- 447 000e 8300 0000 		.long	0x83
- 448 0012 6D61 696E 		.string	"main"
- 448      00
- 449 0017 E900 0000 		.long	0xe9
- 450 001b 765F 5379 		.string	"v_SysStat"
- 450      7353 7461 
- 450      7400 
- 451 0025 0001 0000 		.long	0x100
- 452 0029 765F 5374 		.string	"v_StatReg"
- 452      6174 5265 
- 452      6700 
- 453 0033 0000 0000 		.long	0x0
- 454               		.section	.debug_aranges,"",@progbits
- 455 0000 1C00 0000 		.long	0x1c
- 456 0004 0200      		.word	0x2
- 457 0006 0000 0000 		.long	.Ldebug_info0
- 458 000a 04        		.byte	0x4
- 459 000b 00        		.byte	0x0
- 460 000c 0000      		.word	0x0
- 461 000e 0000      		.word	0x0
- 462 0010 0000 0000 		.long	.Ltext0
- 463 0014 7A00 0000 		.long	.Letext0-.Ltext0
- 464 0018 0000 0000 		.long	0x0
- 465 001c 0000 0000 		.long	0x0
- 466               		.section	.debug_line
- 467 0000 1D01 0000 		.long	.LELT0-.LSLT0
- 468               	.LSLT0:
- 469 0004 0200      		.word	0x2
- 470 0006 5500 0000 		.long	.LELTP0-.LASLTP0
- 471               	.LASLTP0:
- 472 000a 01        		.byte	0x1
- 473 000b 01        		.byte	0x1
- 474 000c F6        		.byte	0xf6
- 475 000d F5        		.byte	0xf5
- 476 000e 0A        		.byte	0xa
- 477 000f 00        		.byte	0x0
- 478 0010 01        		.byte	0x1
- 479 0011 01        		.byte	0x1
- 480 0012 01        		.byte	0x1
- 481 0013 01        		.byte	0x1
- 482 0014 00        		.byte	0x0
- 483 0015 00        		.byte	0x0
- 484 0016 00        		.byte	0x0
- 485 0017 01        		.byte	0x1
- 486 0018 7372 632F 		.ascii	"src/applic"
- 486      6170 706C 
- 486      6963 
- 487 0022 00        		.byte	0
- 488 0023 7372 632F 		.ascii	"src/applic/../includes"
- 488      6170 706C 
- 488      6963 2F2E 
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 10
+ 441 00a3 49        		.uleb128 0x49
+ 442 00a4 13        		.uleb128 0x13
+ 443 00a5 00        		.byte	0x0
+ 444 00a6 00        		.byte	0x0
+ 445 00a7 00        		.byte	0x0
+ 446               		.section	.debug_pubnames,"",@progbits
+ 447 0000 3300 0000 		.long	0x33
+ 448 0004 0200      		.word	0x2
+ 449 0006 0000 0000 		.long	.Ldebug_info0
+ 450 000a 1301 0000 		.long	0x113
+ 451 000e 8300 0000 		.long	0x83
+ 452 0012 6D61 696E 		.string	"main"
+ 452      00
+ 453 0017 E900 0000 		.long	0xe9
+ 454 001b 765F 5379 		.string	"v_SysStat"
+ 454      7353 7461 
+ 454      7400 
+ 455 0025 0001 0000 		.long	0x100
+ 456 0029 765F 5374 		.string	"v_StatReg"
+ 456      6174 5265 
+ 456      6700 
+ 457 0033 0000 0000 		.long	0x0
+ 458               		.section	.debug_aranges,"",@progbits
+ 459 0000 1C00 0000 		.long	0x1c
+ 460 0004 0200      		.word	0x2
+ 461 0006 0000 0000 		.long	.Ldebug_info0
+ 462 000a 04        		.byte	0x4
+ 463 000b 00        		.byte	0x0
+ 464 000c 0000      		.word	0x0
+ 465 000e 0000      		.word	0x0
+ 466 0010 0000 0000 		.long	.Ltext0
+ 467 0014 8200 0000 		.long	.Letext0-.Ltext0
+ 468 0018 0000 0000 		.long	0x0
+ 469 001c 0000 0000 		.long	0x0
+ 470               		.section	.debug_line
+ 471 0000 2501 0000 		.long	.LELT0-.LSLT0
+ 472               	.LSLT0:
+ 473 0004 0200      		.word	0x2
+ 474 0006 5500 0000 		.long	.LELTP0-.LASLTP0
+ 475               	.LASLTP0:
+ 476 000a 01        		.byte	0x1
+ 477 000b 01        		.byte	0x1
+ 478 000c F6        		.byte	0xf6
+ 479 000d F5        		.byte	0xf5
+ 480 000e 0A        		.byte	0xa
+ 481 000f 00        		.byte	0x0
+ 482 0010 01        		.byte	0x1
+ 483 0011 01        		.byte	0x1
+ 484 0012 01        		.byte	0x1
+ 485 0013 01        		.byte	0x1
+ 486 0014 00        		.byte	0x0
+ 487 0015 00        		.byte	0x0
+ 488 0016 00        		.byte	0x0
+ 489 0017 01        		.byte	0x1
+ 490 0018 7372 632F 		.ascii	"src/applic"
+ 490      6170 706C 
+ 490      6963 
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 10
 
 
- 488      2E2F 696E 
- 488      636C 7564 
- 489 0039 00        		.byte	0
- 490 003a 00        		.byte	0x0
- 491 003b 6B65 726E 		.string	"kernel.c"
- 491      656C 2E63 
- 491      00
- 492 0044 01        		.uleb128 0x1
- 493 0045 00        		.uleb128 0x0
- 494 0046 00        		.uleb128 0x0
- 495 0047 2E2E 2F69 		.string	"../includes/types.h"
- 495      6E63 6C75 
- 495      6465 732F 
- 495      7479 7065 
- 495      732E 6800 
- 496 005b 01        		.uleb128 0x1
- 497 005c 00        		.uleb128 0x0
- 498 005d 00        		.uleb128 0x0
- 499 005e 00        		.byte	0x0
- 500               	.LELTP0:
- 501 005f 00        		.byte	0x0
- 502 0060 05        		.uleb128 0x5
- 503 0061 02        		.byte	0x2
- 504 0062 0000 0000 		.long	.LM1
- 505 0066 56        		.byte	0x56
- 506 0067 00        		.byte	0x0
- 507 0068 05        		.uleb128 0x5
- 508 0069 02        		.byte	0x2
- 509 006a 0000 0000 		.long	.LM2
- 510 006e 15        		.byte	0x15
- 511 006f 00        		.byte	0x0
- 512 0070 05        		.uleb128 0x5
- 513 0071 02        		.byte	0x2
- 514 0072 0000 0000 		.long	.LM3
- 515 0076 19        		.byte	0x19
- 516 0077 00        		.byte	0x0
- 517 0078 05        		.uleb128 0x5
- 518 0079 02        		.byte	0x2
- 519 007a 0000 0000 		.long	.LM4
- 520 007e 17        		.byte	0x17
- 521 007f 00        		.byte	0x0
- 522 0080 05        		.uleb128 0x5
- 523 0081 02        		.byte	0x2
- 524 0082 0000 0000 		.long	.LM5
- 525 0086 1A        		.byte	0x1a
- 526 0087 00        		.byte	0x0
- 527 0088 05        		.uleb128 0x5
- 528 0089 02        		.byte	0x2
- 529 008a 0000 0000 		.long	.LM6
- 530 008e 18        		.byte	0x18
- 531 008f 00        		.byte	0x0
- 532 0090 05        		.uleb128 0x5
- 533 0091 02        		.byte	0x2
- 534 0092 0000 0000 		.long	.LM7
- 535 0096 28        		.byte	0x28
- 536 0097 00        		.byte	0x0
- 537 0098 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 11
+ 491 0022 00        		.byte	0
+ 492 0023 7372 632F 		.ascii	"src/applic/../includes"
+ 492      6170 706C 
+ 492      6963 2F2E 
+ 492      2E2F 696E 
+ 492      636C 7564 
+ 493 0039 00        		.byte	0
+ 494 003a 00        		.byte	0x0
+ 495 003b 6B65 726E 		.string	"kernel.c"
+ 495      656C 2E63 
+ 495      00
+ 496 0044 01        		.uleb128 0x1
+ 497 0045 00        		.uleb128 0x0
+ 498 0046 00        		.uleb128 0x0
+ 499 0047 2E2E 2F69 		.string	"../includes/types.h"
+ 499      6E63 6C75 
+ 499      6465 732F 
+ 499      7479 7065 
+ 499      732E 6800 
+ 500 005b 01        		.uleb128 0x1
+ 501 005c 00        		.uleb128 0x0
+ 502 005d 00        		.uleb128 0x0
+ 503 005e 00        		.byte	0x0
+ 504               	.LELTP0:
+ 505 005f 00        		.byte	0x0
+ 506 0060 05        		.uleb128 0x5
+ 507 0061 02        		.byte	0x2
+ 508 0062 0000 0000 		.long	.LM1
+ 509 0066 56        		.byte	0x56
+ 510 0067 00        		.byte	0x0
+ 511 0068 05        		.uleb128 0x5
+ 512 0069 02        		.byte	0x2
+ 513 006a 0000 0000 		.long	.LM2
+ 514 006e 15        		.byte	0x15
+ 515 006f 00        		.byte	0x0
+ 516 0070 05        		.uleb128 0x5
+ 517 0071 02        		.byte	0x2
+ 518 0072 0000 0000 		.long	.LM3
+ 519 0076 19        		.byte	0x19
+ 520 0077 00        		.byte	0x0
+ 521 0078 05        		.uleb128 0x5
+ 522 0079 02        		.byte	0x2
+ 523 007a 0000 0000 		.long	.LM4
+ 524 007e 17        		.byte	0x17
+ 525 007f 00        		.byte	0x0
+ 526 0080 05        		.uleb128 0x5
+ 527 0081 02        		.byte	0x2
+ 528 0082 0000 0000 		.long	.LM5
+ 529 0086 1A        		.byte	0x1a
+ 530 0087 00        		.byte	0x0
+ 531 0088 05        		.uleb128 0x5
+ 532 0089 02        		.byte	0x2
+ 533 008a 0000 0000 		.long	.LM6
+ 534 008e 18        		.byte	0x18
+ 535 008f 00        		.byte	0x0
+ 536 0090 05        		.uleb128 0x5
+ 537 0091 02        		.byte	0x2
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 11
 
 
- 538 0099 02        		.byte	0x2
- 539 009a 0000 0000 		.long	.LM8
- 540 009e 18        		.byte	0x18
- 541 009f 00        		.byte	0x0
- 542 00a0 05        		.uleb128 0x5
- 543 00a1 02        		.byte	0x2
- 544 00a2 0000 0000 		.long	.LM9
- 545 00a6 19        		.byte	0x19
- 546 00a7 00        		.byte	0x0
- 547 00a8 05        		.uleb128 0x5
- 548 00a9 02        		.byte	0x2
- 549 00aa 0000 0000 		.long	.LM10
- 550 00ae 1E        		.byte	0x1e
- 551 00af 00        		.byte	0x0
- 552 00b0 05        		.uleb128 0x5
- 553 00b1 02        		.byte	0x2
- 554 00b2 0000 0000 		.long	.LM11
- 555 00b6 15        		.byte	0x15
- 556 00b7 00        		.byte	0x0
- 557 00b8 05        		.uleb128 0x5
- 558 00b9 02        		.byte	0x2
- 559 00ba 0000 0000 		.long	.LM12
- 560 00be 15        		.byte	0x15
- 561 00bf 00        		.byte	0x0
- 562 00c0 05        		.uleb128 0x5
- 563 00c1 02        		.byte	0x2
- 564 00c2 0000 0000 		.long	.LM13
- 565 00c6 15        		.byte	0x15
- 566 00c7 00        		.byte	0x0
- 567 00c8 05        		.uleb128 0x5
- 568 00c9 02        		.byte	0x2
- 569 00ca 0000 0000 		.long	.LM14
- 570 00ce 15        		.byte	0x15
- 571 00cf 00        		.byte	0x0
- 572 00d0 05        		.uleb128 0x5
- 573 00d1 02        		.byte	0x2
- 574 00d2 0000 0000 		.long	.LM15
- 575 00d6 15        		.byte	0x15
- 576 00d7 00        		.byte	0x0
- 577 00d8 05        		.uleb128 0x5
- 578 00d9 02        		.byte	0x2
- 579 00da 0000 0000 		.long	.LM16
- 580 00de 21        		.byte	0x21
- 581 00df 00        		.byte	0x0
- 582 00e0 05        		.uleb128 0x5
- 583 00e1 02        		.byte	0x2
- 584 00e2 0000 0000 		.long	.LM17
- 585 00e6 16        		.byte	0x16
- 586 00e7 00        		.byte	0x0
- 587 00e8 05        		.uleb128 0x5
- 588 00e9 02        		.byte	0x2
- 589 00ea 0000 0000 		.long	.LM18
- 590 00ee 18        		.byte	0x18
- 591 00ef 00        		.byte	0x0
- 592 00f0 05        		.uleb128 0x5
- 593 00f1 02        		.byte	0x2
- 594 00f2 0000 0000 		.long	.LM19
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 12
+ 538 0092 0000 0000 		.long	.LM7
+ 539 0096 28        		.byte	0x28
+ 540 0097 00        		.byte	0x0
+ 541 0098 05        		.uleb128 0x5
+ 542 0099 02        		.byte	0x2
+ 543 009a 0000 0000 		.long	.LM8
+ 544 009e 18        		.byte	0x18
+ 545 009f 00        		.byte	0x0
+ 546 00a0 05        		.uleb128 0x5
+ 547 00a1 02        		.byte	0x2
+ 548 00a2 0000 0000 		.long	.LM9
+ 549 00a6 19        		.byte	0x19
+ 550 00a7 00        		.byte	0x0
+ 551 00a8 05        		.uleb128 0x5
+ 552 00a9 02        		.byte	0x2
+ 553 00aa 0000 0000 		.long	.LM10
+ 554 00ae 1E        		.byte	0x1e
+ 555 00af 00        		.byte	0x0
+ 556 00b0 05        		.uleb128 0x5
+ 557 00b1 02        		.byte	0x2
+ 558 00b2 0000 0000 		.long	.LM11
+ 559 00b6 15        		.byte	0x15
+ 560 00b7 00        		.byte	0x0
+ 561 00b8 05        		.uleb128 0x5
+ 562 00b9 02        		.byte	0x2
+ 563 00ba 0000 0000 		.long	.LM12
+ 564 00be 15        		.byte	0x15
+ 565 00bf 00        		.byte	0x0
+ 566 00c0 05        		.uleb128 0x5
+ 567 00c1 02        		.byte	0x2
+ 568 00c2 0000 0000 		.long	.LM13
+ 569 00c6 15        		.byte	0x15
+ 570 00c7 00        		.byte	0x0
+ 571 00c8 05        		.uleb128 0x5
+ 572 00c9 02        		.byte	0x2
+ 573 00ca 0000 0000 		.long	.LM14
+ 574 00ce 15        		.byte	0x15
+ 575 00cf 00        		.byte	0x0
+ 576 00d0 05        		.uleb128 0x5
+ 577 00d1 02        		.byte	0x2
+ 578 00d2 0000 0000 		.long	.LM15
+ 579 00d6 15        		.byte	0x15
+ 580 00d7 00        		.byte	0x0
+ 581 00d8 05        		.uleb128 0x5
+ 582 00d9 02        		.byte	0x2
+ 583 00da 0000 0000 		.long	.LM16
+ 584 00de 21        		.byte	0x21
+ 585 00df 00        		.byte	0x0
+ 586 00e0 05        		.uleb128 0x5
+ 587 00e1 02        		.byte	0x2
+ 588 00e2 0000 0000 		.long	.LM17
+ 589 00e6 16        		.byte	0x16
+ 590 00e7 00        		.byte	0x0
+ 591 00e8 05        		.uleb128 0x5
+ 592 00e9 02        		.byte	0x2
+ 593 00ea 0000 0000 		.long	.LM18
+ 594 00ee 18        		.byte	0x18
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 12
 
 
- 595 00f6 17        		.byte	0x17
- 596 00f7 00        		.byte	0x0
- 597 00f8 05        		.uleb128 0x5
- 598 00f9 02        		.byte	0x2
- 599 00fa 0000 0000 		.long	.LM20
- 600 00fe 24        		.byte	0x24
- 601 00ff 00        		.byte	0x0
- 602 0100 05        		.uleb128 0x5
- 603 0101 02        		.byte	0x2
- 604 0102 0000 0000 		.long	.LM21
- 605 0106 15        		.byte	0x15
- 606 0107 00        		.byte	0x0
- 607 0108 05        		.uleb128 0x5
- 608 0109 02        		.byte	0x2
- 609 010a 0000 0000 		.long	.LM22
- 610 010e 19        		.byte	0x19
- 611 010f 00        		.byte	0x0
- 612 0110 05        		.uleb128 0x5
- 613 0111 02        		.byte	0x2
- 614 0112 0000 0000 		.long	.LM23
- 615 0116 13        		.byte	0x13
- 616 0117 00        		.byte	0x0
- 617 0118 05        		.uleb128 0x5
- 618 0119 02        		.byte	0x2
- 619 011a 0000 0000 		.long	.Letext0
- 620 011e 00        		.byte	0x0
- 621 011f 01        		.uleb128 0x1
- 622 0120 01        		.byte	0x1
- 623               	.LELT0:
- 624 0121 1600 0000 		.section	.debug_str,"MS",@progbits,1
- 624      0200 1000 
- 624      0000 0101 
- 624      FB0E 0A00 
- 624      0101 0101 
- 625               	.LASF13:
- 626 0000 765F 5379 		.string	"v_SysStat"
- 626      7353 7461 
- 626      7400 
- 627               	.LASF11:
- 628 000a 765F 6B65 		.string	"v_key"
- 628      7900 
- 629               	.LASF10:
- 630 0010 765F 6C65 		.string	"v_led"
- 630      6400 
- 631               	.LASF16:
- 632 0016 7372 632F 		.string	"src/applic/kernel.c"
- 632      6170 706C 
- 632      6963 2F6B 
- 632      6572 6E65 
- 632      6C2E 6300 
- 633               	.LASF1:
- 634 002a 756E 7369 		.string	"unsigned char"
- 634      676E 6564 
- 634      2063 6861 
- 634      7200 
- 635               	.LASF17:
- 636 0038 5A3A 5C68 		.string	"Z:\\home\\mohammadreza\\temo\\Simple-AVR-OS-plus-some-improvement-"
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 13
+ 595 00ef 00        		.byte	0x0
+ 596 00f0 05        		.uleb128 0x5
+ 597 00f1 02        		.byte	0x2
+ 598 00f2 0000 0000 		.long	.LM19
+ 599 00f6 17        		.byte	0x17
+ 600 00f7 00        		.byte	0x0
+ 601 00f8 05        		.uleb128 0x5
+ 602 00f9 02        		.byte	0x2
+ 603 00fa 0000 0000 		.long	.LM20
+ 604 00fe 24        		.byte	0x24
+ 605 00ff 00        		.byte	0x0
+ 606 0100 05        		.uleb128 0x5
+ 607 0101 02        		.byte	0x2
+ 608 0102 0000 0000 		.long	.LM21
+ 609 0106 15        		.byte	0x15
+ 610 0107 00        		.byte	0x0
+ 611 0108 05        		.uleb128 0x5
+ 612 0109 02        		.byte	0x2
+ 613 010a 0000 0000 		.long	.LM22
+ 614 010e 19        		.byte	0x19
+ 615 010f 00        		.byte	0x0
+ 616 0110 05        		.uleb128 0x5
+ 617 0111 02        		.byte	0x2
+ 618 0112 0000 0000 		.long	.LM23
+ 619 0116 13        		.byte	0x13
+ 620 0117 00        		.byte	0x0
+ 621 0118 05        		.uleb128 0x5
+ 622 0119 02        		.byte	0x2
+ 623 011a 0000 0000 		.long	.LM24
+ 624 011e 17        		.byte	0x17
+ 625 011f 00        		.byte	0x0
+ 626 0120 05        		.uleb128 0x5
+ 627 0121 02        		.byte	0x2
+ 628 0122 0000 0000 		.long	.Letext0
+ 629 0126 00        		.byte	0x0
+ 630 0127 01        		.uleb128 0x1
+ 631 0128 01        		.byte	0x1
+ 632               	.LELT0:
+ 633 0129 1600 0000 		.section	.debug_str,"MS",@progbits,1
+ 633      0200 1000 
+ 633      0000 0101 
+ 633      FB0E 0A00 
+ 633      0101 0101 
+ 634               	.LASF13:
+ 635 0000 765F 5379 		.string	"v_SysStat"
+ 635      7353 7461 
+ 635      7400 
+ 636               	.LASF11:
+ 637 000a 765F 6B65 		.string	"v_key"
+ 637      7900 
+ 638               	.LASF10:
+ 639 0010 765F 6C65 		.string	"v_led"
+ 639      6400 
+ 640               	.LASF16:
+ 641 0016 7372 632F 		.string	"src/applic/kernel.c"
+ 641      6170 706C 
+ 641      6963 2F6B 
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 13
 
 
- 636      6F6D 655C 
- 636      6D6F 6861 
- 636      6D6D 6164 
- 636      7265 7A61 
- 637               	.LASF4:
- 638 0077 6C6F 6E67 		.string	"long unsigned int"
- 638      2075 6E73 
- 638      6967 6E65 
- 638      6420 696E 
- 638      7400 
- 639               	.LASF14:
- 640 0089 765F 5374 		.string	"v_StatReg"
- 640      6174 5265 
- 640      6700 
- 641               	.LASF8:
- 642 0093 7368 6F72 		.string	"short unsigned int"
- 642      7420 756E 
- 642      7369 676E 
- 642      6564 2069 
- 642      6E74 00
- 643               	.LASF15:
- 644 00a6 474E 5520 		.string	"GNU C 4.3.3"
- 644      4320 342E 
- 644      332E 3300 
- 645               	.LASF19:
- 646 00b2 6D61 696E 		.string	"main"
- 646      00
- 647               	.LASF2:
- 648 00b7 756E 7369 		.string	"unsigned int"
- 648      676E 6564 
- 648      2069 6E74 
- 648      00
- 649               	.LASF18:
- 650 00c4 494E 5438 		.string	"INT8U"
- 650      5500 
- 651               	.LASF6:
- 652 00ca 6C6F 6E67 		.string	"long long unsigned int"
- 652      206C 6F6E 
- 652      6720 756E 
- 652      7369 676E 
- 652      6564 2069 
- 653               	.LASF5:
- 654 00e1 6C6F 6E67 		.string	"long long int"
- 654      206C 6F6E 
- 654      6720 696E 
- 654      7400 
- 655               	.LASF7:
- 656 00ef 6368 6172 		.string	"char"
- 656      00
- 657               	.LASF9:
- 658 00f4 7368 6F72 		.string	"short int"
- 658      7420 696E 
- 658      7400 
- 659               	.LASF3:
- 660 00fe 6C6F 6E67 		.string	"long int"
- 660      2069 6E74 
- 660      00
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 14
+ 641      6572 6E65 
+ 641      6C2E 6300 
+ 642               	.LASF1:
+ 643 002a 756E 7369 		.string	"unsigned char"
+ 643      676E 6564 
+ 643      2063 6861 
+ 643      7200 
+ 644               	.LASF17:
+ 645 0038 5A3A 5C68 		.string	"Z:\\home\\mohammadreza\\temo\\Simple-AVR-OS-plus-some-improvement-"
+ 645      6F6D 655C 
+ 645      6D6F 6861 
+ 645      6D6D 6164 
+ 645      7265 7A61 
+ 646               	.LASF4:
+ 647 0077 6C6F 6E67 		.string	"long unsigned int"
+ 647      2075 6E73 
+ 647      6967 6E65 
+ 647      6420 696E 
+ 647      7400 
+ 648               	.LASF14:
+ 649 0089 765F 5374 		.string	"v_StatReg"
+ 649      6174 5265 
+ 649      6700 
+ 650               	.LASF8:
+ 651 0093 7368 6F72 		.string	"short unsigned int"
+ 651      7420 756E 
+ 651      7369 676E 
+ 651      6564 2069 
+ 651      6E74 00
+ 652               	.LASF15:
+ 653 00a6 474E 5520 		.string	"GNU C 4.3.3"
+ 653      4320 342E 
+ 653      332E 3300 
+ 654               	.LASF19:
+ 655 00b2 6D61 696E 		.string	"main"
+ 655      00
+ 656               	.LASF2:
+ 657 00b7 756E 7369 		.string	"unsigned int"
+ 657      676E 6564 
+ 657      2069 6E74 
+ 657      00
+ 658               	.LASF18:
+ 659 00c4 494E 5438 		.string	"INT8U"
+ 659      5500 
+ 660               	.LASF6:
+ 661 00ca 6C6F 6E67 		.string	"long long unsigned int"
+ 661      206C 6F6E 
+ 661      6720 756E 
+ 661      7369 676E 
+ 661      6564 2069 
+ 662               	.LASF5:
+ 663 00e1 6C6F 6E67 		.string	"long long int"
+ 663      206C 6F6E 
+ 663      6720 696E 
+ 663      7400 
+ 664               	.LASF7:
+ 665 00ef 6368 6172 		.string	"char"
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 14
 
 
- 661               	.LASF0:
- 662 0107 7369 676E 		.string	"signed char"
- 662      6564 2063 
- 662      6861 7200 
- 663               	.LASF12:
- 664 0113 6275 665F 		.string	"buf_g"
- 664      6700 
- 665               	.global __do_copy_data
- 666               	.global __do_clear_bss
-GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 15
+ 665      00
+ 666               	.LASF9:
+ 667 00f4 7368 6F72 		.string	"short int"
+ 667      7420 696E 
+ 667      7400 
+ 668               	.LASF3:
+ 669 00fe 6C6F 6E67 		.string	"long int"
+ 669      2069 6E74 
+ 669      00
+ 670               	.LASF0:
+ 671 0107 7369 676E 		.string	"signed char"
+ 671      6564 2063 
+ 671      6861 7200 
+ 672               	.LASF12:
+ 673 0113 6275 665F 		.string	"buf_g"
+ 673      6700 
+ 674               	.global __do_copy_data
+ 675               	.global __do_clear_bss
+GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 kernel.c
-C:\users\mohammadreza\Temp/ccZSMcPi.s:2      *ABS*:0000003f __SREG__
-C:\users\mohammadreza\Temp/ccZSMcPi.s:3      *ABS*:0000003e __SP_H__
-C:\users\mohammadreza\Temp/ccZSMcPi.s:4      *ABS*:0000003d __SP_L__
-C:\users\mohammadreza\Temp/ccZSMcPi.s:5      *ABS*:00000034 __CCP__
-C:\users\mohammadreza\Temp/ccZSMcPi.s:6      *ABS*:00000000 __tmp_reg__
-C:\users\mohammadreza\Temp/ccZSMcPi.s:7      *ABS*:00000001 __zero_reg__
-C:\users\mohammadreza\Temp/ccZSMcPi.s:29     .text:00000000 main
+C:\users\mohammadreza\Temp/ccrETlMm.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/ccrETlMm.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/ccrETlMm.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/ccrETlMm.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/ccrETlMm.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/ccrETlMm.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/ccrETlMm.s:29     .text:00000000 main
                             *COM*:00000001 v_SysStat
                             *COM*:00000001 v_StatReg
 
@@ -820,5 +829,6 @@ f_SysADC
 f_TaskDebugger
 f_SerApp
 applications_reducer
+f_Delay_ms
 __do_copy_data
 __do_clear_bss
