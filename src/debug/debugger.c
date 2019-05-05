@@ -69,7 +69,7 @@
 #define c_CMDAVAIL        24
 
 
-#ifndef MOD_DEBUGGER_ON
+#ifdef MOD_DEBUGGER_ON
 
 void f_InitDebug(void) {}
 
@@ -78,7 +78,8 @@ void f_TaskDebugger(void) {}
 void f_CheckSyntax(void) {}
 
 void f_ProcessCMD(void) {}
-
+void f_debug_port(INT8U data) {
+}
 #else
 
 extern INT8U v_SysStat;
