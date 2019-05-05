@@ -1,4 +1,4 @@
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 1
 
 
    1               		.file	"kernel.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
   39               	.LM4:
   40 000a 0E94 0000 		call f_ConfigSerial
   41               	.LM5:
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 2
 
 
   42 000e 0E94 0000 		call f_ConfigADC
@@ -118,7 +118,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
   96               	.LM22:
   97 006c 812F      		mov r24,r17
   98 006e 0E94 0000 		call applications_reducer
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 3
 
 
   99               	.LM23:
@@ -126,8 +126,8 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  101 0074 1830      		cpi r17,lo8(8)
  102 0076 01F4      		brne .L3
  103               	.LM24:
- 104 0078 88EE      		ldi r24,lo8(1000)
- 105 007a 93E0      		ldi r25,hi8(1000)
+ 104 0078 80E9      		ldi r24,lo8(400)
+ 105 007a 91E0      		ldi r25,hi8(400)
  106 007c 0E94 0000 		call f_Delay_ms
  107 0080 00C0      		rjmp .L8
  108               	.LBE2:
@@ -178,7 +178,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  153 0027 06        		.byte	0x6
  154 0028 0000 0000 		.long	.LASF0
  155 002c 02        		.uleb128 0x2
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 4
 
 
  156 002d 01        		.byte	0x1
@@ -238,7 +238,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  210 008a 43        		.byte	0x43
  211 008b 01        		.byte	0x1
  212 008c 3300 0000 		.long	0x33
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 5
 
 
  213 0090 0000 0000 		.long	.LFB6
@@ -298,7 +298,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  267 0100 0C        		.uleb128 0xc
  268 0101 0000 0000 		.long	.LASF14
  269 0105 01        		.byte	0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 6
 
 
  270 0106 3E        		.byte	0x3e
@@ -358,7 +358,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  324 002e 3E        		.uleb128 0x3e
  325 002f 0B        		.uleb128 0xb
  326 0030 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 7
 
 
  327 0031 00        		.byte	0x0
@@ -418,7 +418,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  381 0067 01        		.byte	0x1
  382 0068 11        		.uleb128 0x11
  383 0069 01        		.uleb128 0x1
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 8
 
 
  384 006a 12        		.uleb128 0x12
@@ -478,7 +478,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  438 00a0 0D        		.uleb128 0xd
  439 00a1 35        		.uleb128 0x35
  440 00a2 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 9
 
 
  441 00a3 49        		.uleb128 0x49
@@ -538,7 +538,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  490 0018 7372 632F 		.ascii	"src/applic"
  490      6170 706C 
  490      6963 
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 10
 
 
  491 0022 00        		.byte	0
@@ -598,7 +598,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  535 008f 00        		.byte	0x0
  536 0090 05        		.uleb128 0x5
  537 0091 02        		.byte	0x2
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 11
 
 
  538 0092 0000 0000 		.long	.LM7
@@ -658,7 +658,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  592 00e9 02        		.byte	0x2
  593 00ea 0000 0000 		.long	.LM18
  594 00ee 18        		.byte	0x18
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 12
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 12
 
 
  595 00ef 00        		.byte	0x0
@@ -718,7 +718,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  641 0016 7372 632F 		.string	"src/applic/kernel.c"
  641      6170 706C 
  641      6963 2F6B 
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 13
 
 
  641      6572 6E65 
@@ -778,7 +778,7 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  663      7400 
  664               	.LASF7:
  665 00ef 6368 6172 		.string	"char"
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 14
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 14
 
 
  665      00
@@ -799,18 +799,18 @@ GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 1
  673      6700 
  674               	.global __do_copy_data
  675               	.global __do_clear_bss
-GAS LISTING C:\users\mohammadreza\Temp/ccrETlMm.s 			page 15
+GAS LISTING C:\users\mohammadreza\Temp/cccdlDBa.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 kernel.c
-C:\users\mohammadreza\Temp/ccrETlMm.s:2      *ABS*:0000003f __SREG__
-C:\users\mohammadreza\Temp/ccrETlMm.s:3      *ABS*:0000003e __SP_H__
-C:\users\mohammadreza\Temp/ccrETlMm.s:4      *ABS*:0000003d __SP_L__
-C:\users\mohammadreza\Temp/ccrETlMm.s:5      *ABS*:00000034 __CCP__
-C:\users\mohammadreza\Temp/ccrETlMm.s:6      *ABS*:00000000 __tmp_reg__
-C:\users\mohammadreza\Temp/ccrETlMm.s:7      *ABS*:00000001 __zero_reg__
-C:\users\mohammadreza\Temp/ccrETlMm.s:29     .text:00000000 main
+C:\users\mohammadreza\Temp/cccdlDBa.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/cccdlDBa.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/cccdlDBa.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/cccdlDBa.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/cccdlDBa.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/cccdlDBa.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/cccdlDBa.s:29     .text:00000000 main
                             *COM*:00000001 v_SysStat
                             *COM*:00000001 v_StatReg
 
