@@ -15,7 +15,8 @@ applic.o: src/applic/applic.c \
   src/applic/../includes/legacy.h src/applic/../Utils/delay.h \
   src/applic/../periphint/Uart.h src/applic/../periphint/Timer0.h \
   src/applic/../periphint/../includes/ifc_time.h \
-  src/applic/../periphint/Timer1.h src/applic/../periphext/scard.h
+  src/applic/../periphint/Timer1.h src/applic/../periphext/scard.h \
+  src/applic/applic.h
 src/applic/applic.c \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/eeprom.h \ :
 /winavr-20100110/lib/gcc/../../avr/include/avr/io.h \ :
@@ -33,4 +34,5 @@ src/applic/applic.c \ :
   src/applic/../includes/legacy.h src/applic/../Utils/delay.h \ :
   src/applic/../periphint/Uart.h src/applic/../periphint/Timer0.h \ :
   src/applic/../periphint/../includes/ifc_time.h \ :
-  src/applic/../periphint/Timer1.h src/applic/../periphext/scard.h :
+  src/applic/../periphint/Timer1.h src/applic/../periphext/scard.h \ :
+  src/applic/applic.h :

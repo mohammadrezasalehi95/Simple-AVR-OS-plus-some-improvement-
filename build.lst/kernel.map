@@ -162,7 +162,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1256
+.text           0x00000000     0x12e6
  *(.vectors)
  .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
                 0x00000000                __vectors
@@ -239,133 +239,140 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x000000c6                __vector_16
                 0x000000c6                __vector_18
                 0x000000c6                __vector_20
- .text          0x000000ca       0x6a build.obj/kernel.o
+ .text          0x000000ca       0x7a build.obj/kernel.o
                 0x000000ca                main
- .text          0x00000134      0x16a build.obj/Timer0.o
-                0x000001c2                f_SysTick
-                0x00000192                f_SystickSetErrLevel
-                0x00000134                f_InitSysTimer
-                0x0000019c                __vector_9
-                0x00000190                f_SwTimerLCM
-                0x0000018e                f_SwTimerKey
-                0x00000184                f_flashled
- .text          0x0000029e       0x90 build.obj/typeconv.o
-                0x000002fe                f_HexBinByte
-                0x000002c0                f_HexBin
-                0x0000029e                f_BinHex
- .text          0x0000032e      0x132 build.obj/applic.o
-                0x00000420                f_Applic
-                0x0000032e                f_LockUnLock
-                0x00000426                my_Applic
-                0x0000036c                f_LockFSM
-                0x00000352                f_LockLock
-                0x0000043e                f_Init_Applic
-                0x00000348                f_LockIdle
- .text          0x00000460      0x1dc build.obj/Uart.o
-                0x000005b4                f_Uart_PutChar
-                0x000004a2                __vector_12
-                0x0000056a                f_Uart_GetChar
-                0x00000508                __vector_11
-                0x00000604                f_Uart_PutStr
-                0x00000460                f_ConfigSerial
-                0x00000632                f_Uart_NL
-                0x00000628                f_Uart_ClrScr
- .text          0x0000063c       0xea build.obj/adc.o
-                0x000006ae                f_SysADC
-                0x0000063c                f_ConfigADC
-                0x000006a0                f_StartADC
-                0x000006c0                __vector_14
- .text          0x00000726      0x63a build.obj/debugger.o
-                0x00000b60                f_debug_lpc_read
-                0x00000c7a                f_debug_PinB
-                0x00000946                f_debug_lcm_wrcmd
-                0x000008cc                f_debug_lpc_write
-                0x00000c58                f_debug_readEEByte
-                0x00000cca                f_TaskDebugger
-                0x00000ae8                f_debug_Port_read
-                0x0000072a                f_debug_Port_write
-                0x00000c6a                f_debug_PinD
-                0x000007aa                f_debug_user_cmd
-                0x00000c8a                f_debug_writebyte
-                0x00000c12                f_debug_fpga_read
-                0x000007fa                f_debug_asctab
-                0x00000c82                f_debug_PinA
-                0x00000c06                f_debug_lcm_read
-                0x00000726                f_CheckSyntax
-                0x00000aa6                f_debug_AnalogRead
-                0x00000728                f_debug_spi_rd
-                0x00000a5a                f_debug_port
-                0x00000860                f_debug_sst_write
-                0x00000c72                f_debug_PinC
-                0x000007b4                f_ProcessCMD
-                0x0000097e                f_debug_bintab
-                0x00000cb8                f_debug_readbyte
-                0x00000796                f_debug_disable
-                0x00000938                f_debug_lcm_wrdata
-                0x00000954                f_debug_fpga_write
-                0x00000c24                f_debug_writeEEbyte
-                0x00000a0e                f_debug_port_v
-                0x00000d3c                f_InitDebug
- .text          0x00000d60       0x18 build.obj/dbgext.o
-                0x00000d64                f_DebugFPGARd
-                0x00000d62                f_DebugFPGAWr
-                0x00000d60                f_Dbg_User_Cmd
-                0x00000d6a                f_DebugLCMWrData
-                0x00000d74                f_DebugLPCRd
-                0x00000d6c                f_DebugLCMRd
-                0x00000d68                f_DebugLCMWrCmd
-                0x00000d72                f_DebugSSTWr
-                0x00000d70                f_DebugLPCWr
- .text          0x00000d78       0x10 build.obj/eeprom.o
-                0x00000d80                f_EERead
-                0x00000d78                f_EEWrite
- .text          0x00000d88      0x23c build.obj/serapp.o
-                0x00000da8                f_ProcessAPPCMD
-                0x00000e3a                f_ProcessAPPKey
-                0x00000f4a                f_SerApp
-                0x00000d94                f_SerApp_DbgEn
-                0x00000d88                f_InitSerApp
- .text          0x00000fc4       0x50 build.obj/Timer1.o
-                0x00000fc4                f_PWM1Enable
-                0x00000fe8                f_InitPWM1
-                0x00000ffe                f_PWM1Set
-                0x00000fd6                f_PWM1Disable
- .text          0x00001014      0x188 build.obj/scard.o
-                0x0000115e                f_SCard_CheckCardIn
-                0x000010d2                f_SCard_MatchID
-                0x0000103e                f_SCard_RstCard
-                0x0000104e                f_SCard_Read
-                0x0000102c                f_SCard_CCLK
-                0x00001014                f_Init_SCard
- .text          0x0000119c       0x64 build.obj/delay.o
-                0x000011a2                f_Delay_us
-                0x000011b8                f_Delay_ms
-                0x0000119c                f_delay_loop_1
- .text          0x00001200        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .text          0x00001200        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text          0x00001200        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text          0x00001200        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text          0x00001200        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
- .text          0x00001200        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
-                0x00001200                . = ALIGN (0x2)
+ .text          0x00000144      0x16a build.obj/Timer0.o
+                0x000001d2                f_SysTick
+                0x000001a2                f_SystickSetErrLevel
+                0x00000144                f_InitSysTimer
+                0x000001ac                __vector_9
+                0x000001a0                f_SwTimerLCM
+                0x0000019e                f_SwTimerKey
+                0x00000194                f_flashled
+ .text          0x000002ae       0x90 build.obj/typeconv.o
+                0x0000030e                f_HexBinByte
+                0x000002d0                f_HexBin
+                0x000002ae                f_BinHex
+ .text          0x0000033e      0x16a build.obj/applic.o
+                0x0000033e                applications_reducer
+                0x00000468                f_Applic
+                0x0000036e                my_Applic4
+                0x00000376                f_LockUnLock
+                0x00000372                my_Applic6
+                0x00000374                my_Applic7
+                0x00000490                my_Applic
+                0x000003b4                f_LockFSM
+                0x0000036a                my_Applic2
+                0x00000370                my_Applic5
+                0x0000039a                f_LockLock
+                0x0000046e                f_Init_Applic
+                0x00000390                f_LockIdle
+                0x0000036c                my_Applic3
+ .text          0x000004a8      0x1dc build.obj/Uart.o
+                0x000005fc                f_Uart_PutChar
+                0x000004ea                __vector_12
+                0x000005b2                f_Uart_GetChar
+                0x00000550                __vector_11
+                0x0000064c                f_Uart_PutStr
+                0x000004a8                f_ConfigSerial
+                0x0000067a                f_Uart_NL
+                0x00000670                f_Uart_ClrScr
+ .text          0x00000684       0xea build.obj/adc.o
+                0x000006f6                f_SysADC
+                0x00000684                f_ConfigADC
+                0x000006e8                f_StartADC
+                0x00000708                __vector_14
+ .text          0x0000076e      0x682 build.obj/debugger.o
+                0x00000bf0                f_debug_lpc_read
+                0x00000d0a                f_debug_PinB
+                0x000009d6                f_debug_lcm_wrcmd
+                0x0000095c                f_debug_lpc_write
+                0x00000ce8                f_debug_readEEByte
+                0x00000d5a                f_TaskDebugger
+                0x00000b78                f_debug_Port_read
+                0x00000772                f_debug_Port_write
+                0x00000cfa                f_debug_PinD
+                0x000007de                f_debug_user_cmd
+                0x00000d1a                f_debug_writebyte
+                0x00000ca2                f_debug_fpga_read
+                0x0000088a                f_debug_asctab
+                0x00000d12                f_debug_PinA
+                0x00000c96                f_debug_lcm_read
+                0x0000076e                f_CheckSyntax
+                0x00000b36                f_debug_AnalogRead
+                0x00000770                f_debug_spi_rd
+                0x00000aea                f_debug_port
+                0x000008f0                f_debug_sst_write
+                0x00000d02                f_debug_PinC
+                0x00000844                f_ProcessCMD
+                0x00000a0e                f_debug_bintab
+                0x00000d48                f_debug_readbyte
+                0x00000830                f_debug_disable
+                0x000009c8                f_debug_lcm_wrdata
+                0x000009e4                f_debug_fpga_write
+                0x00000cb4                f_debug_writeEEbyte
+                0x00000a9e                f_debug_port_v
+                0x00000dcc                f_InitDebug
+ .text          0x00000df0       0x18 build.obj/dbgext.o
+                0x00000df4                f_DebugFPGARd
+                0x00000df2                f_DebugFPGAWr
+                0x00000df0                f_Dbg_User_Cmd
+                0x00000dfa                f_DebugLCMWrData
+                0x00000e04                f_DebugLPCRd
+                0x00000dfc                f_DebugLCMRd
+                0x00000df8                f_DebugLCMWrCmd
+                0x00000e02                f_DebugSSTWr
+                0x00000e00                f_DebugLPCWr
+ .text          0x00000e08       0x10 build.obj/eeprom.o
+                0x00000e10                f_EERead
+                0x00000e08                f_EEWrite
+ .text          0x00000e18      0x23c build.obj/serapp.o
+                0x00000e38                f_ProcessAPPCMD
+                0x00000eca                f_ProcessAPPKey
+                0x00000fda                f_SerApp
+                0x00000e24                f_SerApp_DbgEn
+                0x00000e18                f_InitSerApp
+ .text          0x00001054       0x50 build.obj/Timer1.o
+                0x00001054                f_PWM1Enable
+                0x00001078                f_InitPWM1
+                0x0000108e                f_PWM1Set
+                0x00001066                f_PWM1Disable
+ .text          0x000010a4      0x188 build.obj/scard.o
+                0x000011ee                f_SCard_CheckCardIn
+                0x00001162                f_SCard_MatchID
+                0x000010ce                f_SCard_RstCard
+                0x000010de                f_SCard_Read
+                0x000010bc                f_SCard_CCLK
+                0x000010a4                f_Init_SCard
+ .text          0x0000122c       0x64 build.obj/delay.o
+                0x00001232                f_Delay_us
+                0x00001248                f_Delay_ms
+                0x0000122c                f_delay_loop_1
+ .text          0x00001290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00001290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00001290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00001290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00001290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
+ .text          0x00001290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
+                0x00001290                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x00001200       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x00001200                __udivmodhi4
- .text.libgcc   0x00001228        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00001228        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00001228        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001290       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001290                __udivmodhi4
+ .text.libgcc   0x000012b8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000012b8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000012b8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
  .text.avr-libc
-                0x00001228       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
-                0x00001228                __eerd_byte_m16
+                0x000012b8       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
+                0x000012b8                __eerd_byte_m16
  .text.avr-libc
-                0x00001238       0x1a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
-                0x0000123a                __eewr_r18_m16
-                0x00001238                __eewr_byte_m16
-                0x00001252                . = ALIGN (0x2)
+                0x000012c8       0x1a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
+                0x000012ca                __eewr_r18_m16
+                0x000012c8                __eewr_byte_m16
+                0x000012e2                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001252        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00001252                exit
-                0x00001252                _exit
+ .fini9         0x000012e2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000012e2                exit
+                0x000012e2                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -384,113 +391,115 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001252        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x000012e2        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001256                _etext = .
+                0x000012e6                _etext = .
 
-.data           0x00800060      0x20e load address 0x00001256
+.data           0x00800060      0x20a load address 0x000012e6
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
- .data          0x00800060       0x99 build.obj/kernel.o
- .data          0x008000f9        0xc build.obj/Timer0.o
- .data          0x00800105       0x10 build.obj/typeconv.o
- .data          0x00800115       0x1c build.obj/applic.o
- .data          0x00800131        0xb build.obj/Uart.o
-                0x00800139                UART_NL
-                0x00800131                UART_CLR
- .data          0x0080013c        0x0 build.obj/adc.o
- .data          0x0080013c       0xa0 build.obj/debugger.o
-                0x008001ac                f_lut_dbgfunc
- .data          0x008001dc        0x0 build.obj/dbgext.o
- .data          0x008001dc        0x0 build.obj/eeprom.o
- .data          0x008001dc       0x8f build.obj/serapp.o
- .data          0x0080026b        0x0 build.obj/Timer1.o
- .data          0x0080026b        0x2 build.obj/scard.o
- .data          0x0080026d        0x0 build.obj/delay.o
- .data          0x0080026d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .data          0x0080026d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .data          0x0080026d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .data          0x0080026d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .data          0x0080026d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
- .data          0x0080026d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
+ .data          0x00800060       0x9d build.obj/kernel.o
+ .data          0x008000fd        0xc build.obj/Timer0.o
+ .data          0x00800109       0x10 build.obj/typeconv.o
+ .data          0x00800119       0x2c build.obj/applic.o
+                0x00800135                f_Applic_function
+ .data          0x00800145        0xb build.obj/Uart.o
+                0x0080014d                UART_NL
+                0x00800145                UART_CLR
+ .data          0x00800150        0x0 build.obj/adc.o
+ .data          0x00800150       0x88 build.obj/debugger.o
+                0x008001a8                f_lut_dbgfunc
+ .data          0x008001d8        0x0 build.obj/dbgext.o
+ .data          0x008001d8        0x0 build.obj/eeprom.o
+ .data          0x008001d8       0x8f build.obj/serapp.o
+ .data          0x00800267        0x0 build.obj/Timer1.o
+ .data          0x00800267        0x2 build.obj/scard.o
+ .data          0x00800269        0x0 build.obj/delay.o
+ .data          0x00800269        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800269        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800269        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800269        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800269        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
+ .data          0x00800269        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x0080026e                . = ALIGN (0x2)
- *fill*         0x0080026d        0x1 00
-                0x0080026e                _edata = .
-                0x0080026e                PROVIDE (__data_end, .)
+                0x0080026a                . = ALIGN (0x2)
+ *fill*         0x00800269        0x1 00
+                0x0080026a                _edata = .
+                0x0080026a                PROVIDE (__data_end, .)
 
-.bss            0x0080026e       0xd7
-                0x0080026e                PROVIDE (__bss_start, .)
+.bss            0x0080026a       0xd8
+                0x0080026a                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0080026e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
- .bss           0x0080026e        0x0 build.obj/kernel.o
- .bss           0x0080026e        0x0 build.obj/Timer0.o
- .bss           0x0080026e        0x0 build.obj/typeconv.o
- .bss           0x0080026e        0x1 build.obj/applic.o
-                0x0080026e                c
- .bss           0x0080026f        0x0 build.obj/Uart.o
- .bss           0x0080026f        0x0 build.obj/adc.o
- .bss           0x0080026f        0x0 build.obj/debugger.o
- .bss           0x0080026f        0x0 build.obj/dbgext.o
- .bss           0x0080026f        0x0 build.obj/eeprom.o
- .bss           0x0080026f        0x0 build.obj/serapp.o
- .bss           0x0080026f        0x0 build.obj/Timer1.o
- .bss           0x0080026f        0x0 build.obj/scard.o
- .bss           0x0080026f        0x0 build.obj/delay.o
- .bss           0x0080026f        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .bss           0x0080026f        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x0080026f        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x0080026f        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .bss           0x0080026f        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
- .bss           0x0080026f        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
+ .bss           0x0080026a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x0080026a        0x0 build.obj/kernel.o
+ .bss           0x0080026a        0x0 build.obj/Timer0.o
+ .bss           0x0080026a        0x0 build.obj/typeconv.o
+ .bss           0x0080026a        0x1 build.obj/applic.o
+                0x0080026a                c
+ .bss           0x0080026b        0x0 build.obj/Uart.o
+ .bss           0x0080026b        0x0 build.obj/adc.o
+ .bss           0x0080026b        0x1 build.obj/debugger.o
+                0x0080026b                app_subscription
+ .bss           0x0080026c        0x0 build.obj/dbgext.o
+ .bss           0x0080026c        0x0 build.obj/eeprom.o
+ .bss           0x0080026c        0x0 build.obj/serapp.o
+ .bss           0x0080026c        0x0 build.obj/Timer1.o
+ .bss           0x0080026c        0x0 build.obj/scard.o
+ .bss           0x0080026c        0x0 build.obj/delay.o
+ .bss           0x0080026c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x0080026c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080026c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080026c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080026c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega16.o)
+ .bss           0x0080026c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega16.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x0080026f        0x2 build.obj/kernel.o
-                0x0080026f                v_SysStat
-                0x00800270                v_StatReg
- COMMON         0x00800271        0xc build.obj/Timer0.o
-                0x00800271                v_ErrLevel
-                0x00800273                v_SysTimer
-                0x00800275                v_SwTimer_mS
- COMMON         0x0080027d        0x4 build.obj/applic.o
-                0x0080027d                state_Lock
-                0x0080027f                v_ServoUnLock
-                0x00800280                v_ServoLock
- COMMON         0x00800281       0x5a build.obj/Uart.o
-                0x00800281                v_uart_txbuf_cnt
-                0x00800282                p_uart_rxin
-                0x00800284                p_uart_rxout
-                0x00800286                buf_uart_rx
-                0x00800296                v_uart_rxbuf_cnt
-                0x00800297                buf_uart_tx
-                0x008002d7                p_uart_txin
-                0x008002d9                p_uart_txout
- COMMON         0x008002db       0x10 build.obj/adc.o
-                0x008002db                v_Chan
- COMMON         0x008002eb       0x11 build.obj/debugger.o
-                0x008002eb                buf_debugentry
-                0x008002fb                v_debugcnt
- COMMON         0x008002fc       0x48 build.obj/serapp.o
-                0x008002fc                v_pwmcnt
-                0x008002fd                buf_types
-                0x00800339                buf_appentry
-                0x00800343                v_appcnt
- COMMON         0x00800344        0x1 build.obj/scard.o
-                0x00800344                v_CardStatus
-                0x00800345                PROVIDE (__bss_end, .)
-                0x00001256                __data_load_start = LOADADDR (.data)
-                0x00001464                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0080026c        0x2 build.obj/kernel.o
+                0x0080026c                v_SysStat
+                0x0080026d                v_StatReg
+ COMMON         0x0080026e        0xc build.obj/Timer0.o
+                0x0080026e                v_ErrLevel
+                0x00800270                v_SysTimer
+                0x00800272                v_SwTimer_mS
+ COMMON         0x0080027a        0x4 build.obj/applic.o
+                0x0080027a                state_Lock
+                0x0080027c                v_ServoUnLock
+                0x0080027d                v_ServoLock
+ COMMON         0x0080027e       0x5a build.obj/Uart.o
+                0x0080027e                v_uart_txbuf_cnt
+                0x0080027f                p_uart_rxin
+                0x00800281                p_uart_rxout
+                0x00800283                buf_uart_rx
+                0x00800293                v_uart_rxbuf_cnt
+                0x00800294                buf_uart_tx
+                0x008002d4                p_uart_txin
+                0x008002d6                p_uart_txout
+ COMMON         0x008002d8       0x10 build.obj/adc.o
+                0x008002d8                v_Chan
+ COMMON         0x008002e8       0x11 build.obj/debugger.o
+                0x008002e8                buf_debugentry
+                0x008002f8                v_debugcnt
+ COMMON         0x008002f9       0x48 build.obj/serapp.o
+                0x008002f9                v_pwmcnt
+                0x008002fa                buf_types
+                0x00800336                buf_appentry
+                0x00800340                v_appcnt
+ COMMON         0x00800341        0x1 build.obj/scard.o
+                0x00800341                v_CardStatus
+                0x00800342                PROVIDE (__bss_end, .)
+                0x000012e6                __data_load_start = LOADADDR (.data)
+                0x000014f0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800345        0x0
-                0x00800345                PROVIDE (__noinit_start, .)
+.noinit         0x00800342        0x0
+                0x00800342                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800345                PROVIDE (__noinit_end, .)
-                0x00800345                _end = .
-                0x00800345                PROVIDE (__heap_start, .)
+                0x00800342                PROVIDE (__noinit_end, .)
+                0x00800342                _end = .
+                0x00800342                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -571,7 +580,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00000180       0x20 build.obj/delay.o
 
 .debug_pubnames
-                0x00000000      0x8f2
+                0x00000000      0x990
  *(.debug_pubnames)
  .debug_pubnames
                 0x00000000       0x37 build.obj/kernel.o
@@ -580,132 +589,133 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .debug_pubnames
                 0x000000f2       0x3d build.obj/typeconv.o
  .debug_pubnames
-                0x0000012f       0xb3 build.obj/applic.o
+                0x0000012f      0x13c build.obj/applic.o
  .debug_pubnames
-                0x000001e2      0x142 build.obj/Uart.o
+                0x0000026b      0x142 build.obj/Uart.o
  .debug_pubnames
-                0x00000324       0x59 build.obj/adc.o
+                0x000003ad       0x59 build.obj/adc.o
  .debug_pubnames
-                0x0000037d      0x2b3 build.obj/debugger.o
+                0x00000406      0x2c8 build.obj/debugger.o
  .debug_pubnames
-                0x00000630       0xb6 build.obj/dbgext.o
+                0x000006ce       0xb6 build.obj/dbgext.o
  .debug_pubnames
-                0x000006e6       0x2d build.obj/eeprom.o
+                0x00000784       0x2d build.obj/eeprom.o
  .debug_pubnames
-                0x00000713       0xa4 build.obj/serapp.o
+                0x000007b1       0xa4 build.obj/serapp.o
  .debug_pubnames
-                0x000007b7       0x52 build.obj/Timer1.o
+                0x00000855       0x52 build.obj/Timer1.o
  .debug_pubnames
-                0x00000809       0xa6 build.obj/scard.o
+                0x000008a7       0xa6 build.obj/scard.o
  .debug_pubnames
-                0x000008af       0x43 build.obj/delay.o
+                0x0000094d       0x43 build.obj/delay.o
 
-.debug_info     0x00000000     0x1d9c
+.debug_info     0x00000000     0x1ec1
  *(.debug_info)
- .debug_info    0x00000000       0xfe build.obj/kernel.o
- .debug_info    0x000000fe      0x1f1 build.obj/Timer0.o
- .debug_info    0x000002ef      0x180 build.obj/typeconv.o
- .debug_info    0x0000046f      0x1e5 build.obj/applic.o
- .debug_info    0x00000654      0x29e build.obj/Uart.o
- .debug_info    0x000008f2      0x16d build.obj/adc.o
- .debug_info    0x00000a5f      0x85e build.obj/debugger.o
- .debug_info    0x000012bd      0x1fe build.obj/dbgext.o
- .debug_info    0x000014bb       0xe8 build.obj/eeprom.o
- .debug_info    0x000015a3      0x239 build.obj/serapp.o
- .debug_info    0x000017dc      0x10d build.obj/Timer1.o
- .debug_info    0x000018e9      0x261 build.obj/scard.o
- .debug_info    0x00001b4a      0x252 build.obj/delay.o
+ .debug_info    0x00000000      0x113 build.obj/kernel.o
+ .debug_info    0x00000113      0x1f1 build.obj/Timer0.o
+ .debug_info    0x00000304      0x180 build.obj/typeconv.o
+ .debug_info    0x00000484      0x2bc build.obj/applic.o
+ .debug_info    0x00000740      0x29e build.obj/Uart.o
+ .debug_info    0x000009de      0x16d build.obj/adc.o
+ .debug_info    0x00000b4b      0x897 build.obj/debugger.o
+ .debug_info    0x000013e2      0x1fe build.obj/dbgext.o
+ .debug_info    0x000015e0       0xe8 build.obj/eeprom.o
+ .debug_info    0x000016c8      0x239 build.obj/serapp.o
+ .debug_info    0x00001901      0x10d build.obj/Timer1.o
+ .debug_info    0x00001a0e      0x261 build.obj/scard.o
+ .debug_info    0x00001c6f      0x252 build.obj/delay.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0xbbb
+.debug_abbrev   0x00000000      0xbf2
  *(.debug_abbrev)
- .debug_abbrev  0x00000000       0x90 build.obj/kernel.o
- .debug_abbrev  0x00000090      0x10f build.obj/Timer0.o
- .debug_abbrev  0x0000019f       0xd0 build.obj/typeconv.o
- .debug_abbrev  0x0000026f      0x108 build.obj/applic.o
- .debug_abbrev  0x00000377       0xee build.obj/Uart.o
- .debug_abbrev  0x00000465       0xf9 build.obj/adc.o
- .debug_abbrev  0x0000055e      0x188 build.obj/debugger.o
- .debug_abbrev  0x000006e6       0xa6 build.obj/dbgext.o
- .debug_abbrev  0x0000078c       0x81 build.obj/eeprom.o
- .debug_abbrev  0x0000080d      0x103 build.obj/serapp.o
- .debug_abbrev  0x00000910       0x87 build.obj/Timer1.o
- .debug_abbrev  0x00000997      0x102 build.obj/scard.o
- .debug_abbrev  0x00000a99      0x122 build.obj/delay.o
+ .debug_abbrev  0x00000000       0xa8 build.obj/kernel.o
+ .debug_abbrev  0x000000a8      0x10f build.obj/Timer0.o
+ .debug_abbrev  0x000001b7       0xd0 build.obj/typeconv.o
+ .debug_abbrev  0x00000287      0x127 build.obj/applic.o
+ .debug_abbrev  0x000003ae       0xee build.obj/Uart.o
+ .debug_abbrev  0x0000049c       0xf9 build.obj/adc.o
+ .debug_abbrev  0x00000595      0x188 build.obj/debugger.o
+ .debug_abbrev  0x0000071d       0xa6 build.obj/dbgext.o
+ .debug_abbrev  0x000007c3       0x81 build.obj/eeprom.o
+ .debug_abbrev  0x00000844      0x103 build.obj/serapp.o
+ .debug_abbrev  0x00000947       0x87 build.obj/Timer1.o
+ .debug_abbrev  0x000009ce      0x102 build.obj/scard.o
+ .debug_abbrev  0x00000ad0      0x122 build.obj/delay.o
 
-.debug_line     0x00000000     0x1c51
+.debug_line     0x00000000     0x1ced
  *(.debug_line)
- .debug_line    0x00000000      0x133 build.obj/kernel.o
- .debug_line    0x00000133      0x21a build.obj/Timer0.o
- .debug_line    0x0000034d      0x153 build.obj/typeconv.o
- .debug_line    0x000004a0      0x23b build.obj/applic.o
- .debug_line    0x000006db      0x271 build.obj/Uart.o
- .debug_line    0x0000094c      0x140 build.obj/adc.o
- .debug_line    0x00000a8c      0x816 build.obj/debugger.o
- .debug_line    0x000012a2      0x111 build.obj/dbgext.o
- .debug_line    0x000013b3       0xb9 build.obj/eeprom.o
- .debug_line    0x0000146c      0x2d3 build.obj/serapp.o
- .debug_line    0x0000173f      0x143 build.obj/Timer1.o
- .debug_line    0x00001882      0x26a build.obj/scard.o
- .debug_line    0x00001aec      0x165 build.obj/delay.o
+ .debug_line    0x00000000      0x13b build.obj/kernel.o
+ .debug_line    0x0000013b      0x21a build.obj/Timer0.o
+ .debug_line    0x00000355      0x153 build.obj/typeconv.o
+ .debug_line    0x000004a8      0x2b3 build.obj/applic.o
+ .debug_line    0x0000075b      0x271 build.obj/Uart.o
+ .debug_line    0x000009cc      0x140 build.obj/adc.o
+ .debug_line    0x00000b0c      0x832 build.obj/debugger.o
+ .debug_line    0x0000133e      0x111 build.obj/dbgext.o
+ .debug_line    0x0000144f       0xb9 build.obj/eeprom.o
+ .debug_line    0x00001508      0x2d3 build.obj/serapp.o
+ .debug_line    0x000017db      0x143 build.obj/Timer1.o
+ .debug_line    0x0000191e      0x26a build.obj/scard.o
+ .debug_line    0x00001b88      0x165 build.obj/delay.o
 
-.debug_frame    0x00000000      0x660
+.debug_frame    0x00000000      0x6d0
  *(.debug_frame)
  .debug_frame   0x00000000       0x20 build.obj/kernel.o
  .debug_frame   0x00000020       0x80 build.obj/Timer0.o
  .debug_frame   0x000000a0       0x40 build.obj/typeconv.o
- .debug_frame   0x000000e0       0x80 build.obj/applic.o
- .debug_frame   0x00000160       0x90 build.obj/Uart.o
- .debug_frame   0x000001f0       0x50 build.obj/adc.o
- .debug_frame   0x00000240      0x1f0 build.obj/debugger.o
- .debug_frame   0x00000430       0xa0 build.obj/dbgext.o
- .debug_frame   0x000004d0       0x30 build.obj/eeprom.o
- .debug_frame   0x00000500       0x60 build.obj/serapp.o
- .debug_frame   0x00000560       0x50 build.obj/Timer1.o
- .debug_frame   0x000005b0       0x70 build.obj/scard.o
- .debug_frame   0x00000620       0x40 build.obj/delay.o
+ .debug_frame   0x000000e0       0xf0 build.obj/applic.o
+ .debug_frame   0x000001d0       0x90 build.obj/Uart.o
+ .debug_frame   0x00000260       0x50 build.obj/adc.o
+ .debug_frame   0x000002b0      0x1f0 build.obj/debugger.o
+ .debug_frame   0x000004a0       0xa0 build.obj/dbgext.o
+ .debug_frame   0x00000540       0x30 build.obj/eeprom.o
+ .debug_frame   0x00000570       0x60 build.obj/serapp.o
+ .debug_frame   0x000005d0       0x50 build.obj/Timer1.o
+ .debug_frame   0x00000620       0x70 build.obj/scard.o
+ .debug_frame   0x00000690       0x40 build.obj/delay.o
 
-.debug_str      0x00000000      0x99c
+.debug_str      0x00000000      0xa0f
  *(.debug_str)
- .debug_str     0x00000000       0xe7 build.obj/kernel.o
-                                0x120 (size before relaxing)
- .debug_str     0x000000e7       0xb9 build.obj/Timer0.o
-                                0x1a4 (size before relaxing)
- .debug_str     0x000001a0       0x5d build.obj/typeconv.o
-                                0x10c (size before relaxing)
- .debug_str     0x000001fd       0xdb build.obj/applic.o
-                                0x1d0 (size before relaxing)
- .debug_str     0x000002d8      0x108 build.obj/Uart.o
-                                0x1ee (size before relaxing)
- .debug_str     0x000003e0       0x59 build.obj/adc.o
-                                0x152 (size before relaxing)
- .debug_str     0x00000439      0x26a build.obj/debugger.o
-                                0x386 (size before relaxing)
- .debug_str     0x000006a3       0x93 build.obj/dbgext.o
-                                0x147 (size before relaxing)
- .debug_str     0x00000736       0x31 build.obj/eeprom.o
+ .debug_str     0x00000000       0xe0 build.obj/kernel.o
                                 0x119 (size before relaxing)
- .debug_str     0x00000767       0x9b build.obj/serapp.o
-                                0x1c4 (size before relaxing)
- .debug_str     0x00000802       0x5c build.obj/Timer1.o
-                                0x13d (size before relaxing)
- .debug_str     0x0000085e       0xdb build.obj/scard.o
-                                0x1ea (size before relaxing)
- .debug_str     0x00000939       0x63 build.obj/delay.o
-                                0x14c (size before relaxing)
+ .debug_str     0x000000e0       0xb9 build.obj/Timer0.o
+                                0x19d (size before relaxing)
+ .debug_str     0x00000199       0x5d build.obj/typeconv.o
+                                0x105 (size before relaxing)
+ .debug_str     0x000001f6      0x155 build.obj/applic.o
+                                0x243 (size before relaxing)
+ .debug_str     0x0000034b      0x108 build.obj/Uart.o
+                                0x1e7 (size before relaxing)
+ .debug_str     0x00000453       0x59 build.obj/adc.o
+                                0x14b (size before relaxing)
+ .debug_str     0x000004ac      0x26a build.obj/debugger.o
+                                0x390 (size before relaxing)
+ .debug_str     0x00000716       0x93 build.obj/dbgext.o
+                                0x140 (size before relaxing)
+ .debug_str     0x000007a9       0x31 build.obj/eeprom.o
+                                0x112 (size before relaxing)
+ .debug_str     0x000007da       0x9b build.obj/serapp.o
+                                0x1bd (size before relaxing)
+ .debug_str     0x00000875       0x5c build.obj/Timer1.o
+                                0x136 (size before relaxing)
+ .debug_str     0x000008d1       0xdb build.obj/scard.o
+                                0x1e3 (size before relaxing)
+ .debug_str     0x000009ac       0x63 build.obj/delay.o
+                                0x145 (size before relaxing)
 
-.debug_loc      0x00000000      0x8ec
+.debug_loc      0x00000000      0x8ff
  *(.debug_loc)
  .debug_loc     0x00000000       0x13 build.obj/Timer0.o
  .debug_loc     0x00000013       0xd5 build.obj/typeconv.o
- .debug_loc     0x000000e8       0x4e build.obj/Uart.o
- .debug_loc     0x00000136       0x3f build.obj/adc.o
- .debug_loc     0x00000175      0x45f build.obj/debugger.o
- .debug_loc     0x000005d4       0x26 build.obj/dbgext.o
- .debug_loc     0x000005fa       0x39 build.obj/eeprom.o
- .debug_loc     0x00000633      0x13a build.obj/serapp.o
- .debug_loc     0x0000076d       0xd1 build.obj/scard.o
- .debug_loc     0x0000083e       0xae build.obj/delay.o
+ .debug_loc     0x000000e8       0x13 build.obj/applic.o
+ .debug_loc     0x000000fb       0x4e build.obj/Uart.o
+ .debug_loc     0x00000149       0x3f build.obj/adc.o
+ .debug_loc     0x00000188      0x45f build.obj/debugger.o
+ .debug_loc     0x000005e7       0x26 build.obj/dbgext.o
+ .debug_loc     0x0000060d       0x39 build.obj/eeprom.o
+ .debug_loc     0x00000646      0x13a build.obj/serapp.o
+ .debug_loc     0x00000780       0xd1 build.obj/scard.o
+ .debug_loc     0x00000851       0xae build.obj/delay.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -781,6 +791,10 @@ __vector_9                                        build.obj/Timer0.o
 __vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
 __vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
 _exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+app_subscription                                  build.obj/debugger.o
+                                                  build.obj/applic.o
+applications_reducer                              build.obj/applic.o
+                                                  build.obj/kernel.o
 buf_appentry                                      build.obj/serapp.o
 buf_debugentry                                    build.obj/debugger.o
 buf_types                                         build.obj/serapp.o
@@ -790,7 +804,7 @@ c                                                 build.obj/applic.o
 exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
                                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
 f_Applic                                          build.obj/applic.o
-                                                  build.obj/kernel.o
+f_Applic_function                                 build.obj/applic.o
 f_BinHex                                          build.obj/typeconv.o
                                                   build.obj/scard.o
                                                   build.obj/debugger.o
@@ -925,7 +939,12 @@ lut_dbgcmd                                        build.obj/debugger.o
 main                                              build.obj/kernel.o
                                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
 my_Applic                                         build.obj/applic.o
-                                                  build.obj/kernel.o
+my_Applic2                                        build.obj/applic.o
+my_Applic3                                        build.obj/applic.o
+my_Applic4                                        build.obj/applic.o
+my_Applic5                                        build.obj/applic.o
+my_Applic6                                        build.obj/applic.o
+my_Applic7                                        build.obj/applic.o
 p_uart_rxin                                       build.obj/Uart.o
 p_uart_rxout                                      build.obj/Uart.o
 p_uart_txin                                       build.obj/Uart.o
