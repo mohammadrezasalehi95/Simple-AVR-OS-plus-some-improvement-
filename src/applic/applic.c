@@ -26,7 +26,7 @@
 
 #include <avr/eeprom.h>
 #include <avr/io.h>
-
+#include "../debug/debugger.h"
 #include "../includes/types.h"
 #include "../includes/settings.h"
 #include "../Utils/delay.h"
