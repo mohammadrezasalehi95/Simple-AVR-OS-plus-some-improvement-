@@ -83,7 +83,7 @@ void f_debug_port(INT8U data) {
 #else
 
 extern INT8U v_SysStat;
-INT8U app_subscription = 0b0;
+extern INT8U app_subscription = 0b0;
 
 
 volatile INT8U v_debugcnt;

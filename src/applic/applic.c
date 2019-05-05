@@ -76,7 +76,7 @@ volatile type_Lock_state state_Lock;
 // And control Servo final position
 volatile INT8U v_ServoLock;
 volatile INT8U v_ServoUnLock;
-extern INT8U app_subscription;
+INT8U app_subscription;
 void f_LockFSM(void);
 
 void f_LockLock(void);
