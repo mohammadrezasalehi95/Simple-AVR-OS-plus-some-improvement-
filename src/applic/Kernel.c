@@ -173,6 +173,7 @@ int main(void) {
             for (; i < 8; ++i) {
                 applications_reducer(i);
             }
+            f_Delay_ms(1000);
         }
 
 #ifdef DCFG_LOWPOW

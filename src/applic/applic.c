@@ -88,6 +88,7 @@ void (*f_Applic_function[8])(void) =
 void applications_reducer(INT8U num) {
     if (app_subscription&(1<<num)){
         (*f_Applic_function[num])();
+
     }
 }
 
@@ -99,7 +100,6 @@ void f_Applic(void) {
 INT8U c = 0;
 void my_Applic(void) {
     c++;
-    f_Delay_ms(100);
     outp(c, PORTA);
 }
 INT16U start2=0x0171;
