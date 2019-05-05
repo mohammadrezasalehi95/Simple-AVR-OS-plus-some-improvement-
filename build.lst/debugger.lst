@@ -1,0 +1,687 @@
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 1
+
+
+   1               		.file	"debugger.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.section	.debug_abbrev,"",@progbits
+   9               	.Ldebug_abbrev0:
+  10               		.section	.debug_info,"",@progbits
+  11               	.Ldebug_info0:
+  12               		.section	.debug_line,"",@progbits
+  13               	.Ldebug_line0:
+  14               		.text
+  15               	.Ltext0:
+  16               	.global	f_InitDebug
+  17               		.type	f_InitDebug, @function
+  18               	f_InitDebug:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	/* epilogue start */
+  24               	.LM2:
+  25 0000 0895      		ret
+  26               	.LFE2:
+  27               		.size	f_InitDebug, .-f_InitDebug
+  28               	.global	f_TaskDebugger
+  29               		.type	f_TaskDebugger, @function
+  30               	f_TaskDebugger:
+  31               	.LFB3:
+  32               	.LM3:
+  33               	/* prologue: function */
+  34               	/* frame size = 0 */
+  35               	/* epilogue start */
+  36               	.LM4:
+  37 0002 0895      		ret
+  38               	.LFE3:
+  39               		.size	f_TaskDebugger, .-f_TaskDebugger
+  40               	.global	f_CheckSyntax
+  41               		.type	f_CheckSyntax, @function
+  42               	f_CheckSyntax:
+  43               	.LFB4:
+  44               	.LM5:
+  45               	/* prologue: function */
+  46               	/* frame size = 0 */
+  47               	/* epilogue start */
+  48               	.LM6:
+  49 0004 0895      		ret
+  50               	.LFE4:
+  51               		.size	f_CheckSyntax, .-f_CheckSyntax
+  52               	.global	f_ProcessCMD
+  53               		.type	f_ProcessCMD, @function
+  54               	f_ProcessCMD:
+  55               	.LFB5:
+  56               	.LM7:
+  57               	/* prologue: function */
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 2
+
+
+  58               	/* frame size = 0 */
+  59               	/* epilogue start */
+  60               	.LM8:
+  61 0006 0895      		ret
+  62               	.LFE5:
+  63               		.size	f_ProcessCMD, .-f_ProcessCMD
+  64               	.global	f_debug_port
+  65               		.type	f_debug_port, @function
+  66               	f_debug_port:
+  67               	.LFB6:
+  68               	.LM9:
+  69               	.LVL0:
+  70               	/* prologue: function */
+  71               	/* frame size = 0 */
+  72               	/* epilogue start */
+  73               	.LM10:
+  74 0008 0895      		ret
+  75               	.LFE6:
+  76               		.size	f_debug_port, .-f_debug_port
+  77               		.section	.debug_frame,"",@progbits
+  78               	.Lframe0:
+  79 0000 0C00 0000 		.long	.LECIE0-.LSCIE0
+  80               	.LSCIE0:
+  81 0004 FFFF FFFF 		.long	0xffffffff
+  82 0008 01        		.byte	0x1
+  83 0009 00        		.string	""
+  84 000a 01        		.uleb128 0x1
+  85 000b 7F        		.sleb128 -1
+  86 000c 24        		.byte	0x24
+  87 000d 0C        		.byte	0xc
+  88 000e 20        		.uleb128 0x20
+  89 000f 00        		.uleb128 0x0
+  90               		.p2align	2
+  91               	.LECIE0:
+  92               	.LSFDE0:
+  93 0010 0C00 0000 		.long	.LEFDE0-.LASFDE0
+  94               	.LASFDE0:
+  95 0014 0000 0000 		.long	.Lframe0
+  96 0018 0000 0000 		.long	.LFB2
+  97 001c 0200 0000 		.long	.LFE2-.LFB2
+  98               		.p2align	2
+  99               	.LEFDE0:
+ 100               	.LSFDE2:
+ 101 0020 0C00 0000 		.long	.LEFDE2-.LASFDE2
+ 102               	.LASFDE2:
+ 103 0024 0000 0000 		.long	.Lframe0
+ 104 0028 0000 0000 		.long	.LFB3
+ 105 002c 0200 0000 		.long	.LFE3-.LFB3
+ 106               		.p2align	2
+ 107               	.LEFDE2:
+ 108               	.LSFDE4:
+ 109 0030 0C00 0000 		.long	.LEFDE4-.LASFDE4
+ 110               	.LASFDE4:
+ 111 0034 0000 0000 		.long	.Lframe0
+ 112 0038 0000 0000 		.long	.LFB4
+ 113 003c 0200 0000 		.long	.LFE4-.LFB4
+ 114               		.p2align	2
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 3
+
+
+ 115               	.LEFDE4:
+ 116               	.LSFDE6:
+ 117 0040 0C00 0000 		.long	.LEFDE6-.LASFDE6
+ 118               	.LASFDE6:
+ 119 0044 0000 0000 		.long	.Lframe0
+ 120 0048 0000 0000 		.long	.LFB5
+ 121 004c 0200 0000 		.long	.LFE5-.LFB5
+ 122               		.p2align	2
+ 123               	.LEFDE6:
+ 124               	.LSFDE8:
+ 125 0050 0C00 0000 		.long	.LEFDE8-.LASFDE8
+ 126               	.LASFDE8:
+ 127 0054 0000 0000 		.long	.Lframe0
+ 128 0058 0000 0000 		.long	.LFB6
+ 129 005c 0200 0000 		.long	.LFE6-.LFB6
+ 130               		.p2align	2
+ 131               	.LEFDE8:
+ 132               		.text
+ 133               	.Letext0:
+ 134               		.section	.debug_info
+ 135 0000 F200 0000 		.long	0xf2
+ 136 0004 0200      		.word	0x2
+ 137 0006 0000 0000 		.long	.Ldebug_abbrev0
+ 138 000a 04        		.byte	0x4
+ 139 000b 01        		.uleb128 0x1
+ 140 000c 0000 0000 		.long	.LASF14
+ 141 0010 01        		.byte	0x1
+ 142 0011 0000 0000 		.long	.LASF15
+ 143 0015 0000 0000 		.long	.LASF16
+ 144 0019 0000 0000 		.long	.Ltext0
+ 145 001d 0000 0000 		.long	.Letext0
+ 146 0021 0000 0000 		.long	.Ldebug_line0
+ 147 0025 02        		.uleb128 0x2
+ 148 0026 01        		.byte	0x1
+ 149 0027 06        		.byte	0x6
+ 150 0028 0000 0000 		.long	.LASF0
+ 151 002c 02        		.uleb128 0x2
+ 152 002d 01        		.byte	0x1
+ 153 002e 08        		.byte	0x8
+ 154 002f 0000 0000 		.long	.LASF1
+ 155 0033 03        		.uleb128 0x3
+ 156 0034 02        		.byte	0x2
+ 157 0035 05        		.byte	0x5
+ 158 0036 696E 7400 		.string	"int"
+ 159 003a 02        		.uleb128 0x2
+ 160 003b 02        		.byte	0x2
+ 161 003c 07        		.byte	0x7
+ 162 003d 0000 0000 		.long	.LASF2
+ 163 0041 02        		.uleb128 0x2
+ 164 0042 04        		.byte	0x4
+ 165 0043 05        		.byte	0x5
+ 166 0044 0000 0000 		.long	.LASF3
+ 167 0048 02        		.uleb128 0x2
+ 168 0049 04        		.byte	0x4
+ 169 004a 07        		.byte	0x7
+ 170 004b 0000 0000 		.long	.LASF4
+ 171 004f 02        		.uleb128 0x2
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 4
+
+
+ 172 0050 08        		.byte	0x8
+ 173 0051 05        		.byte	0x5
+ 174 0052 0000 0000 		.long	.LASF5
+ 175 0056 02        		.uleb128 0x2
+ 176 0057 08        		.byte	0x8
+ 177 0058 07        		.byte	0x7
+ 178 0059 0000 0000 		.long	.LASF6
+ 179 005d 04        		.uleb128 0x4
+ 180 005e 01        		.byte	0x1
+ 181 005f 06        		.byte	0x6
+ 182 0060 04        		.uleb128 0x4
+ 183 0061 01        		.byte	0x1
+ 184 0062 08        		.byte	0x8
+ 185 0063 02        		.uleb128 0x2
+ 186 0064 01        		.byte	0x1
+ 187 0065 06        		.byte	0x6
+ 188 0066 0000 0000 		.long	.LASF7
+ 189 006a 02        		.uleb128 0x2
+ 190 006b 02        		.byte	0x2
+ 191 006c 07        		.byte	0x7
+ 192 006d 0000 0000 		.long	.LASF8
+ 193 0071 02        		.uleb128 0x2
+ 194 0072 02        		.byte	0x2
+ 195 0073 05        		.byte	0x5
+ 196 0074 0000 0000 		.long	.LASF9
+ 197 0078 05        		.uleb128 0x5
+ 198 0079 0000 0000 		.long	.LASF17
+ 199 007d 02        		.byte	0x2
+ 200 007e 0D        		.byte	0xd
+ 201 007f 2C00 0000 		.long	0x2c
+ 202 0083 06        		.uleb128 0x6
+ 203 0084 01        		.byte	0x1
+ 204 0085 0000 0000 		.long	.LASF10
+ 205 0089 01        		.byte	0x1
+ 206 008a 4A        		.byte	0x4a
+ 207 008b 01        		.byte	0x1
+ 208 008c 0000 0000 		.long	.LFB2
+ 209 0090 0000 0000 		.long	.LFE2
+ 210 0094 02        		.byte	0x2
+ 211 0095 90        		.byte	0x90
+ 212 0096 20        		.uleb128 0x20
+ 213 0097 06        		.uleb128 0x6
+ 214 0098 01        		.byte	0x1
+ 215 0099 0000 0000 		.long	.LASF11
+ 216 009d 01        		.byte	0x1
+ 217 009e 4C        		.byte	0x4c
+ 218 009f 01        		.byte	0x1
+ 219 00a0 0000 0000 		.long	.LFB3
+ 220 00a4 0000 0000 		.long	.LFE3
+ 221 00a8 02        		.byte	0x2
+ 222 00a9 90        		.byte	0x90
+ 223 00aa 20        		.uleb128 0x20
+ 224 00ab 06        		.uleb128 0x6
+ 225 00ac 01        		.byte	0x1
+ 226 00ad 0000 0000 		.long	.LASF12
+ 227 00b1 01        		.byte	0x1
+ 228 00b2 4E        		.byte	0x4e
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 5
+
+
+ 229 00b3 01        		.byte	0x1
+ 230 00b4 0000 0000 		.long	.LFB4
+ 231 00b8 0000 0000 		.long	.LFE4
+ 232 00bc 02        		.byte	0x2
+ 233 00bd 90        		.byte	0x90
+ 234 00be 20        		.uleb128 0x20
+ 235 00bf 06        		.uleb128 0x6
+ 236 00c0 01        		.byte	0x1
+ 237 00c1 0000 0000 		.long	.LASF13
+ 238 00c5 01        		.byte	0x1
+ 239 00c6 50        		.byte	0x50
+ 240 00c7 01        		.byte	0x1
+ 241 00c8 0000 0000 		.long	.LFB5
+ 242 00cc 0000 0000 		.long	.LFE5
+ 243 00d0 02        		.byte	0x2
+ 244 00d1 90        		.byte	0x90
+ 245 00d2 20        		.uleb128 0x20
+ 246 00d3 07        		.uleb128 0x7
+ 247 00d4 01        		.byte	0x1
+ 248 00d5 0000 0000 		.long	.LASF18
+ 249 00d9 01        		.byte	0x1
+ 250 00da 51        		.byte	0x51
+ 251 00db 01        		.byte	0x1
+ 252 00dc 0000 0000 		.long	.LFB6
+ 253 00e0 0000 0000 		.long	.LFE6
+ 254 00e4 02        		.byte	0x2
+ 255 00e5 90        		.byte	0x90
+ 256 00e6 20        		.uleb128 0x20
+ 257 00e7 08        		.uleb128 0x8
+ 258 00e8 0000 0000 		.long	.LASF19
+ 259 00ec 01        		.byte	0x1
+ 260 00ed 51        		.byte	0x51
+ 261 00ee 7800 0000 		.long	0x78
+ 262 00f2 01        		.byte	0x1
+ 263 00f3 68        		.byte	0x68
+ 264 00f4 00        		.byte	0x0
+ 265 00f5 00        		.byte	0x0
+ 266               		.section	.debug_abbrev
+ 267 0000 01        		.uleb128 0x1
+ 268 0001 11        		.uleb128 0x11
+ 269 0002 01        		.byte	0x1
+ 270 0003 25        		.uleb128 0x25
+ 271 0004 0E        		.uleb128 0xe
+ 272 0005 13        		.uleb128 0x13
+ 273 0006 0B        		.uleb128 0xb
+ 274 0007 03        		.uleb128 0x3
+ 275 0008 0E        		.uleb128 0xe
+ 276 0009 1B        		.uleb128 0x1b
+ 277 000a 0E        		.uleb128 0xe
+ 278 000b 11        		.uleb128 0x11
+ 279 000c 01        		.uleb128 0x1
+ 280 000d 12        		.uleb128 0x12
+ 281 000e 01        		.uleb128 0x1
+ 282 000f 10        		.uleb128 0x10
+ 283 0010 06        		.uleb128 0x6
+ 284 0011 00        		.byte	0x0
+ 285 0012 00        		.byte	0x0
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 6
+
+
+ 286 0013 02        		.uleb128 0x2
+ 287 0014 24        		.uleb128 0x24
+ 288 0015 00        		.byte	0x0
+ 289 0016 0B        		.uleb128 0xb
+ 290 0017 0B        		.uleb128 0xb
+ 291 0018 3E        		.uleb128 0x3e
+ 292 0019 0B        		.uleb128 0xb
+ 293 001a 03        		.uleb128 0x3
+ 294 001b 0E        		.uleb128 0xe
+ 295 001c 00        		.byte	0x0
+ 296 001d 00        		.byte	0x0
+ 297 001e 03        		.uleb128 0x3
+ 298 001f 24        		.uleb128 0x24
+ 299 0020 00        		.byte	0x0
+ 300 0021 0B        		.uleb128 0xb
+ 301 0022 0B        		.uleb128 0xb
+ 302 0023 3E        		.uleb128 0x3e
+ 303 0024 0B        		.uleb128 0xb
+ 304 0025 03        		.uleb128 0x3
+ 305 0026 08        		.uleb128 0x8
+ 306 0027 00        		.byte	0x0
+ 307 0028 00        		.byte	0x0
+ 308 0029 04        		.uleb128 0x4
+ 309 002a 24        		.uleb128 0x24
+ 310 002b 00        		.byte	0x0
+ 311 002c 0B        		.uleb128 0xb
+ 312 002d 0B        		.uleb128 0xb
+ 313 002e 3E        		.uleb128 0x3e
+ 314 002f 0B        		.uleb128 0xb
+ 315 0030 00        		.byte	0x0
+ 316 0031 00        		.byte	0x0
+ 317 0032 05        		.uleb128 0x5
+ 318 0033 16        		.uleb128 0x16
+ 319 0034 00        		.byte	0x0
+ 320 0035 03        		.uleb128 0x3
+ 321 0036 0E        		.uleb128 0xe
+ 322 0037 3A        		.uleb128 0x3a
+ 323 0038 0B        		.uleb128 0xb
+ 324 0039 3B        		.uleb128 0x3b
+ 325 003a 0B        		.uleb128 0xb
+ 326 003b 49        		.uleb128 0x49
+ 327 003c 13        		.uleb128 0x13
+ 328 003d 00        		.byte	0x0
+ 329 003e 00        		.byte	0x0
+ 330 003f 06        		.uleb128 0x6
+ 331 0040 2E        		.uleb128 0x2e
+ 332 0041 00        		.byte	0x0
+ 333 0042 3F        		.uleb128 0x3f
+ 334 0043 0C        		.uleb128 0xc
+ 335 0044 03        		.uleb128 0x3
+ 336 0045 0E        		.uleb128 0xe
+ 337 0046 3A        		.uleb128 0x3a
+ 338 0047 0B        		.uleb128 0xb
+ 339 0048 3B        		.uleb128 0x3b
+ 340 0049 0B        		.uleb128 0xb
+ 341 004a 27        		.uleb128 0x27
+ 342 004b 0C        		.uleb128 0xc
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 7
+
+
+ 343 004c 11        		.uleb128 0x11
+ 344 004d 01        		.uleb128 0x1
+ 345 004e 12        		.uleb128 0x12
+ 346 004f 01        		.uleb128 0x1
+ 347 0050 40        		.uleb128 0x40
+ 348 0051 0A        		.uleb128 0xa
+ 349 0052 00        		.byte	0x0
+ 350 0053 00        		.byte	0x0
+ 351 0054 07        		.uleb128 0x7
+ 352 0055 2E        		.uleb128 0x2e
+ 353 0056 01        		.byte	0x1
+ 354 0057 3F        		.uleb128 0x3f
+ 355 0058 0C        		.uleb128 0xc
+ 356 0059 03        		.uleb128 0x3
+ 357 005a 0E        		.uleb128 0xe
+ 358 005b 3A        		.uleb128 0x3a
+ 359 005c 0B        		.uleb128 0xb
+ 360 005d 3B        		.uleb128 0x3b
+ 361 005e 0B        		.uleb128 0xb
+ 362 005f 27        		.uleb128 0x27
+ 363 0060 0C        		.uleb128 0xc
+ 364 0061 11        		.uleb128 0x11
+ 365 0062 01        		.uleb128 0x1
+ 366 0063 12        		.uleb128 0x12
+ 367 0064 01        		.uleb128 0x1
+ 368 0065 40        		.uleb128 0x40
+ 369 0066 0A        		.uleb128 0xa
+ 370 0067 00        		.byte	0x0
+ 371 0068 00        		.byte	0x0
+ 372 0069 08        		.uleb128 0x8
+ 373 006a 05        		.uleb128 0x5
+ 374 006b 00        		.byte	0x0
+ 375 006c 03        		.uleb128 0x3
+ 376 006d 0E        		.uleb128 0xe
+ 377 006e 3A        		.uleb128 0x3a
+ 378 006f 0B        		.uleb128 0xb
+ 379 0070 3B        		.uleb128 0x3b
+ 380 0071 0B        		.uleb128 0xb
+ 381 0072 49        		.uleb128 0x49
+ 382 0073 13        		.uleb128 0x13
+ 383 0074 02        		.uleb128 0x2
+ 384 0075 0A        		.uleb128 0xa
+ 385 0076 00        		.byte	0x0
+ 386 0077 00        		.byte	0x0
+ 387 0078 00        		.byte	0x0
+ 388               		.section	.debug_pubnames,"",@progbits
+ 389 0000 6500 0000 		.long	0x65
+ 390 0004 0200      		.word	0x2
+ 391 0006 0000 0000 		.long	.Ldebug_info0
+ 392 000a F600 0000 		.long	0xf6
+ 393 000e 8300 0000 		.long	0x83
+ 394 0012 665F 496E 		.string	"f_InitDebug"
+ 394      6974 4465 
+ 394      6275 6700 
+ 395 001e 9700 0000 		.long	0x97
+ 396 0022 665F 5461 		.string	"f_TaskDebugger"
+ 396      736B 4465 
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 8
+
+
+ 396      6275 6767 
+ 396      6572 00
+ 397 0031 AB00 0000 		.long	0xab
+ 398 0035 665F 4368 		.string	"f_CheckSyntax"
+ 398      6563 6B53 
+ 398      796E 7461 
+ 398      7800 
+ 399 0043 BF00 0000 		.long	0xbf
+ 400 0047 665F 5072 		.string	"f_ProcessCMD"
+ 400      6F63 6573 
+ 400      7343 4D44 
+ 400      00
+ 401 0054 D300 0000 		.long	0xd3
+ 402 0058 665F 6465 		.string	"f_debug_port"
+ 402      6275 675F 
+ 402      706F 7274 
+ 402      00
+ 403 0065 0000 0000 		.long	0x0
+ 404               		.section	.debug_aranges,"",@progbits
+ 405 0000 1C00 0000 		.long	0x1c
+ 406 0004 0200      		.word	0x2
+ 407 0006 0000 0000 		.long	.Ldebug_info0
+ 408 000a 04        		.byte	0x4
+ 409 000b 00        		.byte	0x0
+ 410 000c 0000      		.word	0x0
+ 411 000e 0000      		.word	0x0
+ 412 0010 0000 0000 		.long	.Ltext0
+ 413 0014 0A00 0000 		.long	.Letext0-.Ltext0
+ 414 0018 0000 0000 		.long	0x0
+ 415 001c 0000 0000 		.long	0x0
+ 416               		.section	.debug_line
+ 417 0000 B500 0000 		.long	.LELT0-.LSLT0
+ 418               	.LSLT0:
+ 419 0004 0200      		.word	0x2
+ 420 0006 5500 0000 		.long	.LELTP0-.LASLTP0
+ 421               	.LASLTP0:
+ 422 000a 01        		.byte	0x1
+ 423 000b 01        		.byte	0x1
+ 424 000c F6        		.byte	0xf6
+ 425 000d F5        		.byte	0xf5
+ 426 000e 0A        		.byte	0xa
+ 427 000f 00        		.byte	0x0
+ 428 0010 01        		.byte	0x1
+ 429 0011 01        		.byte	0x1
+ 430 0012 01        		.byte	0x1
+ 431 0013 01        		.byte	0x1
+ 432 0014 00        		.byte	0x0
+ 433 0015 00        		.byte	0x0
+ 434 0016 00        		.byte	0x0
+ 435 0017 01        		.byte	0x1
+ 436 0018 7372 632F 		.ascii	"src/debug"
+ 436      6465 6275 
+ 436      67
+ 437 0021 00        		.byte	0
+ 438 0022 7372 632F 		.ascii	"src/debug/../includes"
+ 438      6465 6275 
+ 438      672F 2E2E 
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 9
+
+
+ 438      2F69 6E63 
+ 438      6C75 6465 
+ 439 0037 00        		.byte	0
+ 440 0038 00        		.byte	0x0
+ 441 0039 6465 6275 		.string	"debugger.c"
+ 441      6767 6572 
+ 441      2E63 00
+ 442 0044 01        		.uleb128 0x1
+ 443 0045 00        		.uleb128 0x0
+ 444 0046 00        		.uleb128 0x0
+ 445 0047 2E2E 2F69 		.string	"../includes/types.h"
+ 445      6E63 6C75 
+ 445      6465 732F 
+ 445      7479 7065 
+ 445      732E 6800 
+ 446 005b 01        		.uleb128 0x1
+ 447 005c 00        		.uleb128 0x0
+ 448 005d 00        		.uleb128 0x0
+ 449 005e 00        		.byte	0x0
+ 450               	.LELTP0:
+ 451 005f 00        		.byte	0x0
+ 452 0060 05        		.uleb128 0x5
+ 453 0061 02        		.byte	0x2
+ 454 0062 0000 0000 		.long	.LM1
+ 455 0066 5D        		.byte	0x5d
+ 456 0067 00        		.byte	0x0
+ 457 0068 05        		.uleb128 0x5
+ 458 0069 02        		.byte	0x2
+ 459 006a 0000 0000 		.long	.LM2
+ 460 006e 01        		.byte	0x1
+ 461 006f 00        		.byte	0x0
+ 462 0070 05        		.uleb128 0x5
+ 463 0071 02        		.byte	0x2
+ 464 0072 0000 0000 		.long	.LM3
+ 465 0076 16        		.byte	0x16
+ 466 0077 00        		.byte	0x0
+ 467 0078 05        		.uleb128 0x5
+ 468 0079 02        		.byte	0x2
+ 469 007a 0000 0000 		.long	.LM4
+ 470 007e 01        		.byte	0x1
+ 471 007f 00        		.byte	0x0
+ 472 0080 05        		.uleb128 0x5
+ 473 0081 02        		.byte	0x2
+ 474 0082 0000 0000 		.long	.LM5
+ 475 0086 16        		.byte	0x16
+ 476 0087 00        		.byte	0x0
+ 477 0088 05        		.uleb128 0x5
+ 478 0089 02        		.byte	0x2
+ 479 008a 0000 0000 		.long	.LM6
+ 480 008e 01        		.byte	0x1
+ 481 008f 00        		.byte	0x0
+ 482 0090 05        		.uleb128 0x5
+ 483 0091 02        		.byte	0x2
+ 484 0092 0000 0000 		.long	.LM7
+ 485 0096 16        		.byte	0x16
+ 486 0097 00        		.byte	0x0
+ 487 0098 05        		.uleb128 0x5
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 10
+
+
+ 488 0099 02        		.byte	0x2
+ 489 009a 0000 0000 		.long	.LM8
+ 490 009e 01        		.byte	0x1
+ 491 009f 00        		.byte	0x0
+ 492 00a0 05        		.uleb128 0x5
+ 493 00a1 02        		.byte	0x2
+ 494 00a2 0000 0000 		.long	.LM9
+ 495 00a6 15        		.byte	0x15
+ 496 00a7 00        		.byte	0x0
+ 497 00a8 05        		.uleb128 0x5
+ 498 00a9 02        		.byte	0x2
+ 499 00aa 0000 0000 		.long	.LM10
+ 500 00ae 15        		.byte	0x15
+ 501 00af 00        		.byte	0x0
+ 502 00b0 05        		.uleb128 0x5
+ 503 00b1 02        		.byte	0x2
+ 504 00b2 0000 0000 		.long	.Letext0
+ 505 00b6 00        		.byte	0x0
+ 506 00b7 01        		.uleb128 0x1
+ 507 00b8 01        		.byte	0x1
+ 508               	.LELT0:
+ 509 00b9 1600 0000 		.section	.debug_str,"MS",@progbits,1
+ 509      0200 1000 
+ 509      0000 0101 
+ 509      FB0E 0A00 
+ 509      0101 0101 
+ 510               	.LASF12:
+ 511 0000 665F 4368 		.string	"f_CheckSyntax"
+ 511      6563 6B53 
+ 511      796E 7461 
+ 511      7800 
+ 512               	.LASF10:
+ 513 000e 665F 496E 		.string	"f_InitDebug"
+ 513      6974 4465 
+ 513      6275 6700 
+ 514               	.LASF11:
+ 515 001a 665F 5461 		.string	"f_TaskDebugger"
+ 515      736B 4465 
+ 515      6275 6767 
+ 515      6572 00
+ 516               	.LASF18:
+ 517 0029 665F 6465 		.string	"f_debug_port"
+ 517      6275 675F 
+ 517      706F 7274 
+ 517      00
+ 518               	.LASF19:
+ 519 0036 6461 7461 		.string	"data"
+ 519      00
+ 520               	.LASF1:
+ 521 003b 756E 7369 		.string	"unsigned char"
+ 521      676E 6564 
+ 521      2063 6861 
+ 521      7200 
+ 522               	.LASF16:
+ 523 0049 5A3A 5C68 		.string	"Z:\\home\\mohammadreza\\temo\\Simple-AVR-OS-plus-some-improvement-"
+ 523      6F6D 655C 
+ 523      6D6F 6861 
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 11
+
+
+ 523      6D6D 6164 
+ 523      7265 7A61 
+ 524               	.LASF4:
+ 525 0088 6C6F 6E67 		.string	"long unsigned int"
+ 525      2075 6E73 
+ 525      6967 6E65 
+ 525      6420 696E 
+ 525      7400 
+ 526               	.LASF8:
+ 527 009a 7368 6F72 		.string	"short unsigned int"
+ 527      7420 756E 
+ 527      7369 676E 
+ 527      6564 2069 
+ 527      6E74 00
+ 528               	.LASF14:
+ 529 00ad 474E 5520 		.string	"GNU C 4.3.3"
+ 529      4320 342E 
+ 529      332E 3300 
+ 530               	.LASF2:
+ 531 00b9 756E 7369 		.string	"unsigned int"
+ 531      676E 6564 
+ 531      2069 6E74 
+ 531      00
+ 532               	.LASF17:
+ 533 00c6 494E 5438 		.string	"INT8U"
+ 533      5500 
+ 534               	.LASF6:
+ 535 00cc 6C6F 6E67 		.string	"long long unsigned int"
+ 535      206C 6F6E 
+ 535      6720 756E 
+ 535      7369 676E 
+ 535      6564 2069 
+ 536               	.LASF15:
+ 537 00e3 7372 632F 		.string	"src/debug/debugger.c"
+ 537      6465 6275 
+ 537      672F 6465 
+ 537      6275 6767 
+ 537      6572 2E63 
+ 538               	.LASF13:
+ 539 00f8 665F 5072 		.string	"f_ProcessCMD"
+ 539      6F63 6573 
+ 539      7343 4D44 
+ 539      00
+ 540               	.LASF5:
+ 541 0105 6C6F 6E67 		.string	"long long int"
+ 541      206C 6F6E 
+ 541      6720 696E 
+ 541      7400 
+ 542               	.LASF7:
+ 543 0113 6368 6172 		.string	"char"
+ 543      00
+ 544               	.LASF9:
+ 545 0118 7368 6F72 		.string	"short int"
+ 545      7420 696E 
+ 545      7400 
+ 546               	.LASF3:
+ 547 0122 6C6F 6E67 		.string	"long int"
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 12
+
+
+ 547      2069 6E74 
+ 547      00
+ 548               	.LASF0:
+ 549 012b 7369 676E 		.string	"signed char"
+ 549      6564 2063 
+ 549      6861 7200 
+GAS LISTING C:\users\mohammadreza\Temp/cclHTvHb.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 debugger.c
+C:\users\mohammadreza\Temp/cclHTvHb.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/cclHTvHb.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/cclHTvHb.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/cclHTvHb.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/cclHTvHb.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/cclHTvHb.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/cclHTvHb.s:18     .text:00000000 f_InitDebug
+C:\users\mohammadreza\Temp/cclHTvHb.s:30     .text:00000002 f_TaskDebugger
+C:\users\mohammadreza\Temp/cclHTvHb.s:42     .text:00000004 f_CheckSyntax
+C:\users\mohammadreza\Temp/cclHTvHb.s:54     .text:00000006 f_ProcessCMD
+C:\users\mohammadreza\Temp/cclHTvHb.s:66     .text:00000008 f_debug_port
+
+NO UNDEFINED SYMBOLS
