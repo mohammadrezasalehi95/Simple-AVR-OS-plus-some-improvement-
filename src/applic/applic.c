@@ -108,12 +108,10 @@ INT8U i2 = 0;
 void my_Applic2(void) {
         INT8U v_data;
         v_data = *(INT8U *)(start2+i2);
-        f_debug_port(v_data);
         i2++;
         outp(v_data,PORTC);
         if (start2+i2==end2){
             i2=0;
-            f_Uart_PutStr("\n    \n");
         }
 }
 
