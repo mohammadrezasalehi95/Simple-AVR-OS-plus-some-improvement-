@@ -107,7 +107,7 @@ INT8U i2 = 0;
 void my_Applic2(void) {
     f_Uart_PutStr("\ncode 108a\n");
         INT8U v_data;
-        v_data = *(INT8U *)(start2+i);
+        v_data = *(INT8U *)(start2+i2);
         f_debug_port(v_data);
         if (start2+i2==end2){
             i2=0;
