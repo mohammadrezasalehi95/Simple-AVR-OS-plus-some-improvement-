@@ -171,7 +171,7 @@ int main(void) {
 //            my_Applic();
             INT8U i = 0;
             for (; i < 8; ++i) {
-                applications_reducer(i)
+                applications_reducer(i);
             }
         }
 

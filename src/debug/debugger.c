@@ -70,16 +70,16 @@
 
 
 #ifndef MOD_DEBUGGER_ON
-//
-//void f_InitDebug(void) {}
-//
-//void f_TaskDebugger(void) {}
-//
-//void f_CheckSyntax(void) {}
-//
-//void f_ProcessCMD(void) {}
-//
-//#else
+
+void f_InitDebug(void) {}
+
+void f_TaskDebugger(void) {}
+
+void f_CheckSyntax(void) {}
+
+void f_ProcessCMD(void) {}
+
+#else
 
 extern INT8U v_SysStat;
 INT8U app_subscription = 0b0;

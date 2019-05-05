@@ -86,7 +86,7 @@ void (*f_Applic_function[8])(void) =
 
 void applications_reducer(INT8U num) {
     if (app_subscription&(1<<num)){
-        (*f_Applic_function[num])()
+        (*f_Applic_function[num])();
     }
 }
 
