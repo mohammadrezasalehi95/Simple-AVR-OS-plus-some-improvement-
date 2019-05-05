@@ -69,7 +69,7 @@
 #define c_CMDAVAIL        24
 
 
-#ifdef MOD_DEBUGGER_ON
+#ifndef MOD_DEBUGGER_ON
 
 void f_InitDebug(void) {}
 
