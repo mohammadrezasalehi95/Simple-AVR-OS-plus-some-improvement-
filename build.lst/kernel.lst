@@ -1,4 +1,4 @@
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 1
 
 
    1               		.file	"kernel.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
   39               	.LM4:
   40 000a 0E94 0000 		call f_ConfigSerial
   41               	.LM5:
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 2
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 2
 
 
   42 000e 0E94 0000 		call f_ConfigADC
@@ -118,7 +118,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
   96               	.LM22:
   97 006c 812F      		mov r24,r17
   98 006e 0E94 0000 		call applications_reducer
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 3
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 3
 
 
   99               	.LM23:
@@ -178,7 +178,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  153 002e 08        		.byte	0x8
  154 002f 0000 0000 		.long	.LASF1
  155 0033 03        		.uleb128 0x3
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 4
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 4
 
 
  156 0034 02        		.byte	0x2
@@ -238,7 +238,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  210 0094 0000 0000 		.long	.LFE6
  211 0098 02        		.byte	0x2
  212 0099 90        		.byte	0x90
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 5
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 5
 
 
  213 009a 20        		.uleb128 0x20
@@ -298,7 +298,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  267 0107 FB00 0000 		.long	0xfb
  268 010b 01        		.byte	0x1
  269 010c 05        		.byte	0x5
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 6
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 6
 
 
  270 010d 03        		.byte	0x3
@@ -358,7 +358,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  324 0032 05        		.uleb128 0x5
  325 0033 16        		.uleb128 0x16
  326 0034 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 7
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 7
 
 
  327 0035 03        		.uleb128 0x3
@@ -418,7 +418,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  381 006b 01        		.uleb128 0x1
  382 006c 00        		.byte	0x0
  383 006d 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 8
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 8
 
 
  384 006e 09        		.uleb128 0x9
@@ -478,7 +478,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  438 00a4 13        		.uleb128 0x13
  439 00a5 00        		.byte	0x0
  440 00a6 00        		.byte	0x0
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 9
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 9
 
 
  441 00a7 00        		.byte	0x0
@@ -538,7 +538,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  488 0023 7372 632F 		.ascii	"src/applic/../includes"
  488      6170 706C 
  488      6963 2F2E 
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 10
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 10
 
 
  488      2E2F 696E 
@@ -598,7 +598,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  535 0096 28        		.byte	0x28
  536 0097 00        		.byte	0x0
  537 0098 05        		.uleb128 0x5
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 11
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 11
 
 
  538 0099 02        		.byte	0x2
@@ -658,7 +658,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  592 00f0 05        		.uleb128 0x5
  593 00f1 02        		.byte	0x2
  594 00f2 0000 0000 		.long	.LM19
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 12
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 12
 
 
  595 00f6 17        		.byte	0x17
@@ -718,7 +718,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  634      7200 
  635               	.LASF17:
  636 0038 5A3A 5C68 		.string	"Z:\\home\\mohammadreza\\temo\\Simple-AVR-OS-plus-some-improvement-"
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 13
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 13
 
 
  636      6F6D 655C 
@@ -778,7 +778,7 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  660 00fe 6C6F 6E67 		.string	"long int"
  660      2069 6E74 
  660      00
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 14
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 14
 
 
  661               	.LASF0:
@@ -790,18 +790,18 @@ GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 1
  664      6700 
  665               	.global __do_copy_data
  666               	.global __do_clear_bss
-GAS LISTING C:\users\mohammadreza\Temp/cc5UTMbA.s 			page 15
+GAS LISTING C:\users\mohammadreza\Temp/ccZSMcPi.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 kernel.c
-C:\users\mohammadreza\Temp/cc5UTMbA.s:2      *ABS*:0000003f __SREG__
-C:\users\mohammadreza\Temp/cc5UTMbA.s:3      *ABS*:0000003e __SP_H__
-C:\users\mohammadreza\Temp/cc5UTMbA.s:4      *ABS*:0000003d __SP_L__
-C:\users\mohammadreza\Temp/cc5UTMbA.s:5      *ABS*:00000034 __CCP__
-C:\users\mohammadreza\Temp/cc5UTMbA.s:6      *ABS*:00000000 __tmp_reg__
-C:\users\mohammadreza\Temp/cc5UTMbA.s:7      *ABS*:00000001 __zero_reg__
-C:\users\mohammadreza\Temp/cc5UTMbA.s:29     .text:00000000 main
+C:\users\mohammadreza\Temp/ccZSMcPi.s:2      *ABS*:0000003f __SREG__
+C:\users\mohammadreza\Temp/ccZSMcPi.s:3      *ABS*:0000003e __SP_H__
+C:\users\mohammadreza\Temp/ccZSMcPi.s:4      *ABS*:0000003d __SP_L__
+C:\users\mohammadreza\Temp/ccZSMcPi.s:5      *ABS*:00000034 __CCP__
+C:\users\mohammadreza\Temp/ccZSMcPi.s:6      *ABS*:00000000 __tmp_reg__
+C:\users\mohammadreza\Temp/ccZSMcPi.s:7      *ABS*:00000001 __zero_reg__
+C:\users\mohammadreza\Temp/ccZSMcPi.s:29     .text:00000000 main
                             *COM*:00000001 v_SysStat
                             *COM*:00000001 v_StatReg
 
