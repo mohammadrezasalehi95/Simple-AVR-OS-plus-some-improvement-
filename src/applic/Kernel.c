@@ -60,9 +60,10 @@
 
 volatile INT8U v_SysStat;
 volatile INT8U v_StatReg;
-extern INT8U app_subscription;
 
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmissing-noreturn"
 int main(void) {
     v_SysStat = 0;
     INT8U v_led = 0;
@@ -166,8 +167,11 @@ int main(void) {
 #endif
         if ((v_SysStat & (1 << b_AppTick)) != 0) {
             v_SysStat &= ~(1 << b_AppTick);
-            f_Applic();
-            my_Applic();
+//            f_Applic();
+//            my_Applic();
+            for (int i = 0; i < 8; ++i) {
+                applications_reducer(i)
+            }
         }
 
 #ifdef DCFG_LOWPOW
@@ -177,3 +181,5 @@ int main(void) {
 
     };              /* loop forever */
 }
+
+#pragma clang diagnostic pop
