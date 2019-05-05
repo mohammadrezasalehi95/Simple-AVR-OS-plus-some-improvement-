@@ -169,7 +169,8 @@ int main(void) {
             v_SysStat &= ~(1 << b_AppTick);
 //            f_Applic();
 //            my_Applic();
-            for (int i = 0; i < 8; ++i) {
+            INT8U i = 0;
+            for (; i < 8; ++i) {
                 applications_reducer(i)
             }
         }
