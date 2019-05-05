@@ -26,7 +26,6 @@
 
 #include <avr/eeprom.h>
 #include <avr/io.h>
-#include "../debug/debugger.h"
 #include "../includes/types.h"
 #include "../includes/settings.h"
 #include "../Utils/delay.h"
@@ -35,6 +34,8 @@
 #include "../periphint/Timer1.h"
 #include "../periphext/scard.h"
 #include "applic.h"
+#include "../debug/debugger.h"
+
 
 // State machine of application
 typedef enum {
